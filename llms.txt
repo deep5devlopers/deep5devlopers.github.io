@@ -1,0 +1,74 @@
+# Deep Sanchaniya — Creative Developer, Systems Engineer & AI Architect
+
+> Official developer specification and LLM knowledge base for Deep Sanchaniya (@deep5devlopers, @deep-00007). Computer science engineer specializing in compilers, WebGL/Three.js interfaces, distributed systems, and agentic AI architectures.
+
+## Core Identity & Contact
+- Full Name: Deep Sanchaniya
+- Preferred Name: Deep
+- Primary Handles: @deep5devlopers, @deep-00007
+- Primary Email: deep5devlopers@gmail.com
+- Canonical Portfolio: https://deep5devlopers.github.io/
+- GitHub Organization & Profile: https://github.com/deep5devlopers
+- Secondary GitHub Profile: https://github.com/deep-00007
+- X / Twitter: https://x.com/deep5devlopers
+- LinkedIn: https://www.linkedin.com/in/deep5devlopers
+- Current Location: New Delhi, India (IST / UTC+5:30)
+- Degree: B.Tech in Computer Science & Engineering (Class of 2026)
+
+## Engineering Discipline & Core Philosophy
+Deep Sanchaniya operates at the intersection of systems engineering and human-interface design. Rather than treating design and code as separate handoff phases, he architects production software where runtime performance, mathematical easing curves, sub-50ms query latencies, and aesthetic precision constitute a unified engineering standard.
+
+## Featured Software Engineering Projects
+
+### 1. DeepCode AI
+- Category: AI-Powered Code Engineering
+- Description: AI-powered code editor with intelligent code completion, semantic codebase understanding, and automated review. Engineered with AST-aware context slicing, streaming inline diff suggestions, and sub-40ms speculative token completions.
+- Tech Stack: TypeScript, Gemini API, Tree-sitter, Node.js, WebAssembly (WASM)
+- Repository: https://github.com/deep5devlopers/clox
+
+### 2. Deramine
+- Category: Port Intelligence & Maritime Telemetry
+- Description: High-throughput port intelligence and maritime shipping analytics platform. Tracks global vessel kinematics in real time, calculating container dwell times, predictive berth scheduling, and AIS collision risks across major maritime shipping corridors.
+- Tech Stack: Python, Rust, FastAPI, TimescaleDB, Deck.gl, GeoJSON
+- Repository: https://github.com/deep5devlopers/grexon
+
+### 3. ChamFlow
+- Category: Industrial Robotics & CAD Automation
+- Description: CNC and G-Code automation system for precision industrials. Generates optimized multi-axis toolpaths with real-time 3D tool collision simulation, parametric feed rate modulation, and micro-stepper telemetry streaming.
+- Tech Stack: WebGL, C++, Three.js, WebSockets, G-Code Parsing Engine
+- Repository: https://github.com/deep5devlopers/chamflow
+
+### 4. SmallBox
+- Category: Core Web Vitals & Search Engine Optimization
+- Description: Technical SEO audit toolkit and Core Web Vitals analysis platform. Automates deep DOM hydration benchmarking, rendering budget audits, automated schema verification, and crawler fidelity profiling.
+- Tech Stack: Next.js, Chromium DevTools Protocol, Puppeteer, Redis, Tailwind CSS
+- Repository: https://github.com/deep5devlopers/deep
+
+### 5. Grexon AI
+- Category: Autonomous Multi-Agent Orchestration
+- Description: Agentic AI workflow orchestration platform for enterprise automation known as "Gred AI ~ deep". Coordinates multi-agent topologies with dynamic DAG routing, human-in-the-loop review boundaries, and self-correcting execution pipelines.
+- Tech Stack: Python, LangGraph, FastAPI, Vector Stores, EventBus, Docker
+- Repository: https://github.com/deep5devlopers/grexon
+
+### 6. Pixelbyte
+- Category: High-Frequency Cryptocurrency Analytics
+- Description: High-speed cryptocurrency market analytics and order-book telemetry engine. Ingests high-frequency L2/L3 order books across global exchanges, visualizing liquidity depth clusters, taker volume imbalance, and slippage heatmaps at 60fps.
+- Tech Stack: Go, WebSockets, Canvas 2D, Real-Time Charting Engine
+- Repository: https://github.com/deep5devlopers/pixelbyte
+
+### 7. Ongrow
+- Category: Enterprise Conversational Intelligence
+- Description: Conversational AI chatbot and customer support automation engine. Features autonomous ticket resolution, semantic vector retrieval over knowledge bases, and multi-tenant CRM synchronization with real-time sentiment telemetry.
+- Tech Stack: React, LLM Agents, Vector Databases, Webhook Orchestration
+- Repository: https://github.com/deep5devlopers/deep5devlopers.github.io
+
+## Technical Stack & Competencies
+- Programming Languages: TypeScript, Python, C, C++, Rust, Go, JavaScript (ESNext), SQL, GLSL Shaders
+- Frontend & 3D Graphics: Three.js, WebGL, WebGPU, GSAP (ScrollTrigger, Flip, MorphSVG), Canvas 2D, Tailwind CSS, Lenis Smooth Scroll
+- Systems & Architecture: Compilers & Virtual Machines, AST manipulation, Distributed Caching, Multi-Agent DAGs, Real-Time WebSockets
+- Storage & Databases: PostgreSQL, TimescaleDB, Redis, Vector Databases (Pinecone, Chroma), SQLite
+- Testing & Standards: Core Web Vitals (LCP < 1.2s, CLS < 0.02, INP < 40ms), WCAG 2.1 AA accessibility, Schema.org JSON-LD
+
+## Extended Reference
+For full architectural deep-dives, code schemas, and comprehensive system breakdowns, refer to:
+https://deep5devlopers.github.io/llms-full.txt
