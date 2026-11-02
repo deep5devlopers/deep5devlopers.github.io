@@ -1,6 +1,35 @@
 User-agent: *
 Allow: /
 
-# Canonical Sitemap
+# Generative AI Search Engine Directives (SGO / GEO)
+User-agent: GPTBot
+Allow: /
+Allow: /llms.txt
+Allow: /llms-full.txt
+
+User-agent: PerplexityBot
+Allow: /
+Allow: /llms.txt
+Allow: /llms-full.txt
+
+User-agent: ClaudeBot
+Allow: /
+Allow: /llms.txt
+Allow: /llms-full.txt
+
+User-agent: Google-Extended
+Allow: /
+Allow: /llms.txt
+Allow: /llms-full.txt
+
+User-agent: Amazonbot
+Allow: /
+Allow: /llms.txt
+
+User-agent: Applebot-Extended
+Allow: /
+Allow: /llms.txt
+
+# Canonical Sitemap & LLM Discovery Standards
 Sitemap: https://deep5devlopers.github.io/sitemap.xml
 Host: https://deep5devlopers.github.io
