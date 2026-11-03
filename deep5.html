@@ -107,7 +107,7 @@
       -webkit-font-smoothing: antialiased;
     }
     a { color: inherit; text-decoration: none; }
-    .mono { font-family: var(--mono); font-size: 11px; letter-spacing: .14em; text-transform: uppercase; }
+    .mono { font-family: var(--mono); font-size: 11px; letter-spacing: .14em; text-transform: uppercase; font-variant-numeric: tabular-nums; }
     header {
       display: flex;
       flex-wrap: wrap;
@@ -117,20 +117,31 @@
       padding-bottom: 24px;
       border-bottom: 1px solid var(--line);
     }
-    .logo { font: 600 20px var(--disp); letter-spacing: -.02em; }
-    .logo sup { color: var(--accent); font-size: 12px; }
-    .nav-pills { display: flex; flex-wrap: wrap; gap: 10px; }
-    .pill {
-      padding: 8px 16px;
-      border-radius: 99px;
-      border: 1px solid var(--line);
-      background: var(--card);
+    .logo { font: 600 19px var(--disp); letter-spacing: -.02em; }
+    .logo sup { color: var(--accent); font-size: 11px; }
+    .nav-links { display: flex; flex-wrap: wrap; align-items: center; gap: 14px; }
+    .nav-links a {
+      font-family: var(--mono);
+      font-size: 10.5px;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      color: var(--muted2);
+      padding: 8px 12px;
+      border-radius: 6px;
+      transition: color .25s, background .25s;
+    }
+    .nav-links a:hover { color: var(--fg); background: color-mix(in srgb, var(--fg) 6%, transparent); }
+    .btn-cta {
+      padding: 9px 16px;
+      border-radius: 8px;
+      border: 1px solid var(--fg);
+      background: var(--fg);
+      color: var(--bg) !important;
       font-family: var(--mono);
       font-size: 10.5px;
       letter-spacing: .12em;
       text-transform: uppercase;
     }
-    .pill.hot { background: var(--fg); color: var(--bg); border-color: var(--fg); }
     main {
       max-width: 960px;
       width: 100%;
@@ -138,15 +149,11 @@
       padding: clamp(36px, 6vh, 72px) 0;
     }
     .eyebrow {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      padding: 6px 14px;
-      border-radius: 99px;
-      border: 1px solid var(--line);
-      background: var(--card);
+      display: block;
       color: var(--accent);
-      margin-bottom: 20px;
+      margin-bottom: 16px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid var(--line);
     }
     h1 {
       font: 600 clamp(36px, 6.5vw, 76px)/1.02 var(--disp);
@@ -173,7 +180,7 @@
     .repo-card {
       background: var(--card);
       border: 1px solid var(--line);
-      border-radius: 16px;
+      border-radius: 14px;
       padding: 22px;
       display: flex;
       flex-direction: column;
@@ -202,16 +209,17 @@
 </head>
 <body>
   <header>
-    <a href="/" class="logo" aria-label="deep5 Portfolio Home">DEEP5<sup>©</sup></a>
-    <nav class="nav-pills" aria-label="Entity Navigation">
-      <a href="/" class="pill">← Portfolio Home</a>
-      <a href="/deep-sanchaniya.html" class="pill">Deep Sanchaniya Bio</a>
-      <a href="https://github.com/deep5devlopers" class="pill hot" target="_blank" rel="noopener">GitHub @deep5devlopers ↗</a>
+    <a href="/" class="logo" aria-label="deep5 Portfolio Home">DEEP5 · DEEP SANCHANIYA<sup>©</sup></a>
+    <nav class="nav-links" aria-label="Entity Navigation">
+      <a href="/">← Portfolio Home</a>
+      <a href="/deep-sanchaniya.html">Deep Sanchaniya Bio</a>
+      <a href="/github-agents">GitHub Agents</a>
+      <a href="https://github.com/deep5devlopers" class="btn-cta" target="_blank" rel="noopener">GitHub @deep5devlopers ↗</a>
     </nav>
   </header>
 
   <main id="mainContent">
-    <span class="eyebrow mono">DEVELOPER NAMESPACE // DEEP5 · DEEP5DEVLOPERS</span>
+    <span class="eyebrow mono">DEVELOPER NAMESPACE · DEEP5 · DEEP5DEVLOPERS</span>
     <h1>deep5 — Deep Sanchaniya Developer Hub</h1>
     <p class="lead">
       <strong>deep5</strong> (<strong>@deep5devlopers</strong>) is the official engineering identity, open-source namespace, and software architecture lab of <strong>Deep Sanchaniya</strong> (<strong>Deep</strong>). Every compiler, distributed telemetry engine, and agentic AI system engineered by Deep Sanchaniya is indexed below.
@@ -279,6 +287,7 @@
     <span>© 2026 DEEP5 (DEEP SANCHANIYA)</span>
     <a href="/" class="accent-link">PORTFOLIO HOME ↗</a>
     <a href="/deep-sanchaniya.html" class="accent-link">DEEP SANCHANIYA BIO ↗</a>
+    <a href="/github-agents" class="accent-link">GITHUB AGENTS ↗</a>
   </footer>
 </body>
 </html>
