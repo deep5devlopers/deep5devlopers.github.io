@@ -1,29 +1,40 @@
 User-agent: *
 Allow: /
 
-User-agent: GPTBot
-Allow: /
-
+# Generative AI Search Engine Directives (SGO / GEO — Retrieval Bots Allowed)
 User-agent: OAI-SearchBot
 Allow: /
+Allow: /llms.txt
+Allow: /llms-full.txt
 
 User-agent: ChatGPT-User
 Allow: /
+Allow: /llms.txt
+Allow: /llms-full.txt
 
 User-agent: PerplexityBot
 Allow: /
+Allow: /llms.txt
+Allow: /llms-full.txt
+
+User-agent: Claude-SearchBot
+Allow: /
+Allow: /llms.txt
+Allow: /llms-full.txt
+
+User-agent: Applebot
+Allow: /
+Allow: /llms.txt
+
+# Block Unsolicited Foundation Model Training Scrapers
+User-agent: GPTBot
+Disallow: /
 
 User-agent: ClaudeBot
-Allow: /
+Disallow: /
 
 User-agent: Google-Extended
-Allow: /
-
-User-agent: Applebot-Extended
-Allow: /
-
-User-agent: Bingbot
-Allow: /
+Disallow: /
 
 User-agent: CCBot
 Disallow: /
@@ -31,4 +42,5 @@ Disallow: /
 User-agent: Bytespider
 Disallow: /
 
+# Canonical Sitemap
 Sitemap: https://deep5devlopers.github.io/sitemap.xml
