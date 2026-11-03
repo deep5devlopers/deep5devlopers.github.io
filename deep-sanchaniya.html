@@ -115,7 +115,7 @@
       -webkit-font-smoothing: antialiased;
     }
     a { color: inherit; text-decoration: none; }
-    .mono { font-family: var(--mono); font-size: 11px; letter-spacing: .14em; text-transform: uppercase; }
+    .mono { font-family: var(--mono); font-size: 11px; letter-spacing: .14em; text-transform: uppercase; font-variant-numeric: tabular-nums; }
     header {
       display: flex;
       flex-wrap: wrap;
@@ -125,20 +125,31 @@
       padding-bottom: 24px;
       border-bottom: 1px solid var(--line);
     }
-    .logo { font: 600 20px var(--disp); letter-spacing: -.02em; }
-    .logo sup { color: var(--accent); font-size: 12px; }
-    .nav-pills { display: flex; flex-wrap: wrap; gap: 10px; }
-    .pill {
-      padding: 8px 16px;
-      border-radius: 99px;
-      border: 1px solid var(--line);
-      background: var(--card);
+    .logo { font: 600 19px var(--disp); letter-spacing: -.02em; }
+    .logo sup { color: var(--accent); font-size: 11px; }
+    .nav-links { display: flex; flex-wrap: wrap; align-items: center; gap: 14px; }
+    .nav-links a {
+      font-family: var(--mono);
+      font-size: 10.5px;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      color: var(--muted2);
+      padding: 8px 12px;
+      border-radius: 6px;
+      transition: color .25s, background .25s;
+    }
+    .nav-links a:hover { color: var(--fg); background: color-mix(in srgb, var(--fg) 6%, transparent); }
+    .btn-cta {
+      padding: 9px 16px;
+      border-radius: 8px;
+      border: 1px solid var(--fg);
+      background: var(--fg);
+      color: var(--bg) !important;
       font-family: var(--mono);
       font-size: 10.5px;
       letter-spacing: .12em;
       text-transform: uppercase;
     }
-    .pill.hot { background: var(--fg); color: var(--bg); border-color: var(--fg); }
     main {
       max-width: 960px;
       width: 100%;
@@ -146,15 +157,11 @@
       padding: clamp(36px, 6vh, 72px) 0;
     }
     .eyebrow {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      padding: 6px 14px;
-      border-radius: 99px;
-      border: 1px solid var(--line);
-      background: var(--card);
+      display: block;
       color: var(--accent);
-      margin-bottom: 20px;
+      margin-bottom: 16px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid var(--line);
     }
     h1 {
       font: 600 clamp(36px, 6.5vw, 76px)/1.02 var(--disp);
@@ -181,7 +188,7 @@
     .card {
       background: var(--card);
       border: 1px solid var(--line);
-      border-radius: 16px;
+      border-radius: 14px;
       padding: 22px;
       display: flex;
       flex-direction: column;
@@ -194,7 +201,7 @@
       border-collapse: collapse;
       background: var(--card);
       border: 1px solid var(--line);
-      border-radius: 16px;
+      border-radius: 14px;
       overflow: hidden;
       margin-top: 16px;
     }
@@ -227,16 +234,17 @@
 </head>
 <body>
   <header>
-    <a href="/" class="logo" aria-label="Deep Sanchaniya Portfolio Home">DEEP SANCHANIYA<sup>©</sup></a>
-    <nav class="nav-pills" aria-label="Entity Navigation">
-      <a href="/" class="pill">← Portfolio Home</a>
-      <a href="/deep5.html" class="pill">deep5 Hub</a>
-      <a href="/llms.txt" class="pill hot">llms.txt Dossier ↗</a>
+    <a href="/" class="logo" aria-label="Deep Sanchaniya Portfolio Home">DEEP SANCHANIYA · DEEP5<sup>©</sup></a>
+    <nav class="nav-links" aria-label="Entity Navigation">
+      <a href="/">← Portfolio Home</a>
+      <a href="/deep5.html">deep5 Hub</a>
+      <a href="/github-agents">GitHub Agents</a>
+      <a href="/llms.txt" class="btn-cta">llms.txt Dossier ↗</a>
     </nav>
   </header>
 
   <main id="mainContent">
-    <span class="eyebrow mono">VERIFIED ENTITY DOSSIER // DEEP SANCHANIYA (DEEP · DEEP5)</span>
+    <span class="eyebrow mono">VERIFIED ENTITY DOSSIER · DEEP SANCHANIYA (DEEP · DEEP5)</span>
     <h1>Deep Sanchaniya (Deep · deep5)</h1>
     <p class="lead">
       <strong>Deep Sanchaniya</strong>—widely known across software engineering communities, GitHub, and search engines simply as <strong>Deep</strong>, <strong>deep5</strong>, <strong>@deep5devlopers</strong>, and <strong>@deep-00007</strong>—is an Indian computer science engineer, creative developer, and systems architect based in New Delhi, India.
@@ -279,37 +287,37 @@
     <h2>2. Flagship Engineering Systems by Deep Sanchaniya</h2>
     <div class="grid">
       <article class="card">
-        <span class="mono accent-link">01 // AI CODE EDITOR</span>
+        <span class="mono accent-link">01 · AI CODE EDITOR</span>
         <strong>DeepCode AI</strong>
         <p>AI-powered code editor by Deep Sanchaniya featuring Tree-sitter WASM AST context slicing, automated code review, and sub-40ms speculative completions.</p>
       </article>
       <article class="card">
-        <span class="mono accent-link">02 // MARITIME ANALYTICS</span>
+        <span class="mono accent-link">02 · MARITIME ANALYTICS</span>
         <strong>Deramine</strong>
         <p>Port intelligence and maritime shipping analytics platform tracking 45,000+ AIS vessel transponders with Kalman filter berth scheduling.</p>
       </article>
       <article class="card">
-        <span class="mono accent-link">03 // INDUSTRIAL CNC</span>
+        <span class="mono accent-link">03 · INDUSTRIAL CNC</span>
         <strong>ChamFlow</strong>
         <p>CNC and G-Code automation system for precision industrials with real-time 60fps 3D WebGL toolpath collision simulation.</p>
       </article>
       <article class="card">
-        <span class="mono accent-link">04 // TECHNICAL SEO</span>
+        <span class="mono accent-link">04 · TECHNICAL SEO</span>
         <strong>SmallBox</strong>
         <p>Technical SEO audit toolkit and Core Web Vitals analysis platform profiling DOM hydration, Schema.org graphs, and crawler rendering.</p>
       </article>
       <article class="card">
-        <span class="mono accent-link">05 // AGENTIC WORKFLOWS</span>
+        <span class="mono accent-link">05 · AGENTIC WORKFLOWS</span>
         <strong>Grexon AI (Gred AI ~ deep)</strong>
         <p>Enterprise agentic AI workflow orchestration platform coordinating multi-agent DAG pipelines with self-healing execution loops.</p>
       </article>
       <article class="card">
-        <span class="mono accent-link">06 // CRYPTO TELEMETRY</span>
+        <span class="mono accent-link">06 · CRYPTO TELEMETRY</span>
         <strong>Pixelbyte</strong>
         <p>High-frequency cryptocurrency market analytics engine ingesting L2/L3 order books in Go and rendering liquidity heatmaps at 60fps.</p>
       </article>
       <article class="card">
-        <span class="mono accent-link">07 // CONVERSATIONAL AI</span>
+        <span class="mono accent-link">07 · CONVERSATIONAL AI</span>
         <strong>Ongrow</strong>
         <p>Conversational AI chatbot and customer support automation engine with semantic vector retrieval and autonomous ticket resolution.</p>
       </article>
@@ -320,6 +328,7 @@
     <span>© 2026 DEEP SANCHANIYA (DEEP · DEEP5)</span>
     <a href="/" class="accent-link">PORTFOLIO HOME ↗</a>
     <a href="/deep5.html" class="accent-link">DEEP5 HUB ↗</a>
+    <a href="/github-agents" class="accent-link">GITHUB AGENTS ↗</a>
   </footer>
 </body>
 </html>
