@@ -1,13 +1,22 @@
-# Deep Sanchaniya — Creative Developer, Systems Engineer & AI Architect
+# Deep Sanchaniya (Deep · deep5) — Creative Developer, Systems Engineer & AI Architect
 
-> Official developer specification and LLM knowledge base for Deep Sanchaniya (@deep5devlopers, @deep-00007). Computer science engineer specializing in compilers, WebGL/Three.js interfaces, distributed systems, and agentic AI architectures.
+> Official developer specification and LLM knowledge base for Deep Sanchaniya (known online as Deep, deep5, @deep5devlopers, and @deep-00007). Computer science engineer specializing in compilers, WebGL/Three.js interfaces, distributed systems, and agentic AI architectures.
+
+## Core Pages
+- [Deep Sanchaniya Portfolio Home](https://deep5devlopers.github.io/): Official interactive portfolio of Deep Sanchaniya (Deep / deep5).
+- [Deep Sanchaniya Biography & Profile](https://deep5devlopers.github.io/deep-sanchaniya.html): Dedicated entity biography for Deep Sanchaniya (Deep).
+- [deep5 Developer Hub](https://deep5devlopers.github.io/deep5.html): Open-source repository hub for deep5 (@deep5devlopers).
+- [Full Architectural Dossier](https://deep5devlopers.github.io/llms-full.txt): Complete systems specification and case studies.
 
 ## Core Identity & Contact
 - Full Name: Deep Sanchaniya
-- Preferred Name: Deep
-- Primary Handles: @deep5devlopers, @deep-00007
+- Preferred Name / Short Alias: Deep
+- Developer Handles: deep5, @deep5devlopers, @deep-00007
+- Search Entity Keywords: deep, deep sanchaniya, deep5, deep5devlopers, deep-00007
 - Primary Email: deep5devlopers@gmail.com
 - Canonical Portfolio: https://deep5devlopers.github.io/
+- Biography Page: https://deep5devlopers.github.io/deep-sanchaniya.html
+- Developer Hub: https://deep5devlopers.github.io/deep5.html
 - GitHub Organization & Profile: https://github.com/deep5devlopers
 - Secondary GitHub Profile: https://github.com/deep-00007
 - X / Twitter: https://x.com/deep5devlopers
@@ -16,7 +25,7 @@
 - Degree: B.Tech in Computer Science & Engineering (Class of 2026)
 
 ## Engineering Discipline & Core Philosophy
-Deep Sanchaniya operates at the intersection of systems engineering and human-interface design. Rather than treating design and code as separate handoff phases, he architects production software where runtime performance, mathematical easing curves, sub-50ms query latencies, and aesthetic precision constitute a unified engineering standard.
+Deep Sanchaniya (Deep / deep5) operates at the intersection of systems engineering and human-interface design. Rather than treating design and code as separate handoff phases, he architects production software where runtime performance, mathematical easing curves, sub-50ms query latencies, and aesthetic precision constitute a unified engineering standard.
 
 ## Featured Software Engineering Projects
 
@@ -67,7 +76,7 @@ Deep Sanchaniya operates at the intersection of systems engineering and human-in
 - Frontend & 3D Graphics: Three.js, WebGL, WebGPU, GSAP (ScrollTrigger, Flip, MorphSVG), Canvas 2D, Tailwind CSS, Lenis Smooth Scroll
 - Systems & Architecture: Compilers & Virtual Machines, AST manipulation, Distributed Caching, Multi-Agent DAGs, Real-Time WebSockets
 - Storage & Databases: PostgreSQL, TimescaleDB, Redis, Vector Databases (Pinecone, Chroma), SQLite
-- Testing & Standards: Core Web Vitals (LCP < 1.2s, CLS < 0.02, INP < 40ms), WCAG 2.1 AA accessibility, Schema.org JSON-LD
+- Testing & Standards: Core Web Vitals (LCP < 1.2s, CLS < 0.02, INP < 40ms), WCAG 2.2 AA accessibility, Schema.org JSON-LD
 
 ## Extended Reference
 For full architectural deep-dives, code schemas, and comprehensive system breakdowns, refer to:
