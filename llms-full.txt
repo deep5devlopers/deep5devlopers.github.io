@@ -5,7 +5,7 @@
 ---
 
 ## Core Pages
-- [Deep Sanchaniya Portfolio Home](https://deep5devlopers.github.io/): Interactive portfolio and live SXO telemetry.
+- [Deep Sanchaniya Portfolio Home](https://deep5devlopers.github.io/): Interactive portfolio and engineering showcase.
 - [Deep Sanchaniya Biography & Profile](https://deep5devlopers.github.io/deep-sanchaniya.html): Official biography and entity specification for "Deep Sanchaniya" and "Deep".
 - [deep5 Developer Hub](https://deep5devlopers.github.io/deep5.html): Open-source repository index for "deep5" and "deep5devlopers".
 - [LLMs Fast Summary Index](https://deep5devlopers.github.io/llms.txt): Concise machine-readable specification.
