@@ -1,35 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
   <url>
     <loc>https://deep5devlopers.github.io/</loc>
-    <lastmod>2026-11-03</lastmod>
-    <changefreq>weekly</changefreq>
+    <lastmod>2025-05-15</lastmod>
+    <changefreq>daily</changefreq>
     <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://deep5devlopers.github.io/assets/og-image.png</image:loc>
+      <image:title>Deep Sanchaniya (Deep · deep5 · deep5devlopers) — Systems &amp; AI Engineer Portfolio</image:title>
+      <image:caption>Official portfolio of Deep Sanchaniya (Deep, deep5, @deep5devlopers, @deep-00007), creative developer and systems engineer in New Delhi, India.</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://deep5devlopers.github.io/deep-sanchaniya.html</loc>
-    <lastmod>2026-11-03</lastmod>
+    <lastmod>2025-05-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
+    <image:image>
+      <image:loc>https://deep5devlopers.github.io/assets/og-image.png</image:loc>
+      <image:title>Deep Sanchaniya (Deep · deep5) — Biography &amp; Engineering Profile</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://deep5devlopers.github.io/deep5.html</loc>
-    <lastmod>2026-11-03</lastmod>
+    <lastmod>2025-05-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
+    <image:image>
+      <image:loc>https://deep5devlopers.github.io/assets/og-image.png</image:loc>
+      <image:title>deep5 (deep5devlopers) — Deep Sanchaniya Developer Hub</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://deep5devlopers.github.io/llms.txt</loc>
-    <lastmod>2026-11-03</lastmod>
+    <lastmod>2025-05-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://deep5devlopers.github.io/llms-full.txt</loc>
-    <lastmod>2026-11-03</lastmod>
+    <lastmod>2025-05-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
