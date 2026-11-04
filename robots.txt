@@ -1,6 +1,25 @@
 User-agent: *
 Allow: /
 
+# Google Search, Google Images, Google Discover & Google AI Overviews (Gemini Grounding)
+User-agent: Googlebot
+Allow: /
+Allow: /deep-sanchaniya.html
+Allow: /deep5.html
+Allow: /llms.txt
+Allow: /llms-full.txt
+Allow: /assets/og-image.png
+
+User-agent: Googlebot-Image
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+# Bing & IndexNow Search Indexers
+User-agent: bingbot
+Allow: /
+
 # Generative AI Search Engine Directives (SGO / GEO — Retrieval Bots Allowed)
 User-agent: OAI-SearchBot
 Allow: /
@@ -8,6 +27,11 @@ Allow: /llms.txt
 Allow: /llms-full.txt
 
 User-agent: ChatGPT-User
+Allow: /
+Allow: /llms.txt
+Allow: /llms-full.txt
+
+User-agent: GPTBot
 Allow: /
 Allow: /llms.txt
 Allow: /llms-full.txt
@@ -22,25 +46,15 @@ Allow: /
 Allow: /llms.txt
 Allow: /llms-full.txt
 
+User-agent: ClaudeBot
+Allow: /
+Allow: /llms.txt
+Allow: /llms-full.txt
+
 User-agent: Applebot
 Allow: /
 Allow: /llms.txt
 
-# Block Unsolicited Foundation Model Training Scrapers
-User-agent: GPTBot
-Disallow: /
-
-User-agent: ClaudeBot
-Disallow: /
-
-User-agent: Google-Extended
-Disallow: /
-
-User-agent: CCBot
-Disallow: /
-
-User-agent: Bytespider
-Disallow: /
-
-# Canonical Sitemap
+# Canonical Host & Sitemap
+Host: https://deep5devlopers.github.io
 Sitemap: https://deep5devlopers.github.io/sitemap.xml
