@@ -9,8 +9,8 @@ Category        : Open Source Repository
 Primary Stack   : HTML
 Repository URL  : https://github.com/deep5devlopers/deep5devlopers.github.io
 Live URL        : https://deep5devlopers.github.io
-Last Push (UTC) : 2026-11-06T06:59:59Z
-Generated (UTC) : 2026-11-17 05:57 UTC
+Last Push (UTC) : 2026-11-17T05:57:54Z
+Generated (UTC) : 2026-11-17 10:46 UTC
 Maintainer      : Deep Sanchaniya (@deep5devlopers / deep5devlopers@gmail.com)
 
 SUMMARY
@@ -30,16 +30,16 @@ ROOT DIRECTORY STRUCTURE
   - index.html
   - llms-full.txt
   - llms.txt
+  - overview.txt
   - README.md
   - robots.txt
   - sitemap.xml
-  - overview.txt
 
 RECENT COMMITS
 --------------------------------------------------------------------------------
+  - 5fcbccf | 2026-11-17T05:57:53Z | docs(overview): add root overview.txt
   - d060441 | 2026-11-06T06:59:58Z | docs(architecture): apply standardized 2026 Deep Systems architectural footer
   - 1db67ce | 2026-11-06T06:59:49Z | chore(seo): update sitemap.xml for Deep Systems Hub
   - 291eadd | 2026-11-06T06:59:47Z | chore(seo): update robots.txt for Deep Systems Hub
   - 7cabbc2 | 2026-11-06T06:59:45Z | docs(readme): update live host README for Deep Systems Hub
-  - f982d9a | 2026-11-06T06:59:44Z | feat(hub): deploy Deep Systems Hub and remove personal portfolio from live Pages
 ================================================================================
