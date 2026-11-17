@@ -1,0 +1,45 @@
+================================================================================
+REPOSITORY OVERVIEW — deep5devlopers/deep5devlopers.github.io
+================================================================================
+
+Repository      : deep5devlopers/deep5devlopers.github.io
+Visibility      : Public
+Default Branch  : main
+Category        : Open Source Repository
+Primary Stack   : HTML
+Repository URL  : https://github.com/deep5devlopers/deep5devlopers.github.io
+Live URL        : https://deep5devlopers.github.io
+Last Push (UTC) : 2026-11-06T06:59:59Z
+Generated (UTC) : 2026-11-17 05:57 UTC
+Maintainer      : Deep Sanchaniya (@deep5devlopers / deep5devlopers@gmail.com)
+
+SUMMARY
+--------------------------------------------------------------------------------
+Deep Sanchaniya (@deep-00007, @deep5devlopers) - Senior Principal Systems Architect & Full-Stack Engineer Official Portfolio
+
+REPOSITORY DESCRIPTION
+--------------------------------------------------------------------------------
+Deep Sanchaniya (@deep-00007, @deep5devlopers) - Senior Principal Systems Architect & Full-Stack Engineer Official Portfolio
+
+ROOT DIRECTORY STRUCTURE
+--------------------------------------------------------------------------------
+  - assets/
+  - .nojekyll
+  - 404.html
+  - deep5indexnow2026key.txt
+  - index.html
+  - llms-full.txt
+  - llms.txt
+  - README.md
+  - robots.txt
+  - sitemap.xml
+  - overview.txt
+
+RECENT COMMITS
+--------------------------------------------------------------------------------
+  - d060441 | 2026-11-06T06:59:58Z | docs(architecture): apply standardized 2026 Deep Systems architectural footer
+  - 1db67ce | 2026-11-06T06:59:49Z | chore(seo): update sitemap.xml for Deep Systems Hub
+  - 291eadd | 2026-11-06T06:59:47Z | chore(seo): update robots.txt for Deep Systems Hub
+  - 7cabbc2 | 2026-11-06T06:59:45Z | docs(readme): update live host README for Deep Systems Hub
+  - f982d9a | 2026-11-06T06:59:44Z | feat(hub): deploy Deep Systems Hub and remove personal portfolio from live Pages
+================================================================================
