@@ -1,0 +1,23 @@
+# Deep5 Tech — Rajkot, Gujarat, India
+> Custom software development, factory & warehouse systems, and practical AI engineering serving Rajkot GIDC and Gujarat SMEs.
+
+- Location: 304 Innovation Tower, 150 Feet Ring Road, Near Indira Circle, Rajkot, Gujarat 360005, India
+- Contact: deep5devlopers@gmail.com | Phone: +91 281 405 9000 | WhatsApp: +91 98250 45900
+
+## Core Pages (16 Pages)
+- [Deep5 Tech | Custom Software & AI Company in Rajkot](https://deep5devlopers.github.io/deep5-tech/): Custom software & AI engineering company in Rajkot, Gujarat.
+- [Custom Software & AI Services in Rajkot | Deep5 Tech Hub](https://deep5devlopers.github.io/deep5-tech/services/): Hub listing all 10 specialized B2B software and AI services.
+- [Software & Tech Company in Rajkot | Deep5 Tech Studio](https://deep5devlopers.github.io/deep5-tech/tech-company-rajkot/): Rajkot local engineering page covering Shapar-Veraval, Metoda, Aji, Bhaktinagar & Gujarat cities.
+- [About Deep5 Tech | Software Engineering Team Rajkot](https://deep5devlopers.github.io/deep5-tech/about/): Engineering principles, direct founder workflow, and core technology standards.
+- [Contact Deep5 Tech Rajkot | Request a Project Proposal](https://deep5devlopers.github.io/deep5-tech/contact/): Direct Rajkot address, phone, WhatsApp, email, and validated proposal request form.
+- [Engineering & AI Insights Blog Rajkot | Deep5 Tech Labs](https://deep5devlopers.github.io/deep5-tech/blog/): Editorial index of 8 upcoming engineering guides with category filtering.
+- [Web Application Development in Rajkot | Deep5 Tech Studio](https://deep5devlopers.github.io/deep5-tech/services/web-development/): Deep5 Tech engineers fast, secure web portals and SaaS platforms built to handle high traffic on mobile networks.
+- [Custom CRM Development in Rajkot | Deep5 Tech Services](https://deep5devlopers.github.io/deep5-tech/services/crm-development/): Deep5 Tech builds custom CRM systems that capture every inquiry, automate quotation follow-ups, and connect directly with WhatsApp.
+- [Custom Systems & Dashboards in Rajkot | Deep5 Tech Labs](https://deep5devlopers.github.io/deep5-tech/services/custom-systems-dashboards/): Deep5 Tech unifies disconnected spreadsheets, purchase trackers, and financial metrics into one fast internal operating system.
+- [Custom HRMS & Payroll Software Rajkot | Deep5 Tech Hub](https://deep5devlopers.github.io/deep5-tech/services/hrms-software/): Deep5 Tech automates biometric attendance syncing, shift overtime math, PF/ESIC deductions, and one-click payslips for industrial teams.
+- [Factory Data Management Software Rajkot | Deep5 Tech Pro](https://deep5devlopers.github.io/deep5-tech/services/factory-data-management/): Deep5 Tech replaces paper job cards with real-time CNC output tracking, rejection analysis, and heat-number batch traceability.
+- [Warehouse Management System in Rajkot | Deep5 Tech Hub](https://deep5devlopers.github.io/deep5-tech/services/warehouse-management/): Deep5 Tech delivers custom WMS software that tracks bin locations, QR/barcode picking, FIFO expiry, and mistake-free truck dispatches.
+- [Mobile App Development Company Rajkot | Deep5 Tech Apps](https://deep5devlopers.github.io/deep5-tech/services/app-development/): Deep5 Tech builds fast, reliable Android and iOS apps for dealer networks, field technicians, and customer self-service.
+- [AI Development Company in Rajkot | Deep5 Tech AI Studio](https://deep5devlopers.github.io/deep5-tech/services/ai-development/): Deep5 Tech builds grounded AI systems that extract invoice data, verify catalog quality, and answer internal knowledge queries accurately.
+- [Custom AI Chatbot Development Rajkot | Deep5 Tech Pro](https://deep5devlopers.github.io/deep5-tech/services/chatbot-development/): Deep5 Tech builds website and WhatsApp chatbots that qualify buyer inquiries, check order status, and book calls cleanly.
+- [Enterprise AI Integration in Rajkot | Deep5 Tech Team](https://deep5devlopers.github.io/deep5-tech/services/ai-integration/): Deep5 Tech adds secure AI automation directly inside your existing web apps, CRMs, email inboxes, and SQL databases.
