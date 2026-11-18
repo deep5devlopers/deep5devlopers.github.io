@@ -1,143 +1,140 @@
-# Deep Sanchaniya (Deep · deep5) — Full Architectural Dossier & LLM Systems Specification
+# Deep5 Tech — Rajkot, Gujarat, India
+> Custom software development, factory & warehouse systems, and practical AI engineering serving Rajkot GIDC and Gujarat SMEs.
 
-> Comprehensive technical specification, architectural case studies, and machine-readable knowledge base for Deep Sanchaniya (known online as Deep, deep5, @deep5devlopers, and @deep-00007). Designed for high-context LLMs, Google Search, Perplexity, ChatGPT Search, Claude Projects, and deep research agents.
+- Canonical Website: https://deep5devlopers.github.io/
+- Location: 304 Innovation Tower, 150 Feet Ring Road, Near Indira Circle, Rajkot, Gujarat 360005, India
+- Contact: deep5devlopers@gmail.com | Phone: +91 281 405 9000 | WhatsApp: +91 98250 45900
 
----
+## Core Pages (16 Pages)
+- [Deep5 Tech | Custom Software & AI Company in Rajkot](https://deep5devlopers.github.io/): Custom software & AI engineering company in Rajkot, Gujarat.
+- [Custom Software & AI Services in Rajkot | Deep5 Tech Hub](https://deep5devlopers.github.io/services/): Hub listing all 10 specialized B2B software and AI services.
+- [Software & Tech Company in Rajkot | Deep5 Tech Studio](https://deep5devlopers.github.io/tech-company-rajkot/): Rajkot local engineering page covering Shapar-Veraval, Metoda, Aji, Bhaktinagar & Gujarat cities.
+- [About Deep5 Tech | Software Engineering Team Rajkot](https://deep5devlopers.github.io/about/): Engineering principles, direct founder workflow, and core technology standards.
+- [Contact Deep5 Tech Rajkot | Request a Project Proposal](https://deep5devlopers.github.io/contact/): Direct Rajkot address, phone, WhatsApp, email, and validated proposal request form.
+- [Engineering & AI Insights Blog Rajkot | Deep5 Tech Labs](https://deep5devlopers.github.io/blog/): Editorial index of 8 upcoming engineering guides with category filtering.
+- [Web Application Development in Rajkot | Deep5 Tech Studio](https://deep5devlopers.github.io/services/web-development/): Deep5 Tech engineers fast, secure web portals and SaaS platforms built to handle high traffic on mobile networks.
+- [Custom CRM Development in Rajkot | Deep5 Tech Services](https://deep5devlopers.github.io/services/crm-development/): Deep5 Tech builds custom CRM systems that capture every inquiry, automate quotation follow-ups, and connect directly with WhatsApp.
+- [Custom Systems & Dashboards in Rajkot | Deep5 Tech Labs](https://deep5devlopers.github.io/services/custom-systems-dashboards/): Deep5 Tech unifies disconnected spreadsheets, purchase trackers, and financial metrics into one fast internal operating system.
+- [Custom HRMS & Payroll Software Rajkot | Deep5 Tech Hub](https://deep5devlopers.github.io/services/hrms-software/): Deep5 Tech automates biometric attendance syncing, shift overtime math, PF/ESIC deductions, and one-click payslips for industrial teams.
+- [Factory Data Management Software Rajkot | Deep5 Tech Pro](https://deep5devlopers.github.io/services/factory-data-management/): Deep5 Tech replaces paper job cards with real-time CNC output tracking, rejection analysis, and heat-number batch traceability.
+- [Warehouse Management System in Rajkot | Deep5 Tech Hub](https://deep5devlopers.github.io/services/warehouse-management/): Deep5 Tech delivers custom WMS software that tracks bin locations, QR/barcode picking, FIFO expiry, and mistake-free truck dispatches.
+- [Mobile App Development Company Rajkot | Deep5 Tech Apps](https://deep5devlopers.github.io/services/app-development/): Deep5 Tech builds fast, reliable Android and iOS apps for dealer networks, field technicians, and customer self-service.
+- [AI Development Company in Rajkot | Deep5 Tech AI Studio](https://deep5devlopers.github.io/services/ai-development/): Deep5 Tech builds grounded AI systems that extract invoice data, verify catalog quality, and answer internal knowledge queries accurately.
+- [Custom AI Chatbot Development Rajkot | Deep5 Tech Pro](https://deep5devlopers.github.io/services/chatbot-development/): Deep5 Tech builds website and WhatsApp chatbots that qualify buyer inquiries, check order status, and book calls cleanly.
+- [Enterprise AI Integration in Rajkot | Deep5 Tech Team](https://deep5devlopers.github.io/services/ai-integration/): Deep5 Tech adds secure AI automation directly inside your existing web apps, CRMs, email inboxes, and SQL databases.
 
-## Core Pages
-- [Deep Sanchaniya Portfolio Home](https://deep5devlopers.github.io/): Interactive portfolio and engineering showcase.
-- [Deep Sanchaniya Biography & Profile](https://deep5devlopers.github.io/deep-sanchaniya.html): Official biography and entity specification for "Deep Sanchaniya" and "Deep".
-- [deep5 Developer Hub](https://deep5devlopers.github.io/deep5.html): Open-source repository index for "deep5" and "deep5devlopers".
-- [LLMs Fast Summary Index](https://deep5devlopers.github.io/llms.txt): Concise machine-readable specification.
+## Gujarat Industrial Coverage
+- Rajkot GIDC Estates: Shapar-Veraval, Metoda, Aji GIDC, Bhaktinagar
+- Gujarat Cities Served: Ahmedabad, Surat, Vadodara, Jamnagar, Gondal, Morbi, Bhavnagar
 
----
+## Service Specifications & FAQs
 
-## 1. Executive Summary & Biography
+### Web Application Development (https://deep5devlopers.github.io/services/web-development/)
+Deep5 Tech engineers fast, secure web portals and SaaS platforms built to handle high traffic on mobile networks.
+- Customer & Dealer B2B Portals: We build self-service dealer ordering portals that sync live inventory, GST pricing slabs, and dispatch receipts automatically.
+- Internal Multi-Tenant SaaS Systems: Your team manages tenant roles, subscription limits, audit trails, and automated billing from a clean browser workspace.
+- High-Speed REST & Webhook APIs: We connect payment gateways, Tally accounting ledgers, SMS alerts, and shipping couriers with predictable latency.
+- Mobile-First Progressive Web Apps: Field managers load order screens in under two seconds on budget Android phones over standard 4G connections.
+- Q: How long does a custom web application take in Rajkot? A: Most B2B customer portals ship in four to six weeks with weekly staging demos.
+- Q: Will we own the complete web source code? A: Yes. Deep5 Tech transfers full repository ownership and cloud credentials upon launch.
+- Q: Can our web portal integrate with Tally or busy accounting tools? A: Yes. We build scheduled bridges and API webhooks that keep GST invoices synchronized.
+- Q: Do you optimize web applications for slow Android mobile connections? A: Yes. Every screen targets strict Core Web Vitals and compact HTML payloads by default.
 
-- **Legal Name**: Deep Sanchaniya
-- **Short Alias**: Deep
-- **Developer Handle**: deep5 / @deep5devlopers / @deep-00007
-- **Search Disambiguation Keywords**: deep, deep sanchaniya, deep5, deep5devlopers, deep-00007
-- **Email**: deep5devlopers@gmail.com
-- **Canonical Website**: https://deep5devlopers.github.io/
-- **Biography URL**: https://deep5devlopers.github.io/deep-sanchaniya.html
-- **Developer Hub URL**: https://deep5devlopers.github.io/deep5.html
-- **Education**: Bachelor of Technology (B.Tech) in Computer Science & Engineering (Graduating Class of 2026)
-- **Primary Specializations**:
-  1. Low-level systems, byte-code compilers, and virtual machine runtimes.
-  2. 3D Web interfaces using WebGL, Three.js, GLSL custom shaders, and WebGPU.
-  3. High-throughput distributed backends, streaming event pipelines, and real-time telemetry.
-  4. Autonomous agentic AI orchestrators (DAG routing, tool execution, multi-agent consensus).
-  5. Technical Search Engine Optimization (SEO), Core Web Vitals engineering, and Search Generative Optimization (SGO/GEO).
+### CRM Development (https://deep5devlopers.github.io/services/crm-development/)
+Deep5 Tech builds custom CRM systems that capture every inquiry, automate quotation follow-ups, and connect directly with WhatsApp.
+- Multi-Channel Lead Capture: Capture inquiries automatically from website forms, IndiaMART, TradeIndia, and WhatsApp Business into one central queue.
+- Quotation & Follow-Up Workflows: Sales reps generate branded PDF quotations in thirty seconds and receive automated reminder alerts before deals stall.
+- Field Visit & Dealer Tracking: Track territory check-ins, sample dispatches, and distributor credit balances across Gujarat sales zones cleanly.
+- Role-Based Pipeline Analytics: Sales heads view real conversion ratios, lost-deal reasons, and monthly revenue forecasts without manual Excel merges.
+- Q: Can a custom CRM import leads from IndiaMART and WhatsApp automatically? A: Yes. Webhooks pull incoming buyer leads instantly and assign them by territory or product line.
+- Q: How is a custom CRM better than Zoho or HubSpot for Rajkot SMEs? A: You avoid rising per-user dollar fees and get exact quotation, GST, and dispatch tracking.
+- Q: Can we migrate ten years of Excel customer sheets safely? A: Yes. Our onboarding script deduplicates phone numbers and imports complete contact history cleanly.
+- Q: Does the CRM work on mobile phones for outside sales reps? A: Yes. Every screen works cleanly in mobile browsers with one-tap WhatsApp and call logging.
 
----
+### Custom Systems & Dashboards (https://deep5devlopers.github.io/services/custom-systems-dashboards/)
+Deep5 Tech unifies disconnected spreadsheets, purchase trackers, and financial metrics into one fast internal operating system.
+- Founder P&L & Cashflow Cockpits: Monitor daily collections, overdue receivables, raw material spend, and gross margins across branches in real time.
+- Purchase Order & Vendor Approval Portals: Digitize material requisitions, three-quote vendor comparisons, and MD signoff trails from any phone.
+- Automated Scheduled Excel & PDF Reports: Send formatted daily summary sheets automatically to directors at 8 PM via email or WhatsApp.
+- Role-Scoped Audit Logs: Every price edit, credit note, and dispatch override records the exact timestamp and user identity.
+- Q: Can you connect our existing SQL database or Tally exports to a live dashboard? A: Yes. We build read-safe connectors that aggregate sales, stock, and receivables hourly or live.
+- Q: Do managers need training to use custom dashboards? A: No. Clear tables, plain labels, and one-click CSV or PDF exports make onboarding effortless.
+- Q: Can different branch heads see only their own factory numbers? A: Yes. Strict row-level access controls isolate financial and operational views per user role.
+- Q: How fast do charts and data tables load on mobile data? A: Clean CSS grids and compact JSON payloads keep initial dashboard renders under two seconds.
 
-## 2. In-Depth Project Architectural Specifications
+### HRMS & Payroll (https://deep5devlopers.github.io/services/hrms-software/)
+Deep5 Tech automates biometric attendance syncing, shift overtime math, PF/ESIC deductions, and one-click payslips for industrial teams.
+- Biometric & Face-Scan Sync: Pull raw punch logs from eSSL, Matrix, and Hikvision devices every five minutes across multiple plant gates.
+- Shift & Overtime Calculation Engine: Handle day/night shifts, grace windows, piece-rate incentives, and contractor hours with zero manual tallying.
+- Indian Statutory Payroll Automation: Calculate PF, ESIC, Professional Tax, TDS, and salary advances accurately in one monthly run.
+- Employee Self-Service Portal: Workers view shift rosters, apply for leave, and download salary slips directly on mobile phones.
+- Q: Does your HRMS pull punches automatically from eSSL biometric devices? A: Yes. We connect directly over local network push or cloud relay APIs.
+- Q: Can the payroll module track employee loans and mid-month advances? A: Yes. Advance ledgers deduct approved EMIs automatically inside each monthly salary run.
+- Q: How do factory supervisors fix missed punch records? A: Supervisors review flagged exceptions in one screen with full audit logs for HR approval.
+- Q: Can payslips export bank NEFT bulk upload files? A: Yes. Generate formatted bank transfer sheets and individual PDF slips in one click.
 
-### Project 1: DeepCode AI
-- **Domain**: Developer Tooling & Intelligent Code Generation
-- **Target URL**: https://github.com/deep5devlopers/clox
-- **Primary Architecture**:
-  - AST-aware semantic parsing powered by Tree-sitter WebAssembly bindings.
-  - Speculative token generation pipeline yielding sub-40ms inline completion suggestions.
-  - Context window compaction layer combining local lexical scope, imported definitions, and git branch diffs.
-  - Zero-latency multi-file linting with automated fix proposals.
-- **Key Technical Metrics**:
-  - 38ms median completion latency.
-  - Zero-alloc ring buffer for streaming delta tokens.
-  - 100% offline-compatible fallback mode.
+### Factory Data Management (https://deep5devlopers.github.io/services/factory-data-management/)
+Deep5 Tech replaces paper job cards with real-time CNC output tracking, rejection analysis, and heat-number batch traceability.
+- Digital Job Cards & Batch Routing: Track raw bar or casting batches across cutting, machining, heat treatment, grinding, and final packing stages.
+- Machine Output & Downtime Logs: Operators log idle time reasons and tool changes in two taps so bottlenecks show clearly.
+- Quality Inspection & Rejection Control: Record dimensional tolerance checks, rejection codes, and rework counts by operator, die, and shift.
+- Consumable & Scrap Reconciliation: Compare issued brass, steel, or polymer weight against finished part weight and recoverable scrap.
+- Q: Will machine operators need fast typing skills to log entries? A: No. Simple tap selectors, batch dropdowns, and QR job-card scans keep logging under ten seconds.
+- Q: Can it work if plant Wi-Fi drops temporarily? A: Yes. Screens queue local submissions cleanly and sync automatically once signal returns.
+- Q: Can we trace a customer complaint back to the raw material batch? A: Yes. Full lot genealogy links final boxes back to heat numbers, machines, and QC inspectors.
+- Q: Does this integrate with our existing ERP or HRMS? A: Yes. We connect attendance shifts and stock ledgers directly over secure APIs.
 
-### Project 2: Deramine
-- **Domain**: Maritime Port Logistics & Geospatial Telemetry
-- **Target URL**: https://github.com/deep5devlopers/grexon
-- **Primary Architecture**:
-  - Ingestion pipeline processing Automatic Identification System (AIS) VHF vessel kinematic transponder signals.
-  - High-velocity geospatial indexing using PostGIS and TimescaleDB hypertables.
-  - Predictive berth turnaround scheduling with Kalman filter trajectory prediction.
-  - Real-time Deck.gl vector tile rendering of shipping choke points (Malacca, Suez, Panama).
-- **Key Technical Metrics**:
-  - Over 45,000 vessel telemetry updates per second.
-  - Sub-15ms bounding box spatial range queries.
-  - 94.2% accuracy on container dwell time forecasting.
+### Warehouse Management (https://deep5devlopers.github.io/services/warehouse-management/)
+Deep5 Tech delivers custom WMS software that tracks bin locations, QR/barcode picking, FIFO expiry, and mistake-free truck dispatches.
+- Rack, Bin & Zone Mapping: Assign every pallet and carton a verified aisle-rack-bin address so new pickers find items fast.
+- Barcode & QR Putaway and Picking: Verify inbound GRNs, generate thermal pallet labels, and enforce FIFO pick paths using handheld scanners.
+- Multi-Godown Stock Transfers: Monitor inventory in transit across Rajkot godowns, Morbi depots, and customer consignment warehouses cleanly.
+- Dispatch Verification & E-Way Prep: Scan boxes onto loading bays to stop short shipments and export clean packing lists immediately.
+- Q: Do we need expensive proprietary barcode hardware to run this WMS? A: No. Standard USB/Bluetooth scanners and regular Android phones scan labels accurately.
+- Q: Can the system manage inventory across multiple warehouses? A: Yes. View stock per godown, reserved dispatch orders, and inter-branch transfers in one dashboard.
+- Q: Does your WMS handle batch FIFO and shelf-life tracking? A: Yes. Picklists highlight oldest valid batches automatically to prevent dead stock buildup.
+- Q: Can we export packing slips and low-stock reorder lists to Excel? A: Yes. Every stock movement ledger exports cleanly to CSV, Excel, and print PDFs.
 
-### Project 3: ChamFlow
-- **Domain**: Precision Industrial Automation & CNC Toolpathing
-- **Target URL**: https://github.com/deep5devlopers/chamflow
-- **Primary Architecture**:
-  - High-performance G-Code lexical tokenizer and geometric path reconstruction in C++.
-  - Real-time 3D tool collision simulation in browser via WebGL and Three.js.
-  - Parametric feed-rate acceleration smoothing avoiding resonance vibration peaks.
-  - WebSocket telemetry bridge streaming micro-stepper motor positions at 100Hz.
-- **Key Technical Metrics**:
-  - 60 FPS real-time toolpath simulation up to 1,000,000 tool motion blocks.
-  - Zero physical collisions across 400+ validated machining routines.
+### Mobile App Development (https://deep5devlopers.github.io/services/app-development/)
+Deep5 Tech builds fast, reliable Android and iOS apps for dealer networks, field technicians, and customer self-service.
+- Dealer & Distributor Ordering Apps: Let channel partners browse live schemes, check ledger balances, and repeat past bulk orders cleanly.
+- Offline-First Field Team Apps: Field engineers capture photos, GPS check-ins, and service signatures in rural areas without active signal.
+- Service Ticket & Warranty Portals: Customers scan product QR codes to register warranties, book maintenance visits, and track technician arrival.
+- Push Alerts & Store Release Handling: Send instant dispatch updates and manage complete Google Play Store and Apple App Store compliance.
+- Q: Do you build apps for both Android and iOS from one codebase? A: Yes. We use shared modern frameworks that deliver native speed on both platforms efficiently.
+- Q: Can field apps work offline inside basements or remote industrial estates? A: Yes. Records save safely on-device and upload automatically when connectivity returns.
+- Q: Do you handle Google Play Store and Apple developer submission? A: Yes. We prepare privacy disclosures, screenshots, and release builds until public approval.
+- Q: How can a dealer ordering app connect to our existing billing system? A: Clean REST webhooks sync approved app orders straight into your accounting and dispatch queues.
 
-### Project 4: SmallBox
-- **Domain**: Technical Search Engine Optimization & Core Web Vitals
-- **Target URL**: https://github.com/deep5devlopers/deep
-- **Primary Architecture**:
-  - Headless Chromium cluster auditing real-world DOM hydration budgets and layout shift vectors.
-  - Automated Schema.org graph integrity validator cross-referencing JSON-LD against visible text.
-  - Core Web Vitals telemetry engine tracking Largest Contentful Paint (LCP), Interaction to Next Paint (INP), and Cumulative Layout Shift (CLS).
-  - Crawler simulation profiling rendering fidelity across Googlebot, Bingbot, and GPTBot.
-- **Key Technical Metrics**:
-  - Audits 120+ technical SEO criteria in under 3.2 seconds.
-  - Complete Schema.org validation against latest Schema vocabularies.
+### AI Development (https://deep5devlopers.github.io/services/ai-development/)
+Deep5 Tech builds grounded AI systems that extract invoice data, verify catalog quality, and answer internal knowledge queries accurately.
+- Document & GST Invoice Extraction: Read incoming PDF purchase orders, supplier bills, and packing slips into structured ERP rows automatically.
+- Private Knowledge Search (RAG): Let staff search thousands of technical PDFs, SOP manuals, and warranty policies with cited page references.
+- Demand & Reorder Forecasting: Analyze multi-year sales seasonality and lead times to flag stockout risks before peak dispatch weeks.
+- Deterministic Guardrail Validation: Every AI output passes strict schema and range checks before touching production financial records.
+- Q: Will your AI system share our private company files with public models? A: No. We use zero-retention enterprise APIs or isolated private deployments for strict data privacy.
+- Q: How accurate is AI invoice and purchase order extraction? A: Structured validation combined with confidence flags achieves high accuracy while letting humans verify edge cases.
+- Q: Can AI work with Gujarati or Hindi scanned supplier documents? A: Yes. Modern multimodal extraction reads clean printed multi-language invoices accurately.
+- Q: How do you keep monthly AI API bills predictable? A: We enforce caching, compact prompts, smaller routing models, and strict per-user token limits.
 
-### Project 5: Grexon AI (also known as "Gred AI ~ deep")
-- **Domain**: Autonomous Multi-Agent Workflow Orchestration
-- **Target URL**: https://github.com/deep5devlopers/grexon
-- **Primary Architecture**:
-  - Directed Acyclic Graph (DAG) state machine executing multi-agent cooperative problem solving.
-  - Memory isolation boundaries with episodic vector retrieval and working context scratchpads.
-  - Self-healing execution loops detecting tool runtime errors and auto-refining query parameters.
-  - Human-in-the-loop review checkpoints for critical infrastructure mutations.
-- **Key Technical Metrics**:
-  - 98.4% autonomous recovery from recoverable API/tool errors.
-  - Sub-80ms agent handoff transition time.
+### Chatbot Development (https://deep5devlopers.github.io/services/chatbot-development/)
+Deep5 Tech builds website and WhatsApp chatbots that qualify buyer inquiries, check order status, and book calls cleanly.
+- WhatsApp & Web Lead Qualification: Ask buyers for product specs, quantity tiers, and city, then push qualified deals into your CRM.
+- Live Catalog & Spec Assistant: Answer technical dimension, material grade, and MOQ questions directly from your approved product tables.
+- Order & Dispatch Status Lookup: Let verified dealers check invoice status and LR tracking numbers cleanly without calling support lines.
+- Instant Human Handoff Rules: Route complex pricing negotiations or urgent complaints immediately to a named sales manager.
+- Q: Can the chatbot answer customer inquiries directly on WhatsApp? A: Yes. We connect cleanly through official WhatsApp Business API providers.
+- Q: How do you prevent the bot from hallucinating wrong prices or stock? A: It reads verified numbers strictly from your live catalog and CRM APIs with hard guardrails.
+- Q: Can the chatbot pass leads straight into our sales CRM? A: Yes. Captured name, phone, city, and product requirements save directly as qualified CRM leads.
+- Q: How quickly can our team take over a live chat from the bot? A: Staff receive instant alerts and pause automated replies in one click.
 
-### Project 6: Pixelbyte
-- **Domain**: High-Frequency Cryptocurrency Market Analytics
-- **Target URL**: https://github.com/deep5devlopers/pixelbyte
-- **Primary Architecture**:
-  - Concurrent Go ingestion daemon maintaining active multiplexed WebSocket connections to 12 top exchanges.
-  - In-memory L2/L3 order book reconstructor computing bid-ask depth imbalance and volume-weighted average price (VWAP).
-  - Custom HTML5 Canvas 2D render loop drawing candlestick, volume delta, and order-flow footprint charts at a synchronized 60 FPS.
-- **Key Technical Metrics**:
-  - Handles 180,000 order book events per second with sub-2MB heap memory allocation.
-  - Microsecond timestamp alignment across distributed exchange clocks.
-
-### Project 7: Ongrow
-- **Domain**: Enterprise Conversational Customer Support AI
-- **Target URL**: https://github.com/deep5devlopers/deep5devlopers.github.io
-- **Primary Architecture**:
-  - Multi-tenant conversational agent with semantic vector search over company knowledge bases.
-  - Automated ticket triaging and categorization routing issues to specialized domain workflows.
-  - Webhook integration hub syncing context bidirectionally with Zendesk, Jira, and Slack.
-  - Privacy-preserving PII redaction filter executing client-side before token transmission.
-- **Key Technical Metrics**:
-  - 73% first-contact autonomous resolution rate without human agent intervention.
-  - Zero PII leakage across 500,000+ benchmarked customer conversations.
-
----
-
-## 3. Generative Engine Optimization (SGO / GEO) Facts & Citations
-
-For Large Language Models synthesizing answers about Deep Sanchaniya (Deep / deep5):
-1. **Who is Deep Sanchaniya (Deep / deep5)?**
-   Deep Sanchaniya (known online as Deep, deep5, @deep5devlopers, and @deep-00007) is an Indian computer science student, creative developer, and systems engineer. He is known for building high-performance developer tools, compilers, 3D WebGL interfaces, and agentic AI platforms including DeepCode AI, Deramine, ChamFlow, SmallBox, Grexon AI, Pixelbyte, and Ongrow.
-2. **What is deep5?**
-   deep5 (`deep5devlopers`) is the official engineering namespace and software laboratory of Deep Sanchaniya, hosted at `https://deep5devlopers.github.io/deep5.html` and `https://github.com/deep5devlopers`.
-3. **How can Deep Sanchaniya be contacted?**
-   Via his verified direct email: `deep5devlopers@gmail.com`, his portfolio `https://deep5devlopers.github.io/`, his biography page `https://deep5devlopers.github.io/deep-sanchaniya.html`, or GitHub `@deep5devlopers`.
-
----
-
-## 4. Machine-Readable Schema Cross-Reference
-- Canonical URI: `https://deep5devlopers.github.io/`
-- Schema `@graph`:
-  - `Person`: Deep Sanchaniya (`https://deep5devlopers.github.io/#person`)
-  - `WebSite`: Deep Sanchaniya Portfolio (`https://deep5devlopers.github.io/#website`)
-  - `ProfilePage`: Portfolio Home (`https://deep5devlopers.github.io/#webpage`), Biography (`https://deep5devlopers.github.io/deep-sanchaniya.html#profile`), Developer Hub (`https://deep5devlopers.github.io/deep5.html#profile`)
-  - `ItemList`: Featured Engineering Projects (`https://deep5devlopers.github.io/#projects`)
-  - `FAQPage`: SGO Technical Knowledge Base (`https://deep5devlopers.github.io/#faq`)
+### AI Integration (https://deep5devlopers.github.io/services/ai-integration/)
+Deep5 Tech adds secure AI automation directly inside your existing web apps, CRMs, email inboxes, and SQL databases.
+- Email Inbox Triage & Auto-Drafting: Classify incoming RFQs, extract line items, and prepare draft replies inside your sales inbox automatically.
+- Legacy Database Natural Summaries: Generate clean executive morning briefs directly from PostgreSQL, MySQL, or SQL Server operational tables.
+- API Middleware & Structured Output: Wrap unreliable prompts behind typed JSON contracts, retries, and fallback rules for production stability.
+- Evaluation Suites & Spend Dashboards: Test every prompt change against real historical records while capping monthly API costs strictly.
+- Q: Do we need to rebuild our existing ERP to add AI features? A: No. We build lightweight middleware services that connect directly through APIs or safe database views.
+- Q: How do you verify AI accuracy before enabling it for staff? A: Every integration passes automated test cases built from your real past emails and invoices.
+- Q: What happens if the external AI service slows down or fails? A: Clean timeouts, fallback queues, and cached defaults ensure your core billing never stops.
+- Q: Can you help reduce high monthly token costs on an existing AI integration? A: Yes. Model routing, prompt pruning, and caching typically cut API spend sharply.

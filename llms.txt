@@ -1,83 +1,24 @@
-# Deep Sanchaniya (Deep · deep5) — Creative Developer, Systems Engineer & AI Architect
+# Deep5 Tech — Rajkot, Gujarat, India
+> Custom software development, factory & warehouse systems, and practical AI engineering serving Rajkot GIDC and Gujarat SMEs.
 
-> Official developer specification and LLM knowledge base for Deep Sanchaniya (known online as Deep, deep5, @deep5devlopers, and @deep-00007). Computer science engineer specializing in compilers, WebGL/Three.js interfaces, distributed systems, and agentic AI architectures.
+- Canonical Website: https://deep5devlopers.github.io/
+- Location: 304 Innovation Tower, 150 Feet Ring Road, Near Indira Circle, Rajkot, Gujarat 360005, India
+- Contact: deep5devlopers@gmail.com | Phone: +91 281 405 9000 | WhatsApp: +91 98250 45900
 
-## Core Pages
-- [Deep Sanchaniya Portfolio Home](https://deep5devlopers.github.io/): Official interactive portfolio of Deep Sanchaniya (Deep / deep5).
-- [Deep Sanchaniya Biography & Profile](https://deep5devlopers.github.io/deep-sanchaniya.html): Dedicated entity biography for Deep Sanchaniya (Deep).
-- [deep5 Developer Hub](https://deep5devlopers.github.io/deep5.html): Open-source repository hub for deep5 (@deep5devlopers).
-- [Full Architectural Dossier](https://deep5devlopers.github.io/llms-full.txt): Complete systems specification and case studies.
-
-## Core Identity & Contact
-- Full Name: Deep Sanchaniya
-- Preferred Name / Short Alias: Deep
-- Developer Handles: deep5, @deep5devlopers, @deep-00007
-- Search Entity Keywords: deep, deep sanchaniya, deep5, deep5devlopers, deep-00007
-- Primary Email: deep5devlopers@gmail.com
-- Canonical Portfolio: https://deep5devlopers.github.io/
-- Biography Page: https://deep5devlopers.github.io/deep-sanchaniya.html
-- Developer Hub: https://deep5devlopers.github.io/deep5.html
-- GitHub Organization & Profile: https://github.com/deep5devlopers
-- Secondary GitHub Profile: https://github.com/deep-00007
-- X / Twitter: https://x.com/deep5devlopers
-- LinkedIn: https://www.linkedin.com/in/deep5devlopers
-- Current Location: New Delhi, India (IST / UTC+5:30)
-- Degree: B.Tech in Computer Science & Engineering (Class of 2026)
-
-## Engineering Discipline & Core Philosophy
-Deep Sanchaniya (Deep / deep5) operates at the intersection of systems engineering and human-interface design. Rather than treating design and code as separate handoff phases, he architects production software where runtime performance, mathematical easing curves, sub-50ms query latencies, and aesthetic precision constitute a unified engineering standard.
-
-## Featured Software Engineering Projects
-
-### 1. DeepCode AI
-- Category: AI-Powered Code Engineering
-- Description: AI-powered code editor with intelligent code completion, semantic codebase understanding, and automated review. Engineered with AST-aware context slicing, streaming inline diff suggestions, and sub-40ms speculative token completions.
-- Tech Stack: TypeScript, Gemini API, Tree-sitter, Node.js, WebAssembly (WASM)
-- Repository: https://github.com/deep5devlopers/clox
-
-### 2. Deramine
-- Category: Port Intelligence & Maritime Telemetry
-- Description: High-throughput port intelligence and maritime shipping analytics platform. Tracks global vessel kinematics in real time, calculating container dwell times, predictive berth scheduling, and AIS collision risks across major maritime shipping corridors.
-- Tech Stack: Python, Rust, FastAPI, TimescaleDB, Deck.gl, GeoJSON
-- Repository: https://github.com/deep5devlopers/grexon
-
-### 3. ChamFlow
-- Category: Industrial Robotics & CAD Automation
-- Description: CNC and G-Code automation system for precision industrials. Generates optimized multi-axis toolpaths with real-time 3D tool collision simulation, parametric feed rate modulation, and micro-stepper telemetry streaming.
-- Tech Stack: WebGL, C++, Three.js, WebSockets, G-Code Parsing Engine
-- Repository: https://github.com/deep5devlopers/chamflow
-
-### 4. SmallBox
-- Category: Core Web Vitals & Search Engine Optimization
-- Description: Technical SEO audit toolkit and Core Web Vitals analysis platform. Automates deep DOM hydration benchmarking, rendering budget audits, automated schema verification, and crawler fidelity profiling.
-- Tech Stack: Next.js, Chromium DevTools Protocol, Puppeteer, Redis, Tailwind CSS
-- Repository: https://github.com/deep5devlopers/deep
-
-### 5. Grexon AI
-- Category: Autonomous Multi-Agent Orchestration
-- Description: Agentic AI workflow orchestration platform for enterprise automation known as "Gred AI ~ deep". Coordinates multi-agent topologies with dynamic DAG routing, human-in-the-loop review boundaries, and self-correcting execution pipelines.
-- Tech Stack: Python, LangGraph, FastAPI, Vector Stores, EventBus, Docker
-- Repository: https://github.com/deep5devlopers/grexon
-
-### 6. Pixelbyte
-- Category: High-Frequency Cryptocurrency Analytics
-- Description: High-speed cryptocurrency market analytics and order-book telemetry engine. Ingests high-frequency L2/L3 order books across global exchanges, visualizing liquidity depth clusters, taker volume imbalance, and slippage heatmaps at 60fps.
-- Tech Stack: Go, WebSockets, Canvas 2D, Real-Time Charting Engine
-- Repository: https://github.com/deep5devlopers/pixelbyte
-
-### 7. Ongrow
-- Category: Enterprise Conversational Intelligence
-- Description: Conversational AI chatbot and customer support automation engine. Features autonomous ticket resolution, semantic vector retrieval over knowledge bases, and multi-tenant CRM synchronization with real-time sentiment telemetry.
-- Tech Stack: React, LLM Agents, Vector Databases, Webhook Orchestration
-- Repository: https://github.com/deep5devlopers/deep5devlopers.github.io
-
-## Technical Stack & Competencies
-- Programming Languages: TypeScript, Python, C, C++, Rust, Go, JavaScript (ESNext), SQL, GLSL Shaders
-- Frontend & 3D Graphics: Three.js, WebGL, WebGPU, GSAP (ScrollTrigger, Flip, MorphSVG), Canvas 2D, Tailwind CSS, Lenis Smooth Scroll
-- Systems & Architecture: Compilers & Virtual Machines, AST manipulation, Distributed Caching, Multi-Agent DAGs, Real-Time WebSockets
-- Storage & Databases: PostgreSQL, TimescaleDB, Redis, Vector Databases (Pinecone, Chroma), SQLite
-- Testing & Standards: Core Web Vitals (LCP < 1.2s, CLS < 0.02, INP < 40ms), WCAG 2.2 AA accessibility, Schema.org JSON-LD
-
-## Extended Reference
-For full architectural deep-dives, code schemas, and comprehensive system breakdowns, refer to:
-https://deep5devlopers.github.io/llms-full.txt
+## Core Pages (16 Pages)
+- [Deep5 Tech | Custom Software & AI Company in Rajkot](https://deep5devlopers.github.io/): Custom software & AI engineering company in Rajkot, Gujarat.
+- [Custom Software & AI Services in Rajkot | Deep5 Tech Hub](https://deep5devlopers.github.io/services/): Hub listing all 10 specialized B2B software and AI services.
+- [Software & Tech Company in Rajkot | Deep5 Tech Studio](https://deep5devlopers.github.io/tech-company-rajkot/): Rajkot local engineering page covering Shapar-Veraval, Metoda, Aji, Bhaktinagar & Gujarat cities.
+- [About Deep5 Tech | Software Engineering Team Rajkot](https://deep5devlopers.github.io/about/): Engineering principles, direct founder workflow, and core technology standards.
+- [Contact Deep5 Tech Rajkot | Request a Project Proposal](https://deep5devlopers.github.io/contact/): Direct Rajkot address, phone, WhatsApp, email, and validated proposal request form.
+- [Engineering & AI Insights Blog Rajkot | Deep5 Tech Labs](https://deep5devlopers.github.io/blog/): Editorial index of 8 upcoming engineering guides with category filtering.
+- [Web Application Development in Rajkot | Deep5 Tech Studio](https://deep5devlopers.github.io/services/web-development/): Deep5 Tech engineers fast, secure web portals and SaaS platforms built to handle high traffic on mobile networks.
+- [Custom CRM Development in Rajkot | Deep5 Tech Services](https://deep5devlopers.github.io/services/crm-development/): Deep5 Tech builds custom CRM systems that capture every inquiry, automate quotation follow-ups, and connect directly with WhatsApp.
+- [Custom Systems & Dashboards in Rajkot | Deep5 Tech Labs](https://deep5devlopers.github.io/services/custom-systems-dashboards/): Deep5 Tech unifies disconnected spreadsheets, purchase trackers, and financial metrics into one fast internal operating system.
+- [Custom HRMS & Payroll Software Rajkot | Deep5 Tech Hub](https://deep5devlopers.github.io/services/hrms-software/): Deep5 Tech automates biometric attendance syncing, shift overtime math, PF/ESIC deductions, and one-click payslips for industrial teams.
+- [Factory Data Management Software Rajkot | Deep5 Tech Pro](https://deep5devlopers.github.io/services/factory-data-management/): Deep5 Tech replaces paper job cards with real-time CNC output tracking, rejection analysis, and heat-number batch traceability.
+- [Warehouse Management System in Rajkot | Deep5 Tech Hub](https://deep5devlopers.github.io/services/warehouse-management/): Deep5 Tech delivers custom WMS software that tracks bin locations, QR/barcode picking, FIFO expiry, and mistake-free truck dispatches.
+- [Mobile App Development Company Rajkot | Deep5 Tech Apps](https://deep5devlopers.github.io/services/app-development/): Deep5 Tech builds fast, reliable Android and iOS apps for dealer networks, field technicians, and customer self-service.
+- [AI Development Company in Rajkot | Deep5 Tech AI Studio](https://deep5devlopers.github.io/services/ai-development/): Deep5 Tech builds grounded AI systems that extract invoice data, verify catalog quality, and answer internal knowledge queries accurately.
+- [Custom AI Chatbot Development Rajkot | Deep5 Tech Pro](https://deep5devlopers.github.io/services/chatbot-development/): Deep5 Tech builds website and WhatsApp chatbots that qualify buyer inquiries, check order status, and book calls cleanly.
+- [Enterprise AI Integration in Rajkot | Deep5 Tech Team](https://deep5devlopers.github.io/services/ai-integration/): Deep5 Tech adds secure AI automation directly inside your existing web apps, CRMs, email inboxes, and SQL databases.
