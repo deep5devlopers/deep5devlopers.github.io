@@ -6,12 +6,12 @@
 - Contact: deep5devlopers@gmail.com | Phone: +91 281 405 9000 | WhatsApp: +91 98250 45900
 
 ## Core Pages (16 Pages)
-- [Deep5 Tech | Custom Software & AI Company in Rajkot](https://deep5devlopers.github.io/): Custom software & AI engineering company in Rajkot, Gujarat.
+- [Custom Software & AI Company in Rajkot | Deep5 Tech](https://deep5devlopers.github.io/): Custom software & AI engineering company in Rajkot, Gujarat.
 - [Custom Software & AI Services in Rajkot | Deep5 Tech Hub](https://deep5devlopers.github.io/services/): Hub listing all 10 specialized B2B software and AI services.
-- [Software & Tech Company in Rajkot | Deep5 Tech Studio](https://deep5devlopers.github.io/tech-company-rajkot/): Rajkot local engineering page covering Shapar-Veraval, Metoda, Aji, Bhaktinagar & Gujarat cities.
+- [Tech Company in Rajkot | Custom Software by Deep5 Tech](https://deep5devlopers.github.io/tech-company-rajkot/): Rajkot local engineering page covering Shapar-Veraval, Metoda, Aji, Bhaktinagar & Gujarat cities.
 - [About Deep5 Tech | Software Engineering Team Rajkot](https://deep5devlopers.github.io/about/): Engineering principles, direct founder workflow, and core technology standards.
 - [Contact Deep5 Tech Rajkot | Request a Project Proposal](https://deep5devlopers.github.io/contact/): Direct Rajkot address, phone, WhatsApp, email, and validated proposal request form.
-- [Engineering & AI Insights Blog Rajkot | Deep5 Tech Labs](https://deep5devlopers.github.io/blog/): Editorial index of 8 upcoming engineering guides with category filtering.
+- [Engineering & AI Blog Rajkot | Deep5 Tech Field Notes](https://deep5devlopers.github.io/blog/): Editorial index of 8 upcoming engineering guides with category filtering.
 - [Web Application Development in Rajkot | Deep5 Tech Studio](https://deep5devlopers.github.io/services/web-development/): Deep5 Tech engineers fast, secure web portals and SaaS platforms built to handle high traffic on mobile networks.
 - [Custom CRM Development in Rajkot | Deep5 Tech Services](https://deep5devlopers.github.io/services/crm-development/): Deep5 Tech builds custom CRM systems that capture every inquiry, automate quotation follow-ups, and connect directly with WhatsApp.
 - [Custom Systems & Dashboards in Rajkot | Deep5 Tech Labs](https://deep5devlopers.github.io/services/custom-systems-dashboards/): Deep5 Tech unifies disconnected spreadsheets, purchase trackers, and financial metrics into one fast internal operating system.
