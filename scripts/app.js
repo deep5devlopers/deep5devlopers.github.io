@@ -65,14 +65,12 @@
       evt.preventDefault();
       var nameVal = (document.getElementById("contact-name").value || "").trim();
       var emailVal = (document.getElementById("contact-email").value || "").trim();
-      var phoneVal = (document.getElementById("contact-phone").value || "").trim();
       var serviceVal = (document.getElementById("contact-service").value || "").trim();
       var briefVal = (document.getElementById("contact-brief").value || "").trim();
 
       var valid = true;
       setError("contact-name", "");
       setError("contact-email", "");
-      setError("contact-phone", "");
       setError("contact-service", "");
       setError("contact-brief", "");
 
@@ -84,12 +82,6 @@
       var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
       if (!emailRegex.test(emailVal)) {
         setError("contact-email", "Enter a valid business email address.");
-        valid = false;
-      }
-
-      var digitsOnly = phoneVal.replace(/\D/g, "");
-      if (digitsOnly.length < 10) {
-        setError("contact-phone", "Enter a 10-digit phone or WhatsApp number.");
         valid = false;
       }
 
@@ -115,7 +107,7 @@
       statusBox.textContent =
         "Proposal brief validated for " +
         serviceVal +
-        ". Email deep5devlopers@gmail.com or message +91 98250 45900 on WhatsApp to confirm your kickoff slot.";
+        ". Email deep5devlopers@gmail.com to confirm your project kickoff slot.";
       form.reset();
     });
   }
