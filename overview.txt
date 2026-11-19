@@ -9,8 +9,8 @@ Category        : Open Source Repository
 Primary Stack   : HTML
 Repository URL  : https://github.com/deep5devlopers/deep5devlopers.github.io
 Live URL        : https://deep5devlopers.github.io
-Last Push (UTC) : 2026-11-18T07:13:09Z
-Generated (UTC) : 2026-11-18 07:29 UTC
+Last Push (UTC) : 2026-11-18T13:26:59Z
+Generated (UTC) : 2026-11-19 05:33 UTC
 Maintainer      : Deep Sanchaniya (@deep5devlopers / deep5devlopers@gmail.com)
 
 SUMMARY
@@ -23,7 +23,14 @@ Deep Sanchaniya (@deep-00007, @deep5devlopers) - Senior Principal Systems Archit
 
 ROOT DIRECTORY STRUCTURE
 --------------------------------------------------------------------------------
+  - about/
   - assets/
+  - blog/
+  - contact/
+  - scripts/
+  - services/
+  - styles/
+  - tech-company-rajkot/
   - .nojekyll
   - 404.html
   - deep5indexnow2026key.txt
@@ -37,9 +44,9 @@ ROOT DIRECTORY STRUCTURE
 
 RECENT COMMITS
 --------------------------------------------------------------------------------
-  - d5fa6b4 | 2026-11-18T07:13:08Z | docs(overview): add root overview.txt
-  - ca7d182 | 2026-11-17T10:46:35Z | docs(overview): add root overview.txt
-  - 5fcbccf | 2026-11-17T05:57:53Z | docs(overview): add root overview.txt
-  - d060441 | 2026-11-06T06:59:58Z | docs(architecture): apply standardized 2026 Deep Systems architectural footer
-  - 1db67ce | 2026-11-06T06:59:49Z | chore(seo): update sitemap.xml for Deep Systems Hub
+  - 54033f3 | 2026-11-18T09:30:09Z | fix(contact): enforce email-only contact across all 16 Deep5 Tech pages and schemas
+  - f99c19b | 2026-11-18T09:16:45Z | fix(seo): place Rajkot & primary keywords in first 30 chars of page titles
+  - 03ed0c1 | 2026-11-18T09:13:15Z | fix(seo): remove street-level Rajkot address from all pages and schemas
+  - a8821e1 | 2026-11-18T09:09:18Z | feat(deep5-tech): deploy 16-page Deep5 Tech SEO website to root
+  - d27eac7 | 2026-11-18T08:56:50Z | feat(deep5-tech): publish 16-page static SEO & WCAG AA website to /deep5-tech/
 ================================================================================
