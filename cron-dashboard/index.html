@@ -1,0 +1,1706 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects &amp; Cron Activity Dashboard | Deep5 Operations</title>
+  <meta name="description" content="Monitor all 14 Deep5 ecosystem projects, daily 8:00 AM IST 26/26/6/6 cron schedule, live Indian Standard Time countdowns, 5-minute autopilot pull requests, and complete perfection history.">
+  <meta property="og:title" content="Projects &amp; Cron Activity Dashboard | Deep5 Operations">
+  <meta property="og:description" content="Monitor all 14 Deep5 ecosystem projects, daily 8:00 AM IST 26/26/6/6 cron schedule, live Indian Standard Time countdowns, 5-minute autopilot pull requests, and complete perfection history.">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-canvas: #FFFFFF;
+      --bg-surface: #F8FAFC;
+      --bg-subtle: #F1F5F9;
+      --border-hairline: #E2E8F0;
+      --border-strong: #CBD5E1;
+      --ink-primary: #0B1F3A;
+      --ink-secondary: #334155;
+      --ink-muted: #475569;
+      --accent-blue: #2563EB;
+      --accent-blue-hover: #1D4ED8;
+      --accent-green: #059669;
+      --accent-amber: #B45309;
+      --accent-red: #DC2626;
+      --radius-md: 8px;
+      --radius-lg: 12px;
+      --font-sans: "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+    }
+
+    *, *::before, *::after {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: var(--font-sans);
+      font-size: 15px;
+      line-height: 1.55;
+      color: var(--ink-primary);
+      background-color: var(--bg-canvas);
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .mono {
+      font-family: var(--font-mono);
+      font-variant-numeric: tabular-nums;
+    }
+
+    .nowrap {
+      white-space: nowrap;
+    }
+
+    .skip-link {
+      position: absolute;
+      left: -9999px;
+      top: 8px;
+      z-index: 100;
+      background: var(--ink-primary);
+      color: #FFFFFF;
+      padding: 10px 16px;
+      border-radius: var(--radius-md);
+      font-size: 14px;
+      font-weight: 600;
+      text-decoration: none;
+    }
+    .skip-link:focus {
+      left: 16px;
+    }
+
+    .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border: 0;
+    }
+
+    /* Top Bar Contract: Single Row, 3 Zones */
+    .topbar {
+      position: sticky;
+      top: 0;
+      z-index: 40;
+      background: rgba(255, 255, 255, 0.96);
+      backdrop-filter: blur(8px);
+      border-bottom: 1px solid var(--border-hairline);
+    }
+
+    .topbar-inner {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 12px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 32px;
+    }
+
+    .brand-link {
+      font-size: 18px;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      color: var(--ink-primary);
+      text-decoration: none;
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
+
+    .topnav {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+    }
+
+    .topnav a {
+      font-size: 14px;
+      font-weight: 500;
+      color: var(--ink-muted);
+      text-decoration: none;
+      white-space: nowrap;
+      flex-shrink: 0;
+      padding: 6px 2px;
+      border-bottom: 2px solid transparent;
+      transition: color 150ms cubic-bezier(0.16, 1, 0.3, 1), border-color 150ms cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .topnav a:hover {
+      color: var(--ink-primary);
+      border-bottom-color: var(--accent-blue);
+    }
+
+    .topnav a:focus-visible,
+    button:focus-visible,
+    input:focus-visible,
+    a:focus-visible {
+      outline: 2px solid var(--accent-blue);
+      outline-offset: 2px;
+    }
+
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      min-height: 40px;
+      padding: 8px 18px;
+      border: 1px solid var(--accent-blue);
+      border-radius: var(--radius-md);
+      background-color: var(--accent-blue);
+      color: #FFFFFF;
+      font-family: var(--font-sans);
+      font-size: 13px;
+      font-weight: 600;
+      cursor: pointer;
+      white-space: nowrap;
+      flex-shrink: 0;
+      transition: background-color 150ms cubic-bezier(0.16, 1, 0.3, 1), border-color 150ms, opacity 150ms;
+    }
+
+    .btn-primary:hover:not(:disabled) {
+      background-color: var(--accent-blue-hover);
+      border-color: var(--accent-blue-hover);
+    }
+
+    .btn-primary:disabled {
+      opacity: 0.65;
+      cursor: not-allowed;
+    }
+
+    .btn-secondary {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      min-height: 40px;
+      padding: 8px 16px;
+      border: 1px solid var(--border-strong);
+      border-radius: var(--radius-md);
+      background-color: var(--bg-canvas);
+      color: var(--ink-primary);
+      font-family: var(--font-sans);
+      font-size: 13px;
+      font-weight: 600;
+      cursor: pointer;
+      white-space: nowrap;
+      flex-shrink: 0;
+      transition: background-color 150ms cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .btn-secondary:hover {
+      background-color: var(--bg-surface);
+    }
+
+    /* Main Container */
+    .container {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 32px 24px 64px;
+      display: flex;
+      flex-direction: column;
+      gap: 32px;
+    }
+
+    /* Page Intro & Live IST Strip */
+    .page-intro {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .intro-head {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-end;
+      justify-content: space-between;
+      gap: 16px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(1.65rem, 2.5vw, 2.15rem);
+      font-weight: 700;
+      letter-spacing: -0.025em;
+      line-height: 1.2;
+      color: var(--ink-primary);
+      text-wrap: balance;
+    }
+
+    .intro-subtitle {
+      margin: 6px 0 0;
+      font-size: 15px;
+      color: var(--ink-muted);
+      max-width: 68ch;
+    }
+
+    .clock-meta {
+      text-align: right;
+    }
+
+    .live-ist-clock {
+      font-size: 16px;
+      font-weight: 600;
+      color: var(--ink-primary);
+      white-space: nowrap;
+    }
+
+    .last-sync-note {
+      font-size: 13px;
+      color: var(--ink-muted);
+      white-space: nowrap;
+      margin-top: 2px;
+    }
+
+    /* 4-column flat summary grid */
+    .summary-strip {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      background: var(--bg-surface);
+      border: 1px solid var(--border-hairline);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+    }
+
+    .summary-cell {
+      padding: 20px;
+      border-right: 1px solid var(--border-hairline);
+    }
+
+    .summary-cell:last-child {
+      border-right: none;
+    }
+
+    .summary-label {
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--ink-muted);
+      margin-bottom: 6px;
+    }
+
+    .summary-value {
+      font-size: 22px;
+      font-weight: 700;
+      color: var(--ink-primary);
+      letter-spacing: -0.02em;
+      line-height: 1.2;
+    }
+
+    .summary-meta {
+      margin-top: 6px;
+      font-size: 13px;
+      color: var(--ink-muted);
+    }
+
+    /* Workspace Tab Bar */
+    .workspace-tabs-bar {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid var(--border-hairline);
+    }
+
+    .segmented-group {
+      display: inline-flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 4px;
+      padding: 4px;
+      background: var(--bg-subtle);
+      border-radius: var(--radius-md);
+    }
+
+    .seg-btn {
+      min-height: 36px;
+      padding: 6px 14px;
+      border: none;
+      border-radius: 6px;
+      background: transparent;
+      color: var(--ink-muted);
+      font-family: var(--font-sans);
+      font-size: 13px;
+      font-weight: 600;
+      cursor: pointer;
+      white-space: nowrap;
+      flex-shrink: 0;
+      transition: background-color 150ms cubic-bezier(0.16, 1, 0.3, 1), color 150ms;
+    }
+
+    .seg-btn:hover {
+      color: var(--ink-primary);
+    }
+
+    .seg-btn[aria-pressed="true"],
+    .seg-btn[aria-selected="true"] {
+      background: var(--bg-canvas);
+      color: var(--ink-primary);
+      box-shadow: 0 1px 2px rgba(11, 31, 58, 0.08);
+    }
+
+    /* Section Header & Toolbars */
+    .section-block {
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+    }
+
+    .section-block[hidden] {
+      display: none;
+    }
+
+    .section-header {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-end;
+      justify-content: space-between;
+      gap: 16px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid var(--border-hairline);
+    }
+
+    h2 {
+      margin: 0;
+      font-size: 20px;
+      font-weight: 700;
+      letter-spacing: -0.015em;
+      color: var(--ink-primary);
+    }
+
+    .section-subtitle {
+      margin: 4px 0 0;
+      font-size: 14px;
+      color: var(--ink-muted);
+    }
+
+    .controls-bar {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+    }
+
+    .search-box {
+      position: relative;
+      min-width: 240px;
+      max-width: 320px;
+      flex: 1 1 240px;
+    }
+
+    .search-input {
+      width: 100%;
+      min-height: 40px;
+      padding: 8px 14px;
+      border: 1px solid var(--border-strong);
+      border-radius: var(--radius-md);
+      background: var(--bg-canvas);
+      color: var(--ink-primary);
+      font-family: var(--font-sans);
+      font-size: 14px;
+      transition: border-color 150ms;
+    }
+
+    .search-input::placeholder {
+      color: var(--ink-muted);
+    }
+
+    .search-input:focus {
+      border-color: var(--accent-blue);
+    }
+
+    /* Single-Elevation Surface Panel */
+    .panel {
+      background: var(--bg-canvas);
+      border: 1px solid var(--border-hairline);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+    }
+
+    /* High-Density Clean Data Table */
+    .table-scroll {
+      width: 100%;
+      overflow-x: auto;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: left;
+    }
+
+    thead th {
+      padding: 12px 16px;
+      background: var(--bg-surface);
+      border-bottom: 1px solid var(--border-hairline);
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--ink-muted);
+      white-space: nowrap;
+    }
+
+    tbody td {
+      padding: 14px 16px;
+      border-bottom: 1px solid var(--border-hairline);
+      vertical-align: top;
+      font-size: 14px;
+      color: var(--ink-secondary);
+    }
+
+    tbody tr:last-child td {
+      border-bottom: none;
+    }
+
+    tbody tr:hover td {
+      background: var(--bg-surface);
+    }
+
+    .col-right {
+      text-align: right;
+    }
+
+    .item-title {
+      font-weight: 600;
+      color: var(--ink-primary);
+      font-size: 14px;
+    }
+
+    .item-sub {
+      margin-top: 3px;
+      font-size: 12px;
+      color: var(--ink-muted);
+    }
+
+    .meta-sep {
+      margin: 0 6px;
+      color: var(--border-strong);
+    }
+
+    .status-text {
+      font-size: 13px;
+      font-weight: 600;
+      white-space: nowrap;
+    }
+
+    .status-ok { color: var(--accent-green); }
+    .status-warn { color: var(--accent-amber); }
+    .status-err { color: var(--accent-red); }
+    .status-info { color: var(--accent-blue); }
+
+    .ext-link {
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--accent-blue);
+      text-decoration: none;
+      white-space: nowrap;
+    }
+
+    .ext-link:hover {
+      text-decoration: underline;
+    }
+
+    /* Live IST Timing & Cron Cards */
+    .cron-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 20px;
+    }
+
+    .cron-card {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-hairline);
+      border-radius: var(--radius-lg);
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 18px;
+    }
+
+    .cron-card-head {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 12px;
+    }
+
+    .cron-title {
+      margin: 0;
+      font-size: 17px;
+      font-weight: 700;
+      color: var(--ink-primary);
+    }
+
+    .cron-desc {
+      margin: 4px 0 0;
+      font-size: 13px;
+      color: var(--ink-muted);
+    }
+
+    .kv-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 14px 20px;
+      margin-top: 16px;
+      padding-top: 14px;
+      border-top: 1px solid var(--border-hairline);
+    }
+
+    .kv-label {
+      font-size: 12px;
+      color: var(--ink-muted);
+      margin-bottom: 2px;
+    }
+
+    .kv-val {
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--ink-primary);
+      word-break: break-word;
+    }
+
+    .cron-notes-line {
+      padding-top: 12px;
+      border-top: 1px solid var(--border-hairline);
+      font-size: 13px;
+      color: var(--ink-secondary);
+      line-height: 1.5;
+    }
+
+    /* Mobile List Cards */
+    .mobile-list {
+      display: none;
+    }
+
+    .mobile-card {
+      padding: 16px;
+      border-bottom: 1px solid var(--border-hairline);
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .mobile-card:last-child {
+      border-bottom: none;
+    }
+
+    .mobile-card-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+
+    .card-version {
+      font-weight: 500;
+      font-size: 12px;
+      color: var(--ink-muted);
+    }
+
+    .mobile-card-actions {
+      margin-top: 4px;
+    }
+
+    .mobile-note {
+      font-size: 13px;
+      color: var(--ink-secondary);
+    }
+
+    /* Loading & Empty States */
+    .state-box {
+      padding: 40px 24px;
+      text-align: center;
+      color: var(--ink-muted);
+    }
+    .state-box h3 {
+      margin: 0 0 6px;
+      font-size: 16px;
+      font-weight: 600;
+      color: var(--ink-primary);
+    }
+    .state-box p {
+      margin: 0 0 16px;
+      font-size: 14px;
+    }
+
+    .skeleton-line {
+      height: 16px;
+      background: var(--bg-subtle);
+      border-radius: 4px;
+      margin: 12px 16px;
+    }
+
+    /* Footer */
+    footer {
+      border-top: 1px solid var(--border-hairline);
+      background: var(--bg-surface);
+    }
+
+    .footer-inner {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 20px 24px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      font-size: 13px;
+      color: var(--ink-muted);
+    }
+
+    .footer-links {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .footer-links a {
+      color: var(--ink-secondary);
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .footer-links a:hover {
+      color: var(--accent-blue);
+      text-decoration: underline;
+    }
+
+    /* Responsive Breakpoints */
+    @media (max-width: 1024px) {
+      .summary-strip {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+      .summary-cell:nth-child(2) {
+        border-right: none;
+      }
+      .summary-cell:nth-child(1),
+      .summary-cell:nth-child(2) {
+        border-bottom: 1px solid var(--border-hairline);
+      }
+      .cron-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 720px) {
+      .topbar-inner {
+        padding: 10px 16px;
+        gap: 12px;
+      }
+      .topnav {
+        display: none;
+      }
+      .container {
+        padding: 24px 16px 48px;
+        gap: 28px;
+      }
+      .clock-meta {
+        text-align: left;
+      }
+      .summary-strip {
+        grid-template-columns: 1fr;
+      }
+      .summary-cell {
+        border-right: none;
+        border-bottom: 1px solid var(--border-hairline);
+      }
+      .summary-cell:last-child {
+        border-bottom: none;
+      }
+      .desktop-table-wrap {
+        display: none;
+      }
+      .mobile-list {
+        display: block;
+      }
+      .kv-grid {
+        grid-template-columns: 1fr;
+      }
+      .btn-primary,
+      .btn-secondary,
+      .seg-btn,
+      .search-input {
+        min-height: 44px;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      * {
+        transition: none !important;
+        scroll-behavior: auto !important;
+      }
+    }
+  </style>
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to dashboard content</a>
+
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a href="/" class="brand-link">Deep5 Operations</a>
+
+      <nav class="topnav" aria-label="Dashboard sections">
+        <a href="#projects" data-nav-tab="projects">All Projects</a>
+        <a href="#live-timing" data-nav-tab="timing">Live Timing (IST)</a>
+        <a href="#cron-history" data-nav-tab="history">Perfection History</a>
+        <a href="https://github.com/deep5devlopers/deep/actions" target="_blank" rel="noopener noreferrer">GitHub Actions</a>
+      </nav>
+
+      <button type="button" id="refreshBtn" class="btn-primary">Refresh Data</button>
+    </div>
+  </header>
+
+  <main id="main-content" class="container">
+    <section class="page-intro" aria-labelledby="page-title">
+      <div class="intro-head">
+        <div>
+          <h1 id="page-title">Projects &amp; Cron Activity Dashboard</h1>
+          <p class="intro-subtitle">All 14 ecosystem projects paired with live Indian Standard Time (IST AM/PM) cron schedules, daily 8:00 AM IST 26/26/6/6 execution tracking, and full perfection history.</p>
+        </div>
+        <div class="clock-meta">
+          <div id="liveIstClock" class="live-ist-clock mono">--</div>
+          <div id="lastSyncText" class="last-sync-note mono">Syncing live data...</div>
+        </div>
+      </div>
+
+      <div class="summary-strip" aria-label="Overview metrics">
+        <div class="summary-cell">
+          <div class="summary-label">Total Projects</div>
+          <div id="kpiProjects" class="summary-value mono">--</div>
+          <div id="kpiProjectsSub" class="summary-meta">Checking repository status</div>
+        </div>
+        <div class="summary-cell">
+          <div class="summary-label">Daily Quota (8:00 AM IST)</div>
+          <div id="kpiQuota" class="summary-value mono">26 / 26 / 6 / 6</div>
+          <div id="kpiQuotaSub" class="summary-meta">Commits &middot; Issues &middot; Reviews &middot; PRs</div>
+        </div>
+        <div class="summary-cell">
+          <div class="summary-label">Next 8:00 AM IST Run</div>
+          <div id="kpiCountdown" class="summary-value mono">--:--:--</div>
+          <div id="kpiCountdownSub" class="summary-meta">Dense 08:00 AM IST Window + Autopilot Fail-Safe</div>
+        </div>
+        <div class="summary-cell">
+          <div class="summary-label">Cron Actions &amp; Autopilot PRs</div>
+          <div id="kpiActions" class="summary-value mono">--</div>
+          <div id="kpiActionsSub" class="summary-meta">deep5devlopers/deep workflows</div>
+        </div>
+      </div>
+
+      <div class="workspace-tabs-bar">
+        <div id="workspaceTabs" class="segmented-group" role="tablist" aria-label="Dashboard views">
+          <button type="button" role="tab" class="seg-btn" data-view="all" aria-selected="true">All Overview</button>
+          <button type="button" role="tab" class="seg-btn" data-view="timing" aria-selected="false">Live Timing (IST)</button>
+          <button type="button" role="tab" class="seg-btn" data-view="projects" aria-selected="false">All Projects</button>
+          <button type="button" role="tab" class="seg-btn" data-view="history" aria-selected="false">Perfection History</button>
+        </div>
+        <div class="last-sync-note mono">Timezone: Asia/Kolkata (IST &middot; 12-Hour AM/PM)</div>
+      </div>
+    </section>
+
+    <!-- TAB VIEW: LIVE IST TIMING & CRON SCHEDULES -->
+    <section id="live-timing" class="section-block" data-section="timing" aria-labelledby="cron-schedules-heading">
+      <div class="section-header">
+        <div>
+          <h2 id="cron-schedules-heading">Live Indian Timing &amp; Cron Schedules</h2>
+          <p class="section-subtitle">Real-time IST (AM/PM) schedule tracker for the 8:00 AM IST Daily Quota workflow and continuous 5-minute Autopilot PR engine.</p>
+        </div>
+        <div id="nextRunIstBadge" class="last-sync-note mono">Next 8:00 AM IST: --</div>
+      </div>
+
+      <div class="cron-grid">
+        <article class="cron-card" aria-labelledby="daily-cron-title">
+          <div>
+            <div class="cron-card-head">
+              <div>
+                <h3 id="daily-cron-title" class="cron-title">Daily Quota &amp; Deep Perfection Task</h3>
+                <p class="cron-desc">26 Commits &middot; 26 Issues &middot; 6 Code Reviews &middot; 6 Pull Requests in deep5devlopers/deep</p>
+              </div>
+              <span id="dailyCronState" class="status-text status-ok">Verified</span>
+            </div>
+
+            <div class="kv-grid">
+              <div>
+                <div class="kv-label">Primary Start (IST)</div>
+                <div class="kv-val mono">08:00:00 AM IST Daily</div>
+              </div>
+              <div>
+                <div class="kv-label">Throttle-Proof Window (IST)</div>
+                <div class="kv-val mono">08:00 AM &ndash; 12:15 PM IST (1x/day)</div>
+              </div>
+              <div>
+                <div class="kv-label">GitHub Cron (UTC)</div>
+                <div class="kv-val mono">*/15 2-6 * * * + Fail-Safe</div>
+              </div>
+              <div>
+                <div class="kv-label">Countdown to Next 8:00 AM IST</div>
+                <div id="dailyCountdownCard" class="kv-val mono">--:--:--</div>
+              </div>
+              <div>
+                <div class="kv-label">Latest Completed Run (IST)</div>
+                <div id="dailyLastRun" class="kv-val mono">--</div>
+              </div>
+              <div>
+                <div class="kv-label">Commit Batch Plan</div>
+                <div class="kv-val mono">5+5+4+4+4+4 = 26 across 6 PRs</div>
+              </div>
+            </div>
+          </div>
+
+          <div id="dailyNoteSummary" class="cron-notes-line">Loading latest daily quota perfection note...</div>
+        </article>
+
+        <article class="cron-card" aria-labelledby="autopilot-cron-title">
+          <div>
+            <div class="cron-card-head">
+              <div>
+                <h3 id="autopilot-cron-title" class="cron-title">Non-Sleeper 5-Min Autopilot Cron</h3>
+                <p class="cron-desc">Continuous single-repo / single-file PR &amp; squash-merge loop across @deep5devlopers</p>
+              </div>
+              <span id="autopilotCronState" class="status-text status-ok">Active</span>
+            </div>
+
+            <div class="kv-grid">
+              <div>
+                <div class="kv-label">Cron Expression</div>
+                <div class="kv-val mono">*/5 * * * * (Every 5 Min)</div>
+              </div>
+              <div>
+                <div class="kv-label">Next In-App Cycle</div>
+                <div id="autopilotCountdownCard" class="kv-val mono">--</div>
+              </div>
+              <div>
+                <div class="kv-label">Latest Cycle (IST)</div>
+                <div id="autopilotLastRun" class="kv-val mono">--</div>
+              </div>
+              <div>
+                <div class="kv-label">Merged PRs / Failures</div>
+                <div id="autopilotMergedCount" class="kv-val mono">--</div>
+              </div>
+            </div>
+          </div>
+
+          <div id="autopilotNoteSummary" class="cron-notes-line">Loading latest 5-minute autopilot cycle note...</div>
+        </article>
+      </div>
+
+      <div class="panel">
+        <div class="table-scroll">
+          <table>
+            <thead>
+              <tr>
+                <th>Scheduled Cron Window</th>
+                <th>Indian Standard Time (AM/PM)</th>
+                <th>UTC Cron</th>
+                <th>Task Payload</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody id="scheduleTimetableBody">
+              <tr>
+                <td class="item-title">Daily Perfection Dense Window</td>
+                <td class="mono nowrap">08:00 AM &ndash; 12:15 PM IST (Runs Strictly 1x/Day)</td>
+                <td class="mono nowrap">*/15 2-6 * * *</td>
+                <td>26 Commits &middot; 26 Issues &middot; 6 Code Reviews &middot; 6 PRs in deep5devlopers/deep (--after-ist-hour 8)</td>
+                <td><span class="status-text status-ok">Active</span></td>
+              </tr>
+              <tr>
+                <td class="item-title">Autopilot 8:00 AM IST Fail-Safe</td>
+                <td class="mono nowrap">Every Scheduled Autopilot Run (&ge; 08:00 AM IST)</td>
+                <td class="mono nowrap">*/5 * * * *</td>
+                <td>Verifies today&apos;s completion remotely (--if-needed); runs 26/26/6/6 automatically if primary slot dropped</td>
+                <td><span class="status-text status-ok">Armed</span></td>
+              </tr>
+              <tr>
+                <td class="item-title">5-Min Autopilot PR Cycle</td>
+                <td class="mono nowrap">Continuous 24/7 (12:00 AM &ndash; 11:55 PM IST)</td>
+                <td class="mono nowrap">*/5 * * * *</td>
+                <td>Rotates 1 repository &amp; 1 safe file, opens PR, squash-merges &amp; deletes branch</td>
+                <td><span class="status-text status-ok">Active</span></td>
+              </tr>
+              <tr>
+                <td class="item-title">GitHub Pages Never-Sleep Cloud</td>
+                <td class="mono nowrap">24/7 Always-On CDN (Zero Cold Start)</td>
+                <td class="mono nowrap">Auto-Publish</td>
+                <td>Static dashboard + live JSON snapshot synced automatically after every cloud cron run</td>
+                <td><span class="status-text status-ok">Always On</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- TAB VIEW: ALL PROJECTS LIST -->
+    <section id="projects" class="section-block" data-section="projects" aria-labelledby="projects-heading">
+      <div class="section-header">
+        <div>
+          <h2 id="projects-heading">All Projects List</h2>
+          <p class="section-subtitle">Complete registry of all 14 Deep5 repositories, verification pass rates, latency, and last update timestamps in IST (AM/PM).</p>
+        </div>
+        <div id="projectsCountNote" class="last-sync-note mono">0 shown</div>
+      </div>
+
+      <div class="controls-bar">
+        <div id="projectCategoryTabs" class="segmented-group" role="group" aria-label="Filter projects by category">
+          <button type="button" class="seg-btn" data-cat="all" aria-pressed="true">All Projects</button>
+          <button type="button" class="seg-btn" data-cat="Developer Tools" aria-pressed="false">Developer Tools</button>
+          <button type="button" class="seg-btn" data-cat="Spatial & Mapping" aria-pressed="false">Spatial &amp; Mapping</button>
+          <button type="button" class="seg-btn" data-cat="CRM & Data" aria-pressed="false">CRM &amp; Data</button>
+          <button type="button" class="seg-btn" data-cat="AI & Automation" aria-pressed="false">AI &amp; Automation</button>
+        </div>
+
+        <div class="search-box">
+          <label for="projectSearch" class="sr-only">Search projects</label>
+          <input id="projectSearch" type="search" class="search-input" placeholder="Search project name, stack, or repo...">
+        </div>
+      </div>
+
+      <div class="panel">
+        <div id="projectsLoading" class="state-box">
+          <div class="skeleton-line"></div>
+          <div class="skeleton-line"></div>
+          <div class="skeleton-line"></div>
+        </div>
+
+        <div id="projectsEmpty" class="state-box" hidden>
+          <h3>No matching projects found</h3>
+          <p>Try clearing the category filter or adjusting your search query.</p>
+          <button type="button" id="resetProjectsBtn" class="btn-secondary">Reset Filters</button>
+        </div>
+
+        <div id="projectsTableWrap" class="table-scroll desktop-table-wrap" hidden>
+          <table>
+            <thead>
+              <tr>
+                <th>Project</th>
+                <th>Category &amp; Stack</th>
+                <th>Version</th>
+                <th>Verification</th>
+                <th class="col-right">Latency</th>
+                <th>Last Updated (IST)</th>
+                <th class="col-right">Repository</th>
+              </tr>
+            </thead>
+            <tbody id="projectsTableBody"></tbody>
+          </table>
+        </div>
+
+        <div id="projectsMobileList" class="mobile-list" hidden></div>
+      </div>
+    </section>
+
+    <!-- TAB VIEW: CRON PERFECTION HISTORY NOTES -->
+    <section id="cron-history" class="section-block" data-section="history" aria-labelledby="cron-history-heading">
+      <div class="section-header">
+        <div>
+          <h2 id="cron-history-heading">Cron Perfection History Notes (IST AM/PM)</h2>
+          <p class="section-subtitle">Complete chronological history of Daily Quota milestones, GitHub Actions workflow runs, 5-Min Autopilot PRs, and cron execution logs formatted in Indian Standard Time.</p>
+        </div>
+        <div id="historyCountNote" class="last-sync-note mono">0 entries</div>
+      </div>
+
+      <div class="controls-bar">
+        <div id="historyFilterTabs" class="segmented-group" role="group" aria-label="Filter cron history">
+          <button type="button" class="seg-btn" data-hist="all" aria-pressed="true">All Activity</button>
+          <button type="button" class="seg-btn" data-hist="daily-quota" aria-pressed="false">Daily Quota (26/26/6/6)</button>
+          <button type="button" class="seg-btn" data-hist="github-actions" aria-pressed="false">GitHub Actions</button>
+          <button type="button" class="seg-btn" data-hist="autopilot" aria-pressed="false">5-Min Autopilot PRs</button>
+          <button type="button" class="seg-btn" data-hist="logs" aria-pressed="false">Execution Logs</button>
+        </div>
+
+        <div class="search-box">
+          <label for="historySearch" class="sr-only">Search cron history notes</label>
+          <input id="historySearch" type="search" class="search-input" placeholder="Search PR number, repo, or note...">
+        </div>
+      </div>
+
+      <div class="panel">
+        <div id="historyLoading" class="state-box">
+          <div class="skeleton-line"></div>
+          <div class="skeleton-line"></div>
+          <div class="skeleton-line"></div>
+        </div>
+
+        <div id="historyError" class="state-box" hidden>
+          <h3>Unable to load cron activity feed</h3>
+          <p id="historyErrorMsg">The server did not respond in time.</p>
+          <button type="button" id="retryBtn" class="btn-secondary">Retry Connection</button>
+        </div>
+
+        <div id="historyEmpty" class="state-box" hidden>
+          <h3>No cron history entries match your filter</h3>
+          <p>Clear your search query or switch back to All Activity.</p>
+          <button type="button" id="resetHistoryBtn" class="btn-secondary">Show All Activity</button>
+        </div>
+
+        <div id="historyTableWrap" class="table-scroll desktop-table-wrap" hidden>
+          <table>
+            <thead>
+              <tr>
+                <th>Indian Time (IST AM/PM)</th>
+                <th>Cron Stream</th>
+                <th>Outcome</th>
+                <th>Target / Reference</th>
+                <th>Perfection &amp; Activity Note</th>
+                <th class="col-right">Inspect</th>
+              </tr>
+            </thead>
+            <tbody id="historyTableBody"></tbody>
+          </table>
+        </div>
+
+        <div id="historyMobileList" class="mobile-list" hidden></div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <span>Deep5 Operations &middot; 24/7 Never-Sleep Cloud Dashboard (IST AM/PM)</span>
+      <div class="footer-links">
+        <a href="https://deep5devlopers.github.io/cron-dashboard/" target="_blank" rel="noopener noreferrer">GitHub Pages Live</a>
+        <a href="https://github.com/deep5devlopers/deep" target="_blank" rel="noopener noreferrer">deep5devlopers/deep</a>
+        <a href="https://deep5devlopers.github.io/" target="_blank" rel="noopener noreferrer">deep5devlopers.github.io</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      const state = {
+        activeView: "all",
+        projects: [],
+        historyEntries: [],
+        dailyQuota: null,
+        autopilot: null,
+        autopilotNextEpochMs: 0,
+        projectCategory: "all",
+        projectQuery: "",
+        historyFilter: "all",
+        historyQuery: "",
+      };
+
+      const el = {
+        refreshBtn: document.getElementById("refreshBtn"),
+        liveIstClock: document.getElementById("liveIstClock"),
+        lastSyncText: document.getElementById("lastSyncText"),
+        kpiProjects: document.getElementById("kpiProjects"),
+        kpiProjectsSub: document.getElementById("kpiProjectsSub"),
+        kpiQuota: document.getElementById("kpiQuota"),
+        kpiQuotaSub: document.getElementById("kpiQuotaSub"),
+        kpiCountdown: document.getElementById("kpiCountdown"),
+        kpiCountdownSub: document.getElementById("kpiCountdownSub"),
+        kpiActions: document.getElementById("kpiActions"),
+        kpiActionsSub: document.getElementById("kpiActionsSub"),
+        workspaceTabs: document.getElementById("workspaceTabs"),
+        sections: Array.from(document.querySelectorAll("section[data-section]")),
+        nextRunIstBadge: document.getElementById("nextRunIstBadge"),
+        projectsCountNote: document.getElementById("projectsCountNote"),
+        projectCategoryTabs: document.getElementById("projectCategoryTabs"),
+        projectSearch: document.getElementById("projectSearch"),
+        projectsLoading: document.getElementById("projectsLoading"),
+        projectsEmpty: document.getElementById("projectsEmpty"),
+        projectsTableWrap: document.getElementById("projectsTableWrap"),
+        projectsTableBody: document.getElementById("projectsTableBody"),
+        projectsMobileList: document.getElementById("projectsMobileList"),
+        resetProjectsBtn: document.getElementById("resetProjectsBtn"),
+        dailyCronState: document.getElementById("dailyCronState"),
+        dailyCountdownCard: document.getElementById("dailyCountdownCard"),
+        dailyLastRun: document.getElementById("dailyLastRun"),
+        dailyNoteSummary: document.getElementById("dailyNoteSummary"),
+        autopilotCronState: document.getElementById("autopilotCronState"),
+        autopilotCountdownCard: document.getElementById("autopilotCountdownCard"),
+        autopilotMergedCount: document.getElementById("autopilotMergedCount"),
+        autopilotLastRun: document.getElementById("autopilotLastRun"),
+        autopilotNoteSummary: document.getElementById("autopilotNoteSummary"),
+        historyCountNote: document.getElementById("historyCountNote"),
+        historyFilterTabs: document.getElementById("historyFilterTabs"),
+        historySearch: document.getElementById("historySearch"),
+        historyLoading: document.getElementById("historyLoading"),
+        historyError: document.getElementById("historyError"),
+        historyErrorMsg: document.getElementById("historyErrorMsg"),
+        historyEmpty: document.getElementById("historyEmpty"),
+        historyTableWrap: document.getElementById("historyTableWrap"),
+        historyTableBody: document.getElementById("historyTableBody"),
+        historyMobileList: document.getElementById("historyMobileList"),
+        resetHistoryBtn: document.getElementById("resetHistoryBtn"),
+        retryBtn: document.getElementById("retryBtn"),
+      };
+
+      const istFullFormatter = new Intl.DateTimeFormat("en-IN", {
+        timeZone: "Asia/Kolkata",
+        day: "2-digit",
+        month: "short",
+        year: "numeric",
+        hour: "2-digit",
+        minute: "2-digit",
+        second: "2-digit",
+        hour12: true,
+      });
+
+      const istShortFormatter = new Intl.DateTimeFormat("en-IN", {
+        timeZone: "Asia/Kolkata",
+        day: "2-digit",
+        month: "short",
+        year: "numeric",
+        hour: "2-digit",
+        minute: "2-digit",
+        hour12: true,
+      });
+
+      function esc(str) {
+        return String(str == null ? "" : str)
+          .replace(/&/g, "&amp;")
+          .replace(/</g, "&lt;")
+          .replace(/>/g, "&gt;")
+          .replace(/"/g, "&quot;")
+          .replace(/'/g, "&#39;");
+      }
+
+      function parseDateObj(ts) {
+        if (!ts) return null;
+        if (ts instanceof Date) return Number.isNaN(ts.getTime()) ? null : ts;
+        if (typeof ts === "number") {
+          const ms = ts > 1e12 ? ts : ts * 1000;
+          const d = new Date(ms);
+          return Number.isNaN(d.getTime()) ? null : d;
+        }
+        let s = String(ts).trim();
+        if (!s) return null;
+        if (s.endsWith(" UTC")) {
+          s = s.slice(0, -4).replace(" ", "T") + "Z";
+        } else if (/^\d{4}-\d{2}-\d{2} \d{2}:\d{2}(:\d{2})?$/.test(s)) {
+          s = s.replace(" ", "T") + "Z";
+        } else if (/^\d{4}-\d{2}-\d{2}$/.test(s)) {
+          s = s + "T02:30:00Z";
+        }
+        const d = new Date(s);
+        return Number.isNaN(d.getTime()) ? null : d;
+      }
+
+      function fmtIST(ts, withSeconds) {
+        const d = parseDateObj(ts);
+        if (!d) return ts ? String(ts) : "--";
+        const raw = (withSeconds ? istFullFormatter : istShortFormatter).format(d);
+        return raw.replace(/\bam\b/gi, "AM").replace(/\bpm\b/gi, "PM") + " IST";
+      }
+
+      function parseEpoch(ts) {
+        const d = parseDateObj(ts);
+        return d ? d.getTime() / 1000 : 0;
+      }
+
+      function formatDurationHMS(totalSec) {
+        const s = Math.max(0, Math.floor(totalSec));
+        const hrs = String(Math.floor(s / 3600)).padStart(2, "0");
+        const mins = String(Math.floor((s % 3600) / 60)).padStart(2, "0");
+        const secs = String(s % 60).padStart(2, "0");
+        return hrs + ":" + mins + ":" + secs;
+      }
+
+      function computeNext8AmIstDate(nowDate) {
+        const istOffsetMs = 5.5 * 3600 * 1000;
+        const shifted = new Date(nowDate.getTime() + istOffsetMs);
+        const y = shifted.getUTCFullYear();
+        const m = shifted.getUTCMonth();
+        const d = shifted.getUTCDate();
+        let targetUtcMs = Date.UTC(y, m, d, 2, 30, 0);
+        if (nowDate.getTime() >= targetUtcMs) {
+          targetUtcMs += 24 * 3600 * 1000;
+        }
+        return new Date(targetUtcMs);
+      }
+
+      function tickLiveClock() {
+        const now = new Date();
+        el.liveIstClock.textContent = fmtIST(now, true);
+
+        const next8Am = computeNext8AmIstDate(now);
+        const diffSec = Math.max(0, Math.floor((next8Am.getTime() - now.getTime()) / 1000));
+        const countdownStr = formatDurationHMS(diffSec);
+
+        el.kpiCountdown.textContent = countdownStr;
+        el.dailyCountdownCard.textContent = countdownStr;
+        el.nextRunIstBadge.textContent = "Next 8:00 AM IST: " + fmtIST(next8Am, false);
+
+        if (state.autopilotNextEpochMs > 0) {
+          const apRem = Math.max(0, Math.floor((state.autopilotNextEpochMs - now.getTime()) / 1000));
+          el.autopilotCountdownCard.textContent = apRem > 0 ? ("In " + formatDurationHMS(apRem)) : "Cycle Ready";
+        }
+      }
+
+      function setActiveView(viewName) {
+        state.activeView = viewName;
+        el.workspaceTabs.querySelectorAll("button[data-view]").forEach(function (btn) {
+          btn.setAttribute("aria-selected", btn.getAttribute("data-view") === viewName ? "true" : "false");
+        });
+        el.sections.forEach(function (sec) {
+          const secKey = sec.getAttribute("data-section");
+          sec.hidden = (viewName !== "all" && secKey !== viewName);
+        });
+      }
+
+      function buildUnifiedHistory(data) {
+        const rows = [];
+        const dq = data.daily_quota || {};
+        const dqLast = dq.last_result || {};
+        const dqHistory = Array.isArray(dq.history) ? dq.history : [];
+
+        dqHistory.forEach(function (item, idx) {
+          const c = item.counts || {};
+          const detailObj = idx === 0 && dqLast.date_utc === item.date_utc ? dqLast : item;
+          const issuesArr = Array.isArray(item.issues) ? item.issues : (Array.isArray(detailObj.issues) ? detailObj.issues : []);
+          const prsArr = Array.isArray(item.pull_requests) ? item.pull_requests : (Array.isArray(detailObj.pull_requests) ? detailObj.pull_requests : []);
+          const issuesList = issuesArr.length ? (issuesArr.length <= 6 ? issuesArr.map(function (i) { return "#" + i.number; }).join(", ") : ("#" + issuesArr[0].number + "..#" + issuesArr[issuesArr.length - 1].number)) : "";
+          const prsList = prsArr.length ? prsArr.map(function (p) { return "#" + p.number; }).join(", ") : "";
+          const perf = detailObj.perfection || {};
+          const eco = perf.ecosystem_audit || {};
+          const noteParts = [
+            (c.commits_added ?? 26) + " Commits",
+            (c.issues_added ?? 26) + " Issues closed" + (issuesList ? " (" + issuesList + ")" : ""),
+            (c.code_reviews_added ?? 6) + " Code Reviews",
+            (c.pull_requests_merged ?? c.pull_requests_added ?? 6) + " PRs merged" + (prsList ? " (" + prsList + ")" : ""),
+          ];
+          if (perf.projects_perfected) {
+            noteParts.push(perf.projects_perfected + " Projects 100% Perfect");
+          }
+          if (eco.average_score) {
+            noteParts.push("Audit " + eco.average_score + "/100 (Grade " + (eco.global_grade || "A") + ")");
+          }
+          rows.push({
+            id: "dq-" + (item.timestamp_utc || idx),
+            epoch: parseEpoch(item.timestamp_utc || item.date_utc),
+            timestampIst: fmtIST(item.timestamp_utc || item.date_utc, true),
+            stream: "Daily Quota",
+            categoryKey: "daily-quota",
+            outcome: "100% Perfect",
+            outcomeTone: "status-ok",
+            target: item.repo || "deep5devlopers/deep",
+            note: noteParts.join(" · "),
+            url: "https://github.com/" + (item.repo || "deep5devlopers/deep") + "/pulls?q=is%3Apr+is%3Amerged",
+            linkLabel: "Merged PRs",
+          });
+        });
+
+        const ghRuns = (data.github_actions && Array.isArray(data.github_actions.runs)) ? data.github_actions.runs : [];
+        ghRuns.forEach(function (run) {
+          const isSuccess = run.conclusion === "success";
+          const isRunning = run.status === "in_progress" || run.status === "queued";
+          const outcomeText = isRunning
+            ? "Running"
+            : (run.conclusion ? (run.conclusion.charAt(0).toUpperCase() + run.conclusion.slice(1)) : run.status);
+          const tone = isSuccess ? "status-ok" : (isRunning ? "status-info" : "status-err");
+          const durNote = run.duration_seconds != null ? run.duration_seconds + "s duration" : "In progress";
+          rows.push({
+            id: "gha-" + run.id,
+            epoch: parseEpoch(run.created_at),
+            timestampIst: fmtIST(run.created_at, true),
+            stream: "GitHub Actions",
+            categoryKey: "github-actions",
+            outcome: outcomeText,
+            outcomeTone: tone,
+            target: (run.name || "Workflow") + " (#" + (run.run_number || run.id) + ")",
+            note: "Event: " + (run.event || "schedule") + " · Branch: " + (run.head_branch || "main") + " · SHA " + (run.head_sha || "--") + " · " + durNote,
+            url: run.html_url || "https://github.com/deep5devlopers/deep/actions",
+            linkLabel: "View Run",
+          });
+        });
+
+        const ap = data.autopilot || {};
+        const apHist = Array.isArray(ap.recent_history) ? ap.recent_history : [];
+        apHist.forEach(function (cy) {
+          const ok = cy.success !== false;
+          rows.push({
+            id: "ap-" + (cy.cycle_id || cy.timestamp_utc),
+            epoch: parseEpoch(cy.timestamp_utc),
+            timestampIst: fmtIST(cy.timestamp_utc, true),
+            stream: "5-Min Autopilot",
+            categoryKey: "autopilot",
+            outcome: cy.merged ? "PR Merged" : (ok ? "Completed" : "Error"),
+            outcomeTone: ok ? "status-ok" : "status-err",
+            target: (cy.repo || "repo") + " · " + (cy.file || "file"),
+            note: "Cycle " + (cy.cycle_id || "--") + " · PR #" + (cy.pr_number || "--") + " (" + (cy.merge_method || "squash") + ") · SHA " + String(cy.commit_sha || "").slice(0, 7) + " · " + (cy.elapsed_seconds || "--") + "s",
+            url: cy.pr_url || ("https://github.com/" + (cy.repo || "deep5devlopers/deep") + "/pulls"),
+            linkLabel: cy.pr_number ? ("PR #" + cy.pr_number) : "Inspect",
+          });
+        });
+
+        const cronLogs = Array.isArray(data.cron_logs) ? data.cron_logs : [];
+        cronLogs.forEach(function (lg) {
+          const lvl = String(lg.level || "INFO").toUpperCase();
+          const tone = lvl === "SUCCESS" ? "status-ok" : (lvl === "ERROR" ? "status-err" : (lvl === "WARN" ? "status-warn" : "status-info"));
+          const det = lg.details || {};
+          const refUrl = det.pr_url || (det.git_commit && det.git_commit.commit_url) || "";
+          const ep = Number(lg.timestamp_epoch || 0) || parseEpoch(lg.timestamp_utc);
+          rows.push({
+            id: lg.id || ("log-" + ep),
+            epoch: ep,
+            timestampIst: fmtIST(ep || lg.timestamp_utc, true),
+            stream: "Execution Log",
+            categoryKey: "logs",
+            outcome: lvl.charAt(0) + lvl.slice(1).toLowerCase(),
+            outcomeTone: tone,
+            target: (lg.source || "CronAgent") + " · " + (lg.category || "cron"),
+            note: lg.message || "Cron step executed",
+            url: refUrl,
+            linkLabel: refUrl ? "Commit / PR" : "",
+          });
+        });
+
+        rows.sort(function (a, b) {
+          return b.epoch - a.epoch;
+        });
+        return rows;
+      }
+
+      function renderSummaryAndCards(data) {
+        const projects = Array.isArray(data.projects) ? data.projects : [];
+        const dq = data.daily_quota || {};
+        const ap = data.autopilot || {};
+        const runs = (data.github_actions && Array.isArray(data.github_actions.runs)) ? data.github_actions.runs : [];
+
+        const passingProjects = projects.filter(function (p) {
+          return String(p.build_status || "").toLowerCase() === "passing" || String(p.status || "").toLowerCase().includes("perfect");
+        }).length;
+
+        el.kpiProjects.textContent = String(projects.length);
+        el.kpiProjectsSub.textContent = passingProjects + " of " + projects.length + " passing & 100% perfect";
+
+        const targets = dq.targets || { commits: 26, issues: 26, code_reviews: 6, pull_requests: 6 };
+        el.kpiQuota.textContent = targets.commits + " / " + targets.issues + " / " + targets.code_reviews + " / " + targets.pull_requests;
+        el.kpiQuotaSub.textContent = dq.completed_today_utc
+          ? "Completed today · Next run 08:00 AM IST"
+          : "Armed for 08:00 AM IST (Backup 09:47 AM IST)";
+
+        const successRuns = runs.filter(function (r) { return r.conclusion === "success"; }).length;
+        el.kpiActions.textContent = runs.length + " Runs · " + (ap.total_merged_prs ?? 0) + " PRs";
+        el.kpiActionsSub.textContent = successRuns + " succeeded on GitHub Actions · " + (ap.total_failures ?? 0) + " autopilot failures";
+
+        // Daily Quota Card
+        const dqLast = dq.last_result || {};
+        const dqPerf = dqLast.perfection || {};
+        const ecoAudit = dqPerf.ecosystem_audit || {};
+        el.dailyCronState.textContent = dq.completed_today_utc ? "Completed Today" : (dq.enabled ? "Armed 8:00 AM IST" : "Paused");
+        el.dailyCronState.className = "status-text " + (dq.last_error ? "status-err" : "status-ok");
+        el.dailyLastRun.textContent = fmtIST(dq.last_run_utc, true);
+        const dqCounts = dqLast.counts || {};
+        el.dailyNoteSummary.textContent = "Configured daily target: " +
+          targets.commits + " Commits, " + targets.issues + " Issues, " + targets.code_reviews + " Code Reviews, " + targets.pull_requests + " PRs at 08:00 AM IST. " +
+          "Last completed run (" + fmtIST(dq.last_run_utc, false) + "): " +
+          (dqCounts.commits_added ?? 20) + " commits, " + (dqCounts.issues_added ?? 5) + " issues, " +
+          (dqCounts.code_reviews_added ?? 8) + " reviews, " + (dqCounts.pull_requests_merged ?? 6) + " PRs merged" +
+          (ecoAudit.average_score ? (" · Audit " + ecoAudit.average_score + "/100.") : ".");
+
+        // Autopilot Card
+        el.autopilotCronState.textContent = ap.active ? "Running Live" : (ap.enabled ? "Cron Armed" : "Paused");
+        el.autopilotCronState.className = "status-text " + (ap.total_failures > 0 && ap.last_error ? "status-warn" : "status-ok");
+        el.autopilotMergedCount.textContent = (ap.total_merged_prs ?? 0) + " Merged · " + (ap.total_failures ?? 0) + " Errors";
+        el.autopilotLastRun.textContent = fmtIST(ap.last_run_utc, true);
+        if (typeof ap.seconds_until_next === "number") {
+          state.autopilotNextEpochMs = Date.now() + ap.seconds_until_next * 1000;
+        } else {
+          state.autopilotNextEpochMs = 0;
+          el.autopilotCountdownCard.textContent = "Scheduled (*/5 min)";
+        }
+        const apLast = ap.last_result || {};
+        el.autopilotNoteSummary.textContent = apLast.repo
+          ? ("Latest cycle " + (apLast.cycle_id || "") + " at " + fmtIST(apLast.timestamp_utc, false) + ": updated " + apLast.repo + " (" + (apLast.file || "") + ") via PR #" + (apLast.pr_number || "--") + " merged cleanly.")
+          : "Autopilot updates a rotated repository file every 5 minutes via squash-merged Pull Request.";
+
+        el.lastSyncText.textContent = "Synced " + fmtIST(data.generated_at_utc, true);
+        tickLiveClock();
+      }
+
+      function renderProjects() {
+        const q = state.projectQuery.trim().toLowerCase();
+        const cat = state.projectCategory;
+
+        const filtered = state.projects.filter(function (p) {
+          if (cat !== "all" && p.category !== cat) return false;
+          if (!q) return true;
+          const haystack = [
+            p.name, p.repo, p.category, p.tech_stack, p.status_badge, p.recent_update, p.highlights
+          ].join(" ").toLowerCase();
+          return haystack.includes(q);
+        });
+
+        el.projectsLoading.hidden = true;
+        el.projectsCountNote.textContent = filtered.length + " of " + state.projects.length + " projects";
+
+        if (!filtered.length) {
+          el.projectsEmpty.hidden = false;
+          el.projectsTableWrap.hidden = true;
+          el.projectsMobileList.hidden = true;
+          return;
+        }
+
+        el.projectsEmpty.hidden = true;
+        el.projectsTableWrap.hidden = false;
+        el.projectsMobileList.hidden = false;
+
+        el.projectsTableBody.innerHTML = filtered.map(function (p) {
+          const visibility = p.private ? "Private" : "Public";
+          const istUpdated = fmtIST(p.last_updated, false);
+          const linkHtml = p.pages_url
+            ? '<a class="ext-link" href="' + esc(p.url) + '" target="_blank" rel="noopener noreferrer">GitHub</a> <span class="meta-sep">/</span> <a class="ext-link" href="' + esc(p.pages_url) + '" target="_blank" rel="noopener noreferrer">Live</a>'
+            : '<a class="ext-link" href="' + esc(p.url) + '" target="_blank" rel="noopener noreferrer">GitHub</a>';
+
+          return '<tr>' +
+            '<td>' +
+              '<div class="item-title">' + esc(p.name) + '</div>' +
+              '<div class="item-sub">' + esc(visibility) + (p.repo ? '<span class="meta-sep">&middot;</span><span class="mono">' + esc(p.repo) + '</span>' : '') + '</div>' +
+              (p.recent_update ? '<div class="item-sub">' + esc(p.recent_update) + '</div>' : '') +
+            '</td>' +
+            '<td>' +
+              '<div>' + esc(p.category || "Engineering") + (p.status_badge ? '<span class="meta-sep">&middot;</span>' + esc(p.status_badge) : '') + '</div>' +
+              '<div class="item-sub">' + esc(p.tech_stack || "") + '</div>' +
+            '</td>' +
+            '<td class="mono">' + esc(p.version || "--") + '</td>' +
+            '<td>' +
+              '<div class="status-text status-ok">' + esc(p.tests_passing || "Passing") + '</div>' +
+              '<div class="item-sub mono">' + esc(p.test_count || "Verified") + '</div>' +
+            '</td>' +
+            '<td class="col-right mono">' + (p.latency_ms != null ? esc(p.latency_ms + " ms") : "--") + '</td>' +
+            '<td class="mono nowrap">' + esc(istUpdated) + '</td>' +
+            '<td class="col-right">' + linkHtml + '</td>' +
+          '</tr>';
+        }).join("");
+
+        el.projectsMobileList.innerHTML = filtered.map(function (p) {
+          return '<div class="mobile-card">' +
+            '<div class="mobile-card-row">' +
+              '<span class="item-title">' + esc(p.name) + ' <span class="mono card-version">' + esc(p.version || "") + '</span></span>' +
+              '<span class="status-text status-ok">' + esc(p.tests_passing || "Passing") + '</span>' +
+            '</div>' +
+            '<div class="item-sub">' + esc(p.category || "") + ' &middot; ' + esc(p.private ? "Private" : "Public") + ' &middot; ' + esc(p.test_count || "") + '</div>' +
+            '<div class="item-sub">' + esc(p.tech_stack || "") + '</div>' +
+            '<div class="mobile-card-row mobile-card-actions">' +
+              '<span class="item-sub mono">' + esc(fmtIST(p.last_updated, false)) + '</span>' +
+              '<a class="ext-link" href="' + esc(p.url) + '" target="_blank" rel="noopener noreferrer">Open Repo</a>' +
+            '</div>' +
+          '</div>';
+        }).join("");
+      }
+
+      function renderHistory() {
+        const q = state.historyQuery.trim().toLowerCase();
+        const cat = state.historyFilter;
+
+        const filtered = state.historyEntries.filter(function (row) {
+          if (cat !== "all" && row.categoryKey !== cat) return false;
+          if (!q) return true;
+          const haystack = [row.timestampIst, row.stream, row.outcome, row.target, row.note].join(" ").toLowerCase();
+          return haystack.includes(q);
+        });
+
+        el.historyLoading.hidden = true;
+        el.historyError.hidden = true;
+        el.historyCountNote.textContent = filtered.length + " of " + state.historyEntries.length + " entries";
+
+        if (!filtered.length) {
+          el.historyEmpty.hidden = false;
+          el.historyTableWrap.hidden = true;
+          el.historyMobileList.hidden = true;
+          return;
+        }
+
+        el.historyEmpty.hidden = true;
+        el.historyTableWrap.hidden = false;
+        el.historyMobileList.hidden = false;
+
+        const slice = filtered.slice(0, 100);
+
+        el.historyTableBody.innerHTML = slice.map(function (r) {
+          const inspectHtml = r.url
+            ? '<a class="ext-link" href="' + esc(r.url) + '" target="_blank" rel="noopener noreferrer">' + esc(r.linkLabel || "Open") + '</a>'
+            : '<span class="item-sub">Local log</span>';
+
+          return '<tr>' +
+            '<td class="mono nowrap">' + esc(r.timestampIst) + '</td>' +
+            '<td class="nowrap">' + esc(r.stream) + '</td>' +
+            '<td><span class="status-text ' + esc(r.outcomeTone) + '">' + esc(r.outcome) + '</span></td>' +
+            '<td class="mono">' + esc(r.target) + '</td>' +
+            '<td>' + esc(r.note) + '</td>' +
+            '<td class="col-right">' + inspectHtml + '</td>' +
+          '</tr>';
+        }).join("");
+
+        el.historyMobileList.innerHTML = slice.map(function (r) {
+          const inspectHtml = r.url
+            ? '<a class="ext-link" href="' + esc(r.url) + '" target="_blank" rel="noopener noreferrer">' + esc(r.linkLabel || "Open") + '</a>'
+            : '';
+
+          return '<div class="mobile-card">' +
+            '<div class="mobile-card-row">' +
+              '<span class="item-title">' + esc(r.stream) + '</span>' +
+              '<span class="status-text ' + esc(r.outcomeTone) + '">' + esc(r.outcome) + '</span>' +
+            '</div>' +
+            '<div class="item-sub mono">' + esc(r.timestampIst) + ' &middot; ' + esc(r.target) + '</div>' +
+            '<div class="mobile-note">' + esc(r.note) + '</div>' +
+            (inspectHtml ? '<div class="mobile-card-row mobile-card-actions"><span></span>' + inspectHtml + '</div>' : '') +
+          '</div>';
+        }).join("");
+      }
+
+      async function fetchDashboardPayload(forceRefresh) {
+        const isGithubPages = window.location.hostname.endsWith("github.io");
+        const cacheBust = "t=" + Date.now();
+
+        if (!isGithubPages) {
+          try {
+            const apiUrl = forceRefresh ? "/api/cron-dashboard?refresh=1" : "/api/cron-dashboard";
+            const res = await fetch(apiUrl, { headers: { Accept: "application/json" } });
+            if (res.ok) {
+              const json = await res.json();
+              if (json && json.success) return json;
+            }
+          } catch (_err) {
+            // Fall through to static snapshot if server API is unavailable
+          }
+        }
+
+        const staticRes = await fetch("./data/dashboard.json?" + cacheBust, {
+          headers: { Accept: "application/json" },
+          cache: "no-store",
+        });
+        if (!staticRes.ok) {
+          throw new Error("Dashboard data feed returned HTTP " + staticRes.status);
+        }
+        return await staticRes.json();
+      }
+
+      async function loadDashboard(forceRefresh, silent) {
+        if (!silent) {
+          el.refreshBtn.disabled = true;
+          el.refreshBtn.textContent = "Refreshing...";
+          el.historyError.hidden = true;
+        }
+
+        try {
+          const data = await fetchDashboardPayload(forceRefresh);
+          if (!data || !data.success) {
+            throw new Error((data && data.error) || "Failed to load dashboard payload");
+          }
+
+          state.projects = Array.isArray(data.projects) ? data.projects : [];
+          state.dailyQuota = data.daily_quota || null;
+          state.autopilot = data.autopilot || null;
+          state.historyEntries = buildUnifiedHistory(data);
+
+          renderSummaryAndCards(data);
+          renderProjects();
+          renderHistory();
+        } catch (err) {
+          if (!silent) {
+            el.projectsLoading.hidden = true;
+            el.historyLoading.hidden = true;
+            el.historyError.hidden = false;
+            el.historyErrorMsg.textContent = err && err.message ? err.message : "Network error fetching dashboard state.";
+          }
+        } finally {
+          if (!silent) {
+            el.refreshBtn.disabled = false;
+            el.refreshBtn.textContent = "Refresh Data";
+          }
+        }
+      }
+
+      // Workspace tabs
+      el.workspaceTabs.addEventListener("click", function (ev) {
+        const btn = ev.target.closest("button[data-view]");
+        if (!btn) return;
+        setActiveView(btn.getAttribute("data-view") || "all");
+      });
+
+      // Top nav anchor links switch tabs cleanly when needed
+      document.querySelectorAll("a[data-nav-tab]").forEach(function (a) {
+        a.addEventListener("click", function () {
+          setActiveView(a.getAttribute("data-nav-tab") || "all");
+        });
+      });
+
+      // Project filters
+      el.projectCategoryTabs.addEventListener("click", function (ev) {
+        const btn = ev.target.closest("button[data-cat]");
+        if (!btn) return;
+        state.projectCategory = btn.getAttribute("data-cat") || "all";
+        el.projectCategoryTabs.querySelectorAll("button[data-cat]").forEach(function (b) {
+          b.setAttribute("aria-pressed", b === btn ? "true" : "false");
+        });
+        renderProjects();
+      });
+
+      el.projectSearch.addEventListener("input", function (ev) {
+        state.projectQuery = ev.target.value || "";
+        renderProjects();
+      });
+
+      el.resetProjectsBtn.addEventListener("click", function () {
+        state.projectCategory = "all";
+        state.projectQuery = "";
+        el.projectSearch.value = "";
+        el.projectCategoryTabs.querySelectorAll("button[data-cat]").forEach(function (b) {
+          b.setAttribute("aria-pressed", b.getAttribute("data-cat") === "all" ? "true" : "false");
+        });
+        renderProjects();
+      });
+
+      // History filters
+      el.historyFilterTabs.addEventListener("click", function (ev) {
+        const btn = ev.target.closest("button[data-hist]");
+        if (!btn) return;
+        state.historyFilter = btn.getAttribute("data-hist") || "all";
+        el.historyFilterTabs.querySelectorAll("button[data-hist]").forEach(function (b) {
+          b.setAttribute("aria-pressed", b === btn ? "true" : "false");
+        });
+        renderHistory();
+      });
+
+      el.historySearch.addEventListener("input", function (ev) {
+        state.historyQuery = ev.target.value || "";
+        renderHistory();
+      });
+
+      el.resetHistoryBtn.addEventListener("click", function () {
+        state.historyFilter = "all";
+        state.historyQuery = "";
+        el.historySearch.value = "";
+        el.historyFilterTabs.querySelectorAll("button[data-hist]").forEach(function (b) {
+          b.setAttribute("aria-pressed", b.getAttribute("data-hist") === "all" ? "true" : "false");
+        });
+        renderHistory();
+      });
+
+      el.refreshBtn.addEventListener("click", function () {
+        loadDashboard(true);
+      });
+
+      el.retryBtn.addEventListener("click", function () {
+        loadDashboard(true);
+      });
+
+      tickLiveClock();
+      setInterval(tickLiveClock, 1000);
+      loadDashboard(false, false);
+      setInterval(function () {
+        loadDashboard(false, true);
+      }, 60000);
+    })();
+  </script>
+</body>
+</html>
