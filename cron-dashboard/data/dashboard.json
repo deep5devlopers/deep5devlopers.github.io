@@ -1,6 +1,6 @@
 {
   "success": true,
-  "generated_at_utc": "2026-11-20T10:11:02Z",
+  "generated_at_utc": "2026-11-20T10:12:20Z",
   "deployment": {
     "mode": "github_pages_cloud_never_sleep",
     "pages_url": "https://deep5devlopers.github.io/cron-dashboard/",
@@ -1188,6 +1188,16 @@
   },
   "cron_logs": [
     {
+      "id": "log-1795169480764",
+      "timestamp_epoch": 1795169480.764549,
+      "timestamp_utc": "2026-11-20 10:11:20 UTC",
+      "category": "scheduler",
+      "level": "INFO",
+      "source": "Autopilot5Min",
+      "message": "5-Minute Non-Sleeper Autopilot daemon started (interval: 300s)",
+      "details": {}
+    },
+    {
       "id": "log-1795169358448",
       "timestamp_epoch": 1795169358.44889,
       "timestamp_utc": "2026-11-20 10:09:18 UTC",
@@ -2223,21 +2233,6 @@
         "run_number": 16,
         "target_project": "Corpen",
         "version": "v2.1.2",
-        "category": "resilience"
-      }
-    },
-    {
-      "id": "log-1791529750614",
-      "timestamp_epoch": 1791529750.6147847,
-      "timestamp_utc": "2026-10-09 07:09:10 UTC",
-      "category": "scheduler",
-      "level": "SUCCESS",
-      "source": "CadenceScheduler",
-      "message": "Scheduled 10-minute cycle #16 succeeded: Updated 'Ongrow' [resilience] & synced README (16 cycles complete)",
-      "details": {
-        "run_number": 16,
-        "target_project": "Ongrow",
-        "version": "v1.0.6",
         "category": "resilience"
       }
     }
