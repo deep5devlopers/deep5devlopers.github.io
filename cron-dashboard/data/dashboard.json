@@ -1,6 +1,6 @@
 {
   "success": true,
-  "generated_at_utc": "2026-11-23T12:21:49Z",
+  "generated_at_utc": "2026-11-23T12:26:56Z",
   "deployment": {
     "mode": "github_pages_cloud_never_sleep",
     "pages_url": "https://deep5devlopers.github.io/cron-dashboard/",
@@ -12,14 +12,14 @@
     "enabled": true,
     "mode": "strict_cloud_never_sleep",
     "works_without_browser": true,
-    "total_pulses": 13,
-    "successful_pulses": 13,
-    "last_pulse_utc": "2026-11-23T12:21:48Z",
+    "total_pulses": 14,
+    "successful_pulses": 14,
+    "last_pulse_utc": "2026-11-23T12:26:55Z",
     "last_trigger": "app_server_daemon",
     "cdn_online": true,
-    "cdn_latency_ms": 338,
+    "cdn_latency_ms": 339,
     "snapshot_online": true,
-    "snapshot_latency_ms": 544,
+    "snapshot_latency_ms": 550,
     "git_extraheader_clean": true
   },
   "projects": [
@@ -607,16 +607,12 @@
         "repo": "deep5devlopers/deep",
         "counts": {
           "commits_added": 26,
-          "issues_added": 26,
+          "issues_added": 25,
           "code_reviews_added": 6,
           "pull_requests_added": 6,
           "pull_requests_merged": 6
         },
         "issues": [
-          {
-            "number": 470,
-            "closed": true
-          },
           {
             "number": 471,
             "closed": true
@@ -939,31 +935,50 @@
     "active": true,
     "enabled": true,
     "interval_seconds": 300,
-    "total_cycles": 18,
-    "total_merged_prs": 18,
+    "total_cycles": 19,
+    "total_merged_prs": 19,
     "total_failures": 0,
-    "last_run_utc": "2026-11-23T12:17:56Z",
+    "last_run_utc": "2026-11-23T12:23:08Z",
     "last_error": null,
     "last_result": {
       "success": true,
-      "cycle_id": "ap-1795436276-946",
+      "cycle_id": "ap-1795436588-288",
       "trigger_source": "in_app_5min_daemon",
-      "repo": "deep5devlopers/myflow",
-      "repo_slug": "myflow",
+      "repo": "deep5devlopers/deep",
+      "repo_slug": "deep",
       "private": true,
-      "file": "overview/04-core-capabilities.txt",
-      "branch": "auto/myflow/sync-1795436276",
+      "file": "overview/07-security-and-access.txt",
+      "branch": "auto/deep/sync-1795436588",
       "base_branch": "main",
-      "commit_sha": "6bae9336fd5e",
-      "pr_number": 36,
-      "pr_url": "https://github.com/deep5devlopers/myflow/pull/36",
+      "commit_sha": "32799964ee4d",
+      "pr_number": 550,
+      "pr_url": "https://github.com/deep5devlopers/deep/pull/550",
       "merged": true,
       "merge_method": "squash",
       "branch_deleted": true,
-      "elapsed_seconds": 12.09,
-      "timestamp_utc": "2026-11-23T12:17:56Z"
+      "elapsed_seconds": 13.17,
+      "timestamp_utc": "2026-11-23T12:23:08Z"
     },
     "recent_history": [
+      {
+        "success": true,
+        "cycle_id": "ap-1795436588-288",
+        "trigger_source": "in_app_5min_daemon",
+        "repo": "deep5devlopers/deep",
+        "repo_slug": "deep",
+        "private": true,
+        "file": "overview/07-security-and-access.txt",
+        "branch": "auto/deep/sync-1795436588",
+        "base_branch": "main",
+        "commit_sha": "32799964ee4d",
+        "pr_number": 550,
+        "pr_url": "https://github.com/deep5devlopers/deep/pull/550",
+        "merged": true,
+        "merge_method": "squash",
+        "branch_deleted": true,
+        "elapsed_seconds": 13.17,
+        "timestamp_utc": "2026-11-23T12:23:08Z"
+      },
       {
         "success": true,
         "cycle_id": "ap-1795436276-946",
@@ -1172,25 +1187,6 @@
         "branch_deleted": true,
         "elapsed_seconds": 13.0,
         "timestamp_utc": "2026-11-23T11:25:42Z"
-      },
-      {
-        "success": true,
-        "cycle_id": "ap-1795432830-224",
-        "trigger_source": "in_app_5min_daemon",
-        "repo": "deep5devlopers/myflow",
-        "repo_slug": "myflow",
-        "private": true,
-        "file": "README.md",
-        "branch": "auto/myflow/sync-1795432830",
-        "base_branch": "main",
-        "commit_sha": "89289dca815d",
-        "pr_number": 35,
-        "pr_url": "https://github.com/deep5devlopers/myflow/pull/35",
-        "merged": true,
-        "merge_method": "squash",
-        "branch_deleted": true,
-        "elapsed_seconds": 12.46,
-        "timestamp_utc": "2026-11-23T11:20:30Z"
       }
     ]
   },
@@ -1651,6 +1647,34 @@
     "error": null
   },
   "cron_logs": [
+    {
+      "id": "log-1795436601353",
+      "timestamp_epoch": 1795436601.3537748,
+      "timestamp_utc": "2026-11-23 12:23:21 UTC",
+      "category": "scheduler",
+      "level": "SUCCESS",
+      "source": "Autopilot5Min",
+      "message": "[ap-1795436588-288] deep5devlopers/deep :: overview/07-security-and-access.txt -> PR #550 (MERGED)",
+      "details": {
+        "success": true,
+        "cycle_id": "ap-1795436588-288",
+        "trigger_source": "in_app_5min_daemon",
+        "repo": "deep5devlopers/deep",
+        "repo_slug": "deep",
+        "private": true,
+        "file": "overview/07-security-and-access.txt",
+        "branch": "auto/deep/sync-1795436588",
+        "base_branch": "main",
+        "commit_sha": "32799964ee4d",
+        "pr_number": 550,
+        "pr_url": "https://github.com/deep5devlopers/deep/pull/550",
+        "merged": true,
+        "merge_method": "squash",
+        "branch_deleted": true,
+        "elapsed_seconds": 13.17,
+        "timestamp_utc": "2026-11-23T12:23:08Z"
+      }
+    },
     {
       "id": "log-1795436288167",
       "timestamp_epoch": 1795436288.1678898,
@@ -2757,21 +2781,6 @@
         "category": "resilience",
         "ast_valid": true,
         "git_commit": "{'success': True, 'commit_sha': 'f37a42984225a90f31e6d4f533b1eb7ecbbf4113', 'com"
-      }
-    },
-    {
-      "id": "log-1791530951861",
-      "timestamp_epoch": 1791530951.861051,
-      "timestamp_utc": "2026-10-09 07:29:11 UTC",
-      "category": "scheduler",
-      "level": "SUCCESS",
-      "source": "CadenceScheduler",
-      "message": "Scheduled 10-minute cycle #18 succeeded: Updated 'Deep5' [feature] & synced README (18 cycles complete)",
-      "details": {
-        "run_number": 18,
-        "target_project": "Deep5",
-        "version": "v2.6.3",
-        "category": "feature"
       }
     }
   ]
