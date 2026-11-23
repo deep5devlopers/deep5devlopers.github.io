@@ -1,6 +1,6 @@
 {
   "success": true,
-  "generated_at_utc": "2026-11-23T09:48:38Z",
+  "generated_at_utc": "2026-11-23T09:50:37Z",
   "deployment": {
     "mode": "github_pages_cloud_never_sleep",
     "pages_url": "https://deep5devlopers.github.io/cron-dashboard/",
@@ -1183,6 +1183,21 @@
     "repo": "deep5devlopers/deep",
     "runs": [
       {
+        "id": 45150399738,
+        "run_number": 23,
+        "name": "Non-Sleeper 5-Min Autopilot PR & 8:00 AM IST Daily Fail-Safe Cron",
+        "path": ".github/workflows/autopilot-5min-cron.yml",
+        "event": "workflow_dispatch",
+        "status": "completed",
+        "conclusion": "success",
+        "head_branch": "main",
+        "head_sha": "a48634d",
+        "created_at": "2026-11-23T09:48:53Z",
+        "updated_at": "2026-11-23T09:49:14Z",
+        "duration_seconds": 21,
+        "html_url": "https://github.com/deep5devlopers/deep/actions/runs/45150399738"
+      },
+      {
         "id": 45101720686,
         "run_number": 22,
         "name": "Non-Sleeper 5-Min Autopilot PR & 8:00 AM IST Daily Fail-Safe Cron",
@@ -1591,6 +1606,16 @@
     "error": null
   },
   "cron_logs": [
+    {
+      "id": "log-1795427377391",
+      "timestamp_epoch": 1795427377.3918793,
+      "timestamp_utc": "2026-11-23 09:49:37 UTC",
+      "category": "scheduler",
+      "level": "INFO",
+      "source": "Autopilot5Min",
+      "message": "5-Minute Non-Sleeper Autopilot daemon started (interval: 300s)",
+      "details": {}
+    },
     {
       "id": "log-1795427144723",
       "timestamp_epoch": 1795427144.7237775,
@@ -2674,21 +2699,6 @@
         "target_project": "Skyline Ad Media",
         "version": "v1.8.4",
         "category": "telemetry"
-      }
-    },
-    {
-      "id": "log-1791530351292",
-      "timestamp_epoch": 1791530351.292507,
-      "timestamp_utc": "2026-10-09 07:19:11 UTC",
-      "category": "scheduler",
-      "level": "SUCCESS",
-      "source": "CadenceScheduler",
-      "message": "Scheduled 10-minute cycle #17 succeeded: Updated 'InfoGrid' [resilience] & synced README (17 cycles complete)",
-      "details": {
-        "run_number": 17,
-        "target_project": "InfoGrid",
-        "version": "v3.0.2",
-        "category": "resilience"
       }
     }
   ]
