@@ -1,6 +1,6 @@
 {
   "success": true,
-  "generated_at_utc": "2026-11-23T11:29:10Z",
+  "generated_at_utc": "2026-11-23T11:30:33Z",
   "deployment": {
     "mode": "github_pages_cloud_never_sleep",
     "pages_url": "https://deep5devlopers.github.io/cron-dashboard/",
@@ -12,14 +12,14 @@
     "enabled": true,
     "mode": "strict_cloud_never_sleep",
     "works_without_browser": true,
-    "total_pulses": 2,
-    "successful_pulses": 2,
-    "last_pulse_utc": "2026-11-23T11:29:10Z",
+    "total_pulses": 3,
+    "successful_pulses": 3,
+    "last_pulse_utc": "2026-11-23T11:30:32Z",
     "last_trigger": "app_server_daemon",
     "cdn_online": true,
-    "cdn_latency_ms": 431,
+    "cdn_latency_ms": 666,
     "snapshot_online": true,
-    "snapshot_latency_ms": 313,
+    "snapshot_latency_ms": 370,
     "git_extraheader_clean": true
   },
   "projects": [
@@ -1122,6 +1122,21 @@
     "repo": "deep5devlopers/deep",
     "runs": [
       {
+        "id": 45165647366,
+        "run_number": 25,
+        "name": "Non-Sleeper 5-Min Autopilot PR & 8:00 AM IST Daily Fail-Safe Cron",
+        "path": ".github/workflows/autopilot-5min-cron.yml",
+        "event": "workflow_dispatch",
+        "status": "completed",
+        "conclusion": "success",
+        "head_branch": "main",
+        "head_sha": "6978ae0",
+        "created_at": "2026-11-23T11:29:17Z",
+        "updated_at": "2026-11-23T11:29:41Z",
+        "duration_seconds": 24,
+        "html_url": "https://github.com/deep5devlopers/deep/actions/runs/45165647366"
+      },
+      {
         "id": 45163968390,
         "run_number": 24,
         "name": "Non-Sleeper 5-Min Autopilot PR & 8:00 AM IST Daily Fail-Safe Cron",
@@ -1555,26 +1570,21 @@
         "updated_at": "2026-11-18T01:45:04Z",
         "duration_seconds": 12,
         "html_url": "https://github.com/deep5devlopers/deep/actions/runs/44218147875"
-      },
-      {
-        "id": 44158321890,
-        "run_number": 1,
-        "name": "Non-Sleeper 5-Min Autopilot PR & Keep-Alive Cron",
-        "path": ".github/workflows/autopilot-5min-cron.yml",
-        "event": "schedule",
-        "status": "completed",
-        "conclusion": "failure",
-        "head_branch": "main",
-        "head_sha": "8cae34b",
-        "created_at": "2026-11-17T19:24:54Z",
-        "updated_at": "2026-11-17T19:25:07Z",
-        "duration_seconds": 13,
-        "html_url": "https://github.com/deep5devlopers/deep/actions/runs/44158321890"
       }
     ],
     "error": null
   },
   "cron_logs": [
+    {
+      "id": "log-1795433387469",
+      "timestamp_epoch": 1795433387.4695742,
+      "timestamp_utc": "2026-11-23 11:29:47 UTC",
+      "category": "scheduler",
+      "level": "INFO",
+      "source": "Autopilot5Min",
+      "message": "5-Minute Non-Sleeper Autopilot daemon started (interval: 300s)",
+      "details": {}
+    },
     {
       "id": "log-1795433305052",
       "timestamp_epoch": 1795433305.05251,
@@ -2571,24 +2581,6 @@
         "category": "resilience",
         "ast_valid": true,
         "git_commit": "{'success': True, 'commit_sha': '74dedbe8cad5741722edec32d503f7c0a72d0bcd', 'com"
-      }
-    },
-    {
-      "id": "log-1791529749158",
-      "timestamp_epoch": 1791529749.1588492,
-      "timestamp_utc": "2026-10-09 07:09:09 UTC",
-      "category": "workflow",
-      "level": "SUCCESS",
-      "source": "1HourAutopilot",
-      "message": "1-Hour Random Update on 'Ongrow': [RESILIENCE] Synthesized circuit-breaker error recovery & fault-tolerant failover handlers (AST 100% Green)",
-      "details": {
-        "project_id": "proj-ongrow",
-        "project_name": "Ongrow",
-        "slug": "ongrow",
-        "version": "v1.0.6",
-        "category": "resilience",
-        "ast_valid": true,
-        "git_commit": "{'success': True, 'commit_sha': 'd396da65dd5e18f230f63c323bb88ae0e582bf10', 'com"
       }
     }
   ]
