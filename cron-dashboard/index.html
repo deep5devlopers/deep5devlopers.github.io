@@ -1010,6 +1010,13 @@
                 <td>Raw GitHub main snapshot + live public GitHub Cloud API hydration every 60s with zero server sleep</td>
                 <td><span class="status-text status-ok">Always On</span></td>
               </tr>
+              <tr>
+                <td class="item-title">Strict Never-Sleep Keeper (.py)</td>
+                <td class="mono nowrap">24/7 Cloud Watchdog (Works Without Any Browser Open)</td>
+                <td class="mono nowrap">cloud_never_sleep_keeper.py</td>
+                <td>Verifies GitHub Pages CDN + wakes configured public servers + cleans git .extraheader + syncs dashboard.json</td>
+                <td><span class="status-text status-ok">Active 24/7</span></td>
+              </tr>
             </tbody>
           </table>
         </div>
@@ -1878,14 +1885,21 @@
             ? " + GitHub Cloud API"
             : (state.cloudCache.rateLimited ? " (API rate-limit fallback)" : "");
 
+          const keeper = data.never_sleep_keeper || {};
+          const keeperLatency = keeper.cdn_latency_ms != null ? (" · CDN " + keeper.cdn_latency_ms + "ms") : "";
+          const keeperCount = keeper.total_pulses ? (" · Cloud Pulse #" + keeper.total_pulses) : "";
+
           if (!state.cloudCache.snapshotCommitSha && data.generated_at_utc) {
-            el.hbCloudCommit.textContent = "Snapshot " + fmtIST(data.generated_at_utc, false);
+            el.hbCloudCommit.textContent = "Snapshot " + fmtIST(data.generated_at_utc, false) + keeperLatency;
+          } else if (state.cloudCache.snapshotCommitSha && keeperLatency) {
+            const tsNote = state.cloudCache.snapshotCommitDate ? (" · " + fmtIST(state.cloudCache.snapshotCommitDate, false)) : "";
+            el.hbCloudCommit.textContent = "Snapshot " + state.cloudCache.snapshotCommitSha + tsNote + keeperLatency;
           }
 
           setHeartbeatState(
             state.cloudCache.cloudLiveOk ? "live" : "fallback",
             state.cloudCache.cloudLiveOk ? "Never-Sleep Cloud Heartbeat Active" : "Pages Snapshot Active",
-            "Source: " + channel + cloudTag
+            "Source: " + channel + cloudTag + keeperCount
           );
 
           renderSummaryAndCards(data);
