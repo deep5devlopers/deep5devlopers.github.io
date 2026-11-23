@@ -303,6 +303,61 @@
       color: var(--ink-muted);
     }
 
+    /* Never-Sleep Cloud Heartbeat Strip (Real Live Telemetry) */
+    .heartbeat-bar {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px 24px;
+      padding: 12px 18px;
+      background: var(--bg-surface);
+      border: 1px solid var(--border-hairline);
+      border-radius: var(--radius-md);
+      font-size: 13px;
+      color: var(--ink-secondary);
+    }
+
+    .heartbeat-primary {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .hb-signal {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      flex-shrink: 0;
+      background-color: var(--accent-green);
+      transition: background-color 150ms ease, transform 150ms ease;
+    }
+
+    .hb-signal.is-syncing {
+      background-color: var(--accent-blue);
+      transform: scale(1.2);
+    }
+
+    .hb-signal.is-fallback {
+      background-color: var(--accent-amber);
+    }
+
+    .hb-label {
+      font-weight: 600;
+      color: var(--ink-primary);
+      white-space: nowrap;
+    }
+
+    .heartbeat-meta {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 6px 12px;
+      font-size: 12px;
+      color: var(--ink-muted);
+    }
+
     /* Workspace Tab Bar */
     .workspace-tabs-bar {
       display: flex;
@@ -801,6 +856,22 @@
         </div>
       </div>
 
+      <div class="heartbeat-bar" role="status" aria-live="polite" aria-label="Never-sleep cloud heartbeat telemetry">
+        <div class="heartbeat-primary">
+          <span id="hbSignal" class="hb-signal is-syncing" aria-hidden="true"></span>
+          <span id="hbStatusLabel" class="hb-label">Connecting to GitHub Cloud...</span>
+          <span class="meta-sep" aria-hidden="true">&middot;</span>
+          <span id="hbSourceText" class="mono">Source: Initializing</span>
+        </div>
+        <div class="heartbeat-meta mono">
+          <span id="hbPulseCount">Pulse #0</span>
+          <span aria-hidden="true">&middot;</span>
+          <span id="hbCloudCommit">Snapshot: --</span>
+          <span aria-hidden="true">&middot;</span>
+          <span id="hbNextSync">Next sync in 60s</span>
+        </div>
+      </div>
+
       <div class="workspace-tabs-bar">
         <div id="workspaceTabs" class="segmented-group" role="tablist" aria-label="Dashboard views">
           <button type="button" role="tab" class="seg-btn" data-view="all" aria-selected="true">All Overview</button>
@@ -934,9 +1005,9 @@
               </tr>
               <tr>
                 <td class="item-title">GitHub Pages Never-Sleep Cloud</td>
-                <td class="mono nowrap">24/7 Always-On CDN (Zero Cold Start)</td>
-                <td class="mono nowrap">Auto-Publish</td>
-                <td>Static dashboard + live JSON snapshot synced automatically after every cloud cron run</td>
+                <td class="mono nowrap">24/7 Always-On CDN + 60s Live Browser Heartbeat</td>
+                <td class="mono nowrap">Auto-Publish + API</td>
+                <td>Raw GitHub main snapshot + live public GitHub Cloud API hydration every 60s with zero server sleep</td>
                 <td><span class="status-text status-ok">Always On</span></td>
               </tr>
             </tbody>
@@ -1019,6 +1090,7 @@
           <button type="button" class="seg-btn" data-hist="all" aria-pressed="true">All Activity</button>
           <button type="button" class="seg-btn" data-hist="daily-quota" aria-pressed="false">Daily Quota (26/26/6/6)</button>
           <button type="button" class="seg-btn" data-hist="github-actions" aria-pressed="false">GitHub Actions</button>
+          <button type="button" class="seg-btn" data-hist="github-cloud" aria-pressed="false">GitHub Cloud Live</button>
           <button type="button" class="seg-btn" data-hist="autopilot" aria-pressed="false">5-Min Autopilot PRs</button>
           <button type="button" class="seg-btn" data-hist="logs" aria-pressed="false">Execution Logs</button>
         </div>
@@ -1082,6 +1154,13 @@
 
   <script>
     (function () {
+      const HEARTBEAT_INTERVAL_SEC = 60;
+      const CLOUD_API_CACHE_MS = 120000;
+      const RAW_SNAPSHOT_URL = "https://raw.githubusercontent.com/deep5devlopers/deep5devlopers.github.io/main/cron-dashboard/data/dashboard.json";
+      const GH_PUBLIC_REPOS_URL = "https://api.github.com/users/deep5devlopers/repos?per_page=30&sort=pushed";
+      const GH_PUBLIC_EVENTS_URL = "https://api.github.com/users/deep5devlopers/events/public?per_page=20";
+      const GH_SNAPSHOT_COMMIT_URL = "https://api.github.com/repos/deep5devlopers/deep5devlopers.github.io/commits?path=cron-dashboard/data/dashboard.json&per_page=1";
+
       const state = {
         activeView: "all",
         projects: [],
@@ -1093,12 +1172,29 @@
         projectQuery: "",
         historyFilter: "all",
         historyQuery: "",
+        heartbeatPulses: 0,
+        nextHeartbeatEpochMs: Date.now() + HEARTBEAT_INTERVAL_SEC * 1000,
+        cloudCache: {
+          fetchedAtMs: 0,
+          reposByName: {},
+          publicEvents: [],
+          snapshotCommitSha: "",
+          snapshotCommitDate: "",
+          cloudLiveOk: false,
+          rateLimited: false,
+        },
       };
 
       const el = {
         refreshBtn: document.getElementById("refreshBtn"),
         liveIstClock: document.getElementById("liveIstClock"),
         lastSyncText: document.getElementById("lastSyncText"),
+        hbSignal: document.getElementById("hbSignal"),
+        hbStatusLabel: document.getElementById("hbStatusLabel"),
+        hbSourceText: document.getElementById("hbSourceText"),
+        hbPulseCount: document.getElementById("hbPulseCount"),
+        hbCloudCommit: document.getElementById("hbCloudCommit"),
+        hbNextSync: document.getElementById("hbNextSync"),
         kpiProjects: document.getElementById("kpiProjects"),
         kpiProjectsSub: document.getElementById("kpiProjectsSub"),
         kpiQuota: document.getElementById("kpiQuota"),
@@ -1242,6 +1338,9 @@
           const apRem = Math.max(0, Math.floor((state.autopilotNextEpochMs - now.getTime()) / 1000));
           el.autopilotCountdownCard.textContent = apRem > 0 ? ("In " + formatDurationHMS(apRem)) : "Cycle Ready";
         }
+
+        const hbRem = Math.max(0, Math.ceil((state.nextHeartbeatEpochMs - now.getTime()) / 1000));
+        el.hbNextSync.textContent = hbRem > 0 ? ("Next sync in " + hbRem + "s") : "Syncing now...";
       }
 
       function setActiveView(viewName) {
@@ -1362,6 +1461,54 @@
           });
         });
 
+        const cloudEvents = Array.isArray(state.cloudCache.publicEvents) ? state.cloudCache.publicEvents : [];
+        cloudEvents.forEach(function (ev) {
+          const evType = ev.type || "CloudEvent";
+          const repoFull = (ev.repo && ev.repo.name) ? ev.repo.name : "deep5devlopers";
+          const payload = ev.payload || {};
+          let noteText = evType + " on " + repoFull;
+          let outcomeText = "Live Event";
+          let url = "https://github.com/" + repoFull;
+          let linkLabel = "GitHub";
+
+          if (evType === "PushEvent") {
+            const commits = Array.isArray(payload.commits) ? payload.commits : [];
+            const headMsg = commits.length ? commits[commits.length - 1].message : "";
+            const branch = String(payload.ref || "refs/heads/main").replace("refs/heads/", "");
+            outcomeText = "Cloud Push";
+            noteText = (commits.length || 1) + " commit(s) to " + branch + (headMsg ? (" · " + headMsg.split("\n")[0].slice(0, 96)) : "");
+            if (payload.head) {
+              url = "https://github.com/" + repoFull + "/commit/" + payload.head;
+              linkLabel = "Commit";
+            }
+          } else if (evType === "PullRequestEvent" && payload.pull_request) {
+            const pr = payload.pull_request;
+            outcomeText = pr.merged ? "PR Merged" : ("PR " + (payload.action || "updated"));
+            noteText = "PR #" + pr.number + " · " + String(pr.title || "").slice(0, 96);
+            url = pr.html_url || url;
+            linkLabel = "PR #" + pr.number;
+          } else if (evType === "CreateEvent") {
+            outcomeText = "Created";
+            noteText = "Created " + (payload.ref_type || "ref") + (payload.ref ? (" " + payload.ref) : "");
+          } else {
+            return;
+          }
+
+          rows.push({
+            id: "ghcloud-" + ev.id,
+            epoch: parseEpoch(ev.created_at),
+            timestampIst: fmtIST(ev.created_at, true),
+            stream: "GitHub Cloud Live",
+            categoryKey: "github-cloud",
+            outcome: outcomeText,
+            outcomeTone: "status-info",
+            target: repoFull,
+            note: noteText,
+            url: url,
+            linkLabel: linkLabel,
+          });
+        });
+
         rows.sort(function (a, b) {
           return b.epoch - a.epoch;
         });
@@ -1385,7 +1532,7 @@
         el.kpiQuota.textContent = targets.commits + " / " + targets.issues + " / " + targets.code_reviews + " / " + targets.pull_requests;
         el.kpiQuotaSub.textContent = dq.completed_today_utc
           ? "Completed today · Next run 08:00 AM IST"
-          : "Armed for 08:00 AM IST (Backup 09:47 AM IST)";
+          : "Armed for 08:00 AM – 12:15 PM IST + Autopilot Fail-Safe";
 
         const successRuns = runs.filter(function (r) { return r.conclusion === "success"; }).length;
         el.kpiActions.textContent = runs.length + " Runs · " + (ap.total_merged_prs ?? 0) + " PRs";
@@ -1402,8 +1549,8 @@
         el.dailyNoteSummary.textContent = "Configured daily target: " +
           targets.commits + " Commits, " + targets.issues + " Issues, " + targets.code_reviews + " Code Reviews, " + targets.pull_requests + " PRs at 08:00 AM IST. " +
           "Last completed run (" + fmtIST(dq.last_run_utc, false) + "): " +
-          (dqCounts.commits_added ?? 20) + " commits, " + (dqCounts.issues_added ?? 5) + " issues, " +
-          (dqCounts.code_reviews_added ?? 8) + " reviews, " + (dqCounts.pull_requests_merged ?? 6) + " PRs merged" +
+          (dqCounts.commits_added ?? 26) + " commits, " + (dqCounts.issues_added ?? 26) + " issues, " +
+          (dqCounts.code_reviews_added ?? 6) + " reviews, " + (dqCounts.pull_requests_merged ?? 6) + " PRs merged" +
           (ecoAudit.average_score ? (" · Audit " + ecoAudit.average_score + "/100.") : ".");
 
         // Autopilot Card
@@ -1557,6 +1704,99 @@
         }).join("");
       }
 
+      function setHeartbeatState(mode, statusText, sourceText) {
+        el.hbSignal.classList.remove("is-syncing", "is-fallback");
+        if (mode === "syncing") {
+          el.hbSignal.classList.add("is-syncing");
+        } else if (mode === "fallback") {
+          el.hbSignal.classList.add("is-fallback");
+        }
+        el.hbStatusLabel.textContent = statusText;
+        if (sourceText) {
+          el.hbSourceText.textContent = sourceText;
+        }
+        el.hbPulseCount.textContent = "Pulse #" + state.heartbeatPulses;
+        if (state.cloudCache.snapshotCommitSha) {
+          const tsNote = state.cloudCache.snapshotCommitDate ? (" · " + fmtIST(state.cloudCache.snapshotCommitDate, false)) : "";
+          el.hbCloudCommit.textContent = "Snapshot " + state.cloudCache.snapshotCommitSha + tsNote;
+        }
+      }
+
+      async function hydratePublicGitHubCloud(forceRefresh) {
+        const now = Date.now();
+        if (!forceRefresh && state.cloudCache.fetchedAtMs && (now - state.cloudCache.fetchedAtMs) < CLOUD_API_CACHE_MS) {
+          return state.cloudCache;
+        }
+
+        const headers = { Accept: "application/vnd.github+json" };
+        const [reposRes, eventsRes, commitRes] = await Promise.allSettled([
+          fetch(GH_PUBLIC_REPOS_URL, { headers: headers, cache: "no-store" }),
+          fetch(GH_PUBLIC_EVENTS_URL, { headers: headers, cache: "no-store" }),
+          fetch(GH_SNAPSHOT_COMMIT_URL, { headers: headers, cache: "no-store" }),
+        ]);
+
+        let anyLiveOk = false;
+        let rateLimited = false;
+
+        if (reposRes.status === "fulfilled") {
+          if (reposRes.value.status === 403) rateLimited = true;
+          if (reposRes.value.ok) {
+            const arr = await reposRes.value.json();
+            if (Array.isArray(arr)) {
+              const map = {};
+              arr.forEach(function (rp) {
+                if (rp && rp.name) map[String(rp.name).toLowerCase()] = rp;
+              });
+              state.cloudCache.reposByName = map;
+              anyLiveOk = true;
+            }
+          }
+        }
+
+        if (eventsRes.status === "fulfilled") {
+          if (eventsRes.value.status === 403) rateLimited = true;
+          if (eventsRes.value.ok) {
+            const arr = await eventsRes.value.json();
+            if (Array.isArray(arr)) {
+              state.cloudCache.publicEvents = arr;
+              anyLiveOk = true;
+            }
+          }
+        }
+
+        if (commitRes.status === "fulfilled") {
+          if (commitRes.value.status === 403) rateLimited = true;
+          if (commitRes.value.ok) {
+            const arr = await commitRes.value.json();
+            if (Array.isArray(arr) && arr[0]) {
+              state.cloudCache.snapshotCommitSha = String(arr[0].sha || "").slice(0, 7);
+              state.cloudCache.snapshotCommitDate = (arr[0].commit && arr[0].commit.committer && arr[0].commit.committer.date) || "";
+              anyLiveOk = true;
+            }
+          }
+        }
+
+        state.cloudCache.fetchedAtMs = now;
+        state.cloudCache.cloudLiveOk = anyLiveOk;
+        state.cloudCache.rateLimited = rateLimited;
+        return state.cloudCache;
+      }
+
+      function mergePublicRepoTimestamps(projects) {
+        const repoMap = state.cloudCache.reposByName || {};
+        return projects.map(function (p) {
+          const slug = String(p.repo || p.name || "").split("/").pop().toLowerCase();
+          const liveRepo = repoMap[slug];
+          if (!liveRepo || !liveRepo.pushed_at) return p;
+          const snapEpoch = parseEpoch(p.last_updated);
+          const liveEpoch = parseEpoch(liveRepo.pushed_at);
+          if (liveEpoch > snapEpoch) {
+            return Object.assign({}, p, { last_updated: liveRepo.pushed_at });
+          }
+          return p;
+        });
+      }
+
       async function fetchDashboardPayload(forceRefresh) {
         const isGithubPages = window.location.hostname.endsWith("github.io");
         const cacheBust = "t=" + Date.now();
@@ -1567,24 +1807,46 @@
             const res = await fetch(apiUrl, { headers: { Accept: "application/json" } });
             if (res.ok) {
               const json = await res.json();
-              if (json && json.success) return json;
+              if (json && json.success) {
+                return { data: json, channel: "Local Server API" };
+              }
             }
           } catch (_err) {
-            // Fall through to static snapshot if server API is unavailable
+            // Fall through to GitHub Raw + Pages static snapshot
           }
         }
 
-        const staticRes = await fetch("./data/dashboard.json?" + cacheBust, {
-          headers: { Accept: "application/json" },
-          cache: "no-store",
-        });
-        if (!staticRes.ok) {
-          throw new Error("Dashboard data feed returned HTTP " + staticRes.status);
+        const [rawRes, staticRes] = await Promise.allSettled([
+          fetch(RAW_SNAPSHOT_URL + "?" + cacheBust, { cache: "no-store" }),
+          fetch("./data/dashboard.json?" + cacheBust, { headers: { Accept: "application/json" }, cache: "no-store" }),
+        ]);
+
+        let rawJson = null;
+        let staticJson = null;
+
+        if (rawRes.status === "fulfilled" && rawRes.value.ok) {
+          try { rawJson = await rawRes.value.json(); } catch (_e) {}
         }
-        return await staticRes.json();
+        if (staticRes.status === "fulfilled" && staticRes.value.ok) {
+          try { staticJson = await staticRes.value.json(); } catch (_e) {}
+        }
+
+        if (rawJson && staticJson) {
+          const rawTs = parseEpoch(rawJson.generated_at_utc);
+          const staticTs = parseEpoch(staticJson.generated_at_utc);
+          if (rawTs >= staticTs) {
+            return { data: rawJson, channel: "GitHub Raw Main (Instant)" };
+          }
+          return { data: staticJson, channel: "GitHub Pages CDN" };
+        }
+        if (rawJson) return { data: rawJson, channel: "GitHub Raw Main (Instant)" };
+        if (staticJson) return { data: staticJson, channel: "GitHub Pages CDN" };
+
+        throw new Error("Unable to reach GitHub Cloud or Pages snapshot");
       }
 
       async function loadDashboard(forceRefresh, silent) {
+        setHeartbeatState("syncing", "Syncing GitHub Cloud...", null);
         if (!silent) {
           el.refreshBtn.disabled = true;
           el.refreshBtn.textContent = "Refreshing...";
@@ -1592,20 +1854,46 @@
         }
 
         try {
-          const data = await fetchDashboardPayload(forceRefresh);
+          const [payloadResult] = await Promise.all([
+            fetchDashboardPayload(forceRefresh),
+            hydratePublicGitHubCloud(forceRefresh),
+          ]);
+
+          const data = payloadResult.data;
+          const channel = payloadResult.channel;
           if (!data || !data.success) {
             throw new Error((data && data.error) || "Failed to load dashboard payload");
           }
 
-          state.projects = Array.isArray(data.projects) ? data.projects : [];
+          state.heartbeatPulses += 1;
+          state.nextHeartbeatEpochMs = Date.now() + HEARTBEAT_INTERVAL_SEC * 1000;
+
+          const baseProjects = Array.isArray(data.projects) ? data.projects : [];
+          state.projects = mergePublicRepoTimestamps(baseProjects);
           state.dailyQuota = data.daily_quota || null;
           state.autopilot = data.autopilot || null;
           state.historyEntries = buildUnifiedHistory(data);
+
+          const cloudTag = state.cloudCache.cloudLiveOk
+            ? " + GitHub Cloud API"
+            : (state.cloudCache.rateLimited ? " (API rate-limit fallback)" : "");
+
+          if (!state.cloudCache.snapshotCommitSha && data.generated_at_utc) {
+            el.hbCloudCommit.textContent = "Snapshot " + fmtIST(data.generated_at_utc, false);
+          }
+
+          setHeartbeatState(
+            state.cloudCache.cloudLiveOk ? "live" : "fallback",
+            state.cloudCache.cloudLiveOk ? "Never-Sleep Cloud Heartbeat Active" : "Pages Snapshot Active",
+            "Source: " + channel + cloudTag
+          );
 
           renderSummaryAndCards(data);
           renderProjects();
           renderHistory();
         } catch (err) {
+          state.nextHeartbeatEpochMs = Date.now() + HEARTBEAT_INTERVAL_SEC * 1000;
+          setHeartbeatState("fallback", "Cloud Sync Retrying", "Source: Offline Fallback");
           if (!silent) {
             el.projectsLoading.hidden = true;
             el.historyLoading.hidden = true;
@@ -1694,12 +1982,18 @@
         loadDashboard(true);
       });
 
+      document.addEventListener("visibilitychange", function () {
+        if (document.visibilityState === "visible") {
+          loadDashboard(false, true);
+        }
+      });
+
       tickLiveClock();
       setInterval(tickLiveClock, 1000);
       loadDashboard(false, false);
       setInterval(function () {
         loadDashboard(false, true);
-      }, 60000);
+      }, HEARTBEAT_INTERVAL_SEC * 1000);
     })();
   </script>
 </body>
