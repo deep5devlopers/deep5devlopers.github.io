@@ -1,6 +1,6 @@
 {
   "success": true,
-  "generated_at_utc": "2026-11-23T12:01:22Z",
+  "generated_at_utc": "2026-11-23T12:06:27Z",
   "deployment": {
     "mode": "github_pages_cloud_never_sleep",
     "pages_url": "https://deep5devlopers.github.io/cron-dashboard/",
@@ -12,14 +12,14 @@
     "enabled": true,
     "mode": "strict_cloud_never_sleep",
     "works_without_browser": true,
-    "total_pulses": 9,
-    "successful_pulses": 9,
-    "last_pulse_utc": "2026-11-23T12:01:20Z",
+    "total_pulses": 10,
+    "successful_pulses": 10,
+    "last_pulse_utc": "2026-11-23T12:06:26Z",
     "last_trigger": "app_server_daemon",
     "cdn_online": true,
-    "cdn_latency_ms": 328,
+    "cdn_latency_ms": 354,
     "snapshot_online": true,
-    "snapshot_latency_ms": 754,
+    "snapshot_latency_ms": 359,
     "git_extraheader_clean": true
   },
   "projects": [
@@ -939,31 +939,50 @@
     "active": true,
     "enabled": true,
     "interval_seconds": 300,
-    "total_cycles": 14,
-    "total_merged_prs": 14,
+    "total_cycles": 15,
+    "total_merged_prs": 15,
     "total_failures": 0,
-    "last_run_utc": "2026-11-23T11:57:06Z",
+    "last_run_utc": "2026-11-23T12:02:19Z",
     "last_error": null,
     "last_result": {
       "success": true,
-      "cycle_id": "ap-1795435026-895",
+      "cycle_id": "ap-1795435339-627",
       "trigger_source": "in_app_5min_daemon",
-      "repo": "deep5devlopers/chamflow",
-      "repo_slug": "chamflow",
+      "repo": "deep5devlopers/gred",
+      "repo_slug": "gred",
       "private": true,
       "file": "README.md",
-      "branch": "auto/chamflow/sync-1795435026",
+      "branch": "auto/gred/sync-1795435339",
       "base_branch": "main",
-      "commit_sha": "a3d3ebc2625e",
-      "pr_number": 39,
-      "pr_url": "https://github.com/deep5devlopers/chamflow/pull/39",
+      "commit_sha": "f5056b7f4034",
+      "pr_number": 38,
+      "pr_url": "https://github.com/deep5devlopers/gred/pull/38",
       "merged": true,
       "merge_method": "squash",
       "branch_deleted": true,
-      "elapsed_seconds": 12.52,
-      "timestamp_utc": "2026-11-23T11:57:06Z"
+      "elapsed_seconds": 12.76,
+      "timestamp_utc": "2026-11-23T12:02:19Z"
     },
     "recent_history": [
+      {
+        "success": true,
+        "cycle_id": "ap-1795435339-627",
+        "trigger_source": "in_app_5min_daemon",
+        "repo": "deep5devlopers/gred",
+        "repo_slug": "gred",
+        "private": true,
+        "file": "README.md",
+        "branch": "auto/gred/sync-1795435339",
+        "base_branch": "main",
+        "commit_sha": "f5056b7f4034",
+        "pr_number": 38,
+        "pr_url": "https://github.com/deep5devlopers/gred/pull/38",
+        "merged": true,
+        "merge_method": "squash",
+        "branch_deleted": true,
+        "elapsed_seconds": 12.76,
+        "timestamp_utc": "2026-11-23T12:02:19Z"
+      },
       {
         "success": true,
         "cycle_id": "ap-1795435026-895",
@@ -1172,25 +1191,6 @@
         "branch_deleted": true,
         "elapsed_seconds": 11.71,
         "timestamp_utc": "2026-11-18T07:23:32Z"
-      },
-      {
-        "success": true,
-        "cycle_id": "ap-1794986300-503",
-        "trigger_source": "in_app_5min_daemon",
-        "repo": "deep5devlopers/zerna",
-        "repo_slug": "zerna",
-        "private": true,
-        "file": "README.md",
-        "branch": "auto/zerna/sync-1794986300",
-        "base_branch": "main",
-        "commit_sha": "5e00504ce77c",
-        "pr_number": 8,
-        "pr_url": "https://github.com/deep5devlopers/zerna/pull/8",
-        "merged": true,
-        "merge_method": "squash",
-        "branch_deleted": true,
-        "elapsed_seconds": 12.84,
-        "timestamp_utc": "2026-11-18T07:18:20Z"
       }
     ]
   },
@@ -1651,6 +1651,34 @@
     "error": null
   },
   "cron_logs": [
+    {
+      "id": "log-1795435351057",
+      "timestamp_epoch": 1795435351.0577512,
+      "timestamp_utc": "2026-11-23 12:02:31 UTC",
+      "category": "scheduler",
+      "level": "SUCCESS",
+      "source": "Autopilot5Min",
+      "message": "[ap-1795435339-627] deep5devlopers/gred :: README.md -> PR #38 (MERGED)",
+      "details": {
+        "success": true,
+        "cycle_id": "ap-1795435339-627",
+        "trigger_source": "in_app_5min_daemon",
+        "repo": "deep5devlopers/gred",
+        "repo_slug": "gred",
+        "private": true,
+        "file": "README.md",
+        "branch": "auto/gred/sync-1795435339",
+        "base_branch": "main",
+        "commit_sha": "f5056b7f4034",
+        "pr_number": 38,
+        "pr_url": "https://github.com/deep5devlopers/gred/pull/38",
+        "merged": true,
+        "merge_method": "squash",
+        "branch_deleted": true,
+        "elapsed_seconds": 12.76,
+        "timestamp_utc": "2026-11-23T12:02:19Z"
+      }
+    },
     {
       "id": "log-1795435038277",
       "timestamp_epoch": 1795435038.2774413,
@@ -2711,21 +2739,6 @@
         "category": "telemetry",
         "ast_valid": true,
         "git_commit": "{'success': True, 'commit_sha': '1e303ac59d7c7ffc050a5a6b18dd7df8355f654b', 'com"
-      }
-    },
-    {
-      "id": "log-1791530351380",
-      "timestamp_epoch": 1791530351.3806293,
-      "timestamp_utc": "2026-10-09 07:19:11 UTC",
-      "category": "scheduler",
-      "level": "SUCCESS",
-      "source": "CadenceScheduler",
-      "message": "Scheduled 10-minute cycle #17 succeeded: Updated 'Skyline Ad Media' [telemetry] & synced README (17 cycles complete)",
-      "details": {
-        "run_number": 17,
-        "target_project": "Skyline Ad Media",
-        "version": "v1.8.4",
-        "category": "telemetry"
       }
     }
   ]
