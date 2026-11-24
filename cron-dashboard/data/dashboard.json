@@ -1,6 +1,6 @@
 {
   "success": true,
-  "generated_at_utc": "2026-11-24T13:24:21Z",
+  "generated_at_utc": "2026-11-24T13:29:29Z",
   "deployment": {
     "mode": "github_pages_cloud_never_sleep",
     "pages_url": "https://deep5devlopers.github.io/cron-dashboard/",
@@ -12,14 +12,14 @@
     "enabled": true,
     "mode": "strict_cloud_never_sleep",
     "works_without_browser": true,
-    "total_pulses": 102,
-    "successful_pulses": 102,
-    "last_pulse_utc": "2026-11-24T13:24:20Z",
+    "total_pulses": 103,
+    "successful_pulses": 103,
+    "last_pulse_utc": "2026-11-24T13:29:28Z",
     "last_trigger": "app_server_daemon",
     "cdn_online": true,
-    "cdn_latency_ms": 311,
+    "cdn_latency_ms": 321,
     "snapshot_online": true,
-    "snapshot_latency_ms": 372,
+    "snapshot_latency_ms": 298,
     "git_extraheader_clean": true
   },
   "projects": [
@@ -1087,31 +1087,50 @@
     "active": true,
     "enabled": true,
     "interval_seconds": 300,
-    "total_cycles": 104,
-    "total_merged_prs": 104,
+    "total_cycles": 105,
+    "total_merged_prs": 105,
     "total_failures": 0,
-    "last_run_utc": "2026-11-24T13:22:55Z",
+    "last_run_utc": "2026-11-24T13:28:08Z",
     "last_error": null,
     "last_result": {
       "success": true,
-      "cycle_id": "ap-1795526575-853",
+      "cycle_id": "ap-1795526888-528",
       "trigger_source": "in_app_5min_daemon",
-      "repo": "deep5devlopers/readme-metrics-studio",
-      "repo_slug": "readme-metrics-studio",
-      "private": false,
-      "file": "PROFILE_METRICS.md",
-      "branch": "auto/readme-metrics-studio/sync-1795526575",
+      "repo": "deep5devlopers/gred",
+      "repo_slug": "gred",
+      "private": true,
+      "file": "overview/06-deployment-and-runtime.txt",
+      "branch": "auto/gred/sync-1795526888",
       "base_branch": "main",
-      "commit_sha": "a895d93a6b70",
-      "pr_number": 105,
-      "pr_url": "https://github.com/deep5devlopers/readme-metrics-studio/pull/105",
+      "commit_sha": "55dcd42a6858",
+      "pr_number": 50,
+      "pr_url": "https://github.com/deep5devlopers/gred/pull/50",
       "merged": true,
       "merge_method": "squash",
       "branch_deleted": true,
-      "elapsed_seconds": 13.54,
-      "timestamp_utc": "2026-11-24T13:22:55Z"
+      "elapsed_seconds": 13.63,
+      "timestamp_utc": "2026-11-24T13:28:08Z"
     },
     "recent_history": [
+      {
+        "success": true,
+        "cycle_id": "ap-1795526888-528",
+        "trigger_source": "in_app_5min_daemon",
+        "repo": "deep5devlopers/gred",
+        "repo_slug": "gred",
+        "private": true,
+        "file": "overview/06-deployment-and-runtime.txt",
+        "branch": "auto/gred/sync-1795526888",
+        "base_branch": "main",
+        "commit_sha": "55dcd42a6858",
+        "pr_number": 50,
+        "pr_url": "https://github.com/deep5devlopers/gred/pull/50",
+        "merged": true,
+        "merge_method": "squash",
+        "branch_deleted": true,
+        "elapsed_seconds": 13.63,
+        "timestamp_utc": "2026-11-24T13:28:08Z"
+      },
       {
         "success": true,
         "cycle_id": "ap-1795526575-853",
@@ -1320,25 +1339,6 @@
         "branch_deleted": true,
         "elapsed_seconds": 12.75,
         "timestamp_utc": "2026-11-24T12:30:37Z"
-      },
-      {
-        "success": true,
-        "cycle_id": "ap-1795523124-449",
-        "trigger_source": "in_app_5min_daemon",
-        "repo": "deep5devlopers/gred",
-        "repo_slug": "gred",
-        "private": true,
-        "file": "overview/08-quality-and-standards.txt",
-        "branch": "auto/gred/sync-1795523124",
-        "base_branch": "main",
-        "commit_sha": "d6fb3b8ebf34",
-        "pr_number": 49,
-        "pr_url": "https://github.com/deep5devlopers/gred/pull/49",
-        "merged": true,
-        "merge_method": "squash",
-        "branch_deleted": true,
-        "elapsed_seconds": 13.35,
-        "timestamp_utc": "2026-11-24T12:25:24Z"
       }
     ]
   },
@@ -1799,6 +1799,34 @@
     "error": null
   },
   "cron_logs": [
+    {
+      "id": "log-1795526901673",
+      "timestamp_epoch": 1795526901.6735246,
+      "timestamp_utc": "2026-11-24 13:28:21 UTC",
+      "category": "scheduler",
+      "level": "SUCCESS",
+      "source": "Autopilot5Min",
+      "message": "[ap-1795526888-528] deep5devlopers/gred :: overview/06-deployment-and-runtime.txt -> PR #50 (MERGED)",
+      "details": {
+        "success": true,
+        "cycle_id": "ap-1795526888-528",
+        "trigger_source": "in_app_5min_daemon",
+        "repo": "deep5devlopers/gred",
+        "repo_slug": "gred",
+        "private": true,
+        "file": "overview/06-deployment-and-runtime.txt",
+        "branch": "auto/gred/sync-1795526888",
+        "base_branch": "main",
+        "commit_sha": "55dcd42a6858",
+        "pr_number": 50,
+        "pr_url": "https://github.com/deep5devlopers/gred/pull/50",
+        "merged": true,
+        "merge_method": "squash",
+        "branch_deleted": true,
+        "elapsed_seconds": 13.63,
+        "timestamp_utc": "2026-11-24T13:28:08Z"
+      }
+    },
     {
       "id": "log-1795526588028",
       "timestamp_epoch": 1795526588.0284014,
@@ -3449,34 +3477,6 @@
         "branch_deleted": true,
         "elapsed_seconds": 13.2,
         "timestamp_utc": "2026-11-24T08:19:50Z"
-      }
-    },
-    {
-      "id": "log-1795508090268",
-      "timestamp_epoch": 1795508090.268933,
-      "timestamp_utc": "2026-11-24 08:14:50 UTC",
-      "category": "scheduler",
-      "level": "SUCCESS",
-      "source": "Autopilot5Min",
-      "message": "[ap-1795508078-150] deep5devlopers/myflow :: overview/09-commit-and-activity-log.txt -> PR #41 (MERGED)",
-      "details": {
-        "success": true,
-        "cycle_id": "ap-1795508078-150",
-        "trigger_source": "in_app_5min_daemon",
-        "repo": "deep5devlopers/myflow",
-        "repo_slug": "myflow",
-        "private": true,
-        "file": "overview/09-commit-and-activity-log.txt",
-        "branch": "auto/myflow/sync-1795508078",
-        "base_branch": "main",
-        "commit_sha": "299431deb3d8",
-        "pr_number": 41,
-        "pr_url": "https://github.com/deep5devlopers/myflow/pull/41",
-        "merged": true,
-        "merge_method": "squash",
-        "branch_deleted": true,
-        "elapsed_seconds": 13.33,
-        "timestamp_utc": "2026-11-24T08:14:38Z"
       }
     }
   ]
