@@ -1,6 +1,6 @@
 {
   "success": true,
-  "generated_at_utc": "2026-11-24T09:48:59Z",
+  "generated_at_utc": "2026-11-24T09:54:06Z",
   "deployment": {
     "mode": "github_pages_cloud_never_sleep",
     "pages_url": "https://deep5devlopers.github.io/cron-dashboard/",
@@ -12,14 +12,14 @@
     "enabled": true,
     "mode": "strict_cloud_never_sleep",
     "works_without_browser": true,
-    "total_pulses": 60,
-    "successful_pulses": 60,
-    "last_pulse_utc": "2026-11-24T09:48:58Z",
+    "total_pulses": 61,
+    "successful_pulses": 61,
+    "last_pulse_utc": "2026-11-24T09:54:05Z",
     "last_trigger": "app_server_daemon",
     "cdn_online": true,
-    "cdn_latency_ms": 324,
+    "cdn_latency_ms": 399,
     "snapshot_online": true,
-    "snapshot_latency_ms": 659,
+    "snapshot_latency_ms": 300,
     "git_extraheader_clean": true
   },
   "projects": [
@@ -1114,31 +1114,50 @@
     "active": true,
     "enabled": true,
     "interval_seconds": 300,
-    "total_cycles": 63,
-    "total_merged_prs": 63,
+    "total_cycles": 64,
+    "total_merged_prs": 64,
     "total_failures": 0,
-    "last_run_utc": "2026-11-24T09:48:40Z",
+    "last_run_utc": "2026-11-24T09:53:53Z",
     "last_error": null,
     "last_result": {
       "success": true,
-      "cycle_id": "ap-1795513720-906",
+      "cycle_id": "ap-1795514033-886",
       "trigger_source": "in_app_5min_daemon",
-      "repo": "deep5devlopers/grexon",
-      "repo_slug": "grexon",
+      "repo": "deep5devlopers/gred",
+      "repo_slug": "gred",
       "private": true,
-      "file": "warehouse-management.html",
-      "branch": "auto/grexon/sync-1795513720",
+      "file": "overview.txt",
+      "branch": "auto/gred/sync-1795514033",
       "base_branch": "main",
-      "commit_sha": "20df8b301e62",
-      "pr_number": 53,
-      "pr_url": "https://github.com/deep5devlopers/grexon/pull/53",
+      "commit_sha": "528fd1a0f9a6",
+      "pr_number": 46,
+      "pr_url": "https://github.com/deep5devlopers/gred/pull/46",
       "merged": true,
       "merge_method": "squash",
       "branch_deleted": true,
-      "elapsed_seconds": 13.12,
-      "timestamp_utc": "2026-11-24T09:48:40Z"
+      "elapsed_seconds": 12.69,
+      "timestamp_utc": "2026-11-24T09:53:53Z"
     },
     "recent_history": [
+      {
+        "success": true,
+        "cycle_id": "ap-1795514033-886",
+        "trigger_source": "in_app_5min_daemon",
+        "repo": "deep5devlopers/gred",
+        "repo_slug": "gred",
+        "private": true,
+        "file": "overview.txt",
+        "branch": "auto/gred/sync-1795514033",
+        "base_branch": "main",
+        "commit_sha": "528fd1a0f9a6",
+        "pr_number": 46,
+        "pr_url": "https://github.com/deep5devlopers/gred/pull/46",
+        "merged": true,
+        "merge_method": "squash",
+        "branch_deleted": true,
+        "elapsed_seconds": 12.69,
+        "timestamp_utc": "2026-11-24T09:53:53Z"
+      },
       {
         "success": true,
         "cycle_id": "ap-1795513720-906",
@@ -1347,25 +1366,6 @@
         "branch_deleted": true,
         "elapsed_seconds": 13.19,
         "timestamp_utc": "2026-11-24T08:56:22Z"
-      },
-      {
-        "success": true,
-        "cycle_id": "ap-1795510270-633",
-        "trigger_source": "in_app_5min_daemon",
-        "repo": "deep5devlopers/readme-metrics-studio",
-        "repo_slug": "readme-metrics-studio",
-        "private": false,
-        "file": "overview.txt",
-        "branch": "auto/readme-metrics-studio/sync-1795510270",
-        "base_branch": "main",
-        "commit_sha": "889797f4ea8a",
-        "pr_number": 97,
-        "pr_url": "https://github.com/deep5devlopers/readme-metrics-studio/pull/97",
-        "merged": true,
-        "merge_method": "squash",
-        "branch_deleted": true,
-        "elapsed_seconds": 12.69,
-        "timestamp_utc": "2026-11-24T08:51:10Z"
       }
     ]
   },
@@ -1826,6 +1826,34 @@
     "error": null
   },
   "cron_logs": [
+    {
+      "id": "log-1795514046035",
+      "timestamp_epoch": 1795514046.035385,
+      "timestamp_utc": "2026-11-24 09:54:06 UTC",
+      "category": "scheduler",
+      "level": "SUCCESS",
+      "source": "Autopilot5Min",
+      "message": "[ap-1795514033-886] deep5devlopers/gred :: overview.txt -> PR #46 (MERGED)",
+      "details": {
+        "success": true,
+        "cycle_id": "ap-1795514033-886",
+        "trigger_source": "in_app_5min_daemon",
+        "repo": "deep5devlopers/gred",
+        "repo_slug": "gred",
+        "private": true,
+        "file": "overview.txt",
+        "branch": "auto/gred/sync-1795514033",
+        "base_branch": "main",
+        "commit_sha": "528fd1a0f9a6",
+        "pr_number": 46,
+        "pr_url": "https://github.com/deep5devlopers/gred/pull/46",
+        "merged": true,
+        "merge_method": "squash",
+        "branch_deleted": true,
+        "elapsed_seconds": 12.69,
+        "timestamp_utc": "2026-11-24T09:53:53Z"
+      }
+    },
     {
       "id": "log-1795513733328",
       "timestamp_epoch": 1795513733.328237,
@@ -3447,34 +3475,6 @@
       "source": "Autopilot5Min",
       "message": "5-Minute Non-Sleeper Autopilot daemon started (interval: 300s)",
       "details": {}
-    },
-    {
-      "id": "log-1795155016724",
-      "timestamp_epoch": 1795155016.7247953,
-      "timestamp_utc": "2026-11-20 06:10:16 UTC",
-      "category": "scheduler",
-      "level": "SUCCESS",
-      "source": "Autopilot5Min",
-      "message": "[ap-1795155003-411] deep5devlopers/gred :: overview/08-quality-and-standards.txt -> PR #29 (MERGED)",
-      "details": {
-        "success": true,
-        "cycle_id": "ap-1795155003-411",
-        "trigger_source": "in_app_5min_daemon",
-        "repo": "deep5devlopers/gred",
-        "repo_slug": "gred",
-        "private": true,
-        "file": "overview/08-quality-and-standards.txt",
-        "branch": "auto/gred/sync-1795155003",
-        "base_branch": "main",
-        "commit_sha": "88308dbd6044",
-        "pr_number": 29,
-        "pr_url": "https://github.com/deep5devlopers/gred/pull/29",
-        "merged": true,
-        "merge_method": "squash",
-        "branch_deleted": true,
-        "elapsed_seconds": 14.09,
-        "timestamp_utc": "2026-11-20T06:10:03Z"
-      }
     }
   ]
 }
