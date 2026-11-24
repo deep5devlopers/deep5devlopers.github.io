@@ -1,6 +1,6 @@
 {
   "success": true,
-  "generated_at_utc": "2026-11-24T09:59:13Z",
+  "generated_at_utc": "2026-11-24T10:04:23Z",
   "deployment": {
     "mode": "github_pages_cloud_never_sleep",
     "pages_url": "https://deep5devlopers.github.io/cron-dashboard/",
@@ -12,14 +12,14 @@
     "enabled": true,
     "mode": "strict_cloud_never_sleep",
     "works_without_browser": true,
-    "total_pulses": 62,
-    "successful_pulses": 62,
-    "last_pulse_utc": "2026-11-24T09:59:12Z",
+    "total_pulses": 63,
+    "successful_pulses": 63,
+    "last_pulse_utc": "2026-11-24T10:04:20Z",
     "last_trigger": "app_server_daemon",
     "cdn_online": true,
-    "cdn_latency_ms": 314,
+    "cdn_latency_ms": 329,
     "snapshot_online": true,
-    "snapshot_latency_ms": 504,
+    "snapshot_latency_ms": 3442,
     "git_extraheader_clean": true
   },
   "projects": [
@@ -812,16 +812,12 @@
         "repo": "deep5devlopers/deep",
         "counts": {
           "commits_added": 26,
-          "issues_added": 21,
+          "issues_added": 20,
           "code_reviews_added": 6,
           "pull_requests_added": 6,
           "pull_requests_merged": 6
         },
         "issues": [
-          {
-            "number": 510,
-            "closed": true
-          },
           {
             "number": 511,
             "closed": true
@@ -942,19 +938,14 @@
         "trigger_source": "cloud_verified_github",
         "repo": "deep5devlopers/deep",
         "counts": {
-          "commits_added": 16,
+          "commits_added": 12,
           "issues_added": 0,
-          "code_reviews_added": 4,
-          "pull_requests_added": 4,
-          "pull_requests_merged": 4
+          "code_reviews_added": 3,
+          "pull_requests_added": 3,
+          "pull_requests_merged": 3
         },
         "issues": [],
         "pull_requests": [
-          {
-            "number": 498,
-            "merged": true,
-            "html_url": "https://github.com/deep5devlopers/deep/pull/498"
-          },
           {
             "number": 499,
             "merged": true,
@@ -1114,31 +1105,50 @@
     "active": true,
     "enabled": true,
     "interval_seconds": 300,
-    "total_cycles": 64,
-    "total_merged_prs": 64,
+    "total_cycles": 65,
+    "total_merged_prs": 65,
     "total_failures": 0,
-    "last_run_utc": "2026-11-24T09:53:53Z",
+    "last_run_utc": "2026-11-24T09:59:06Z",
     "last_error": null,
     "last_result": {
       "success": true,
-      "cycle_id": "ap-1795514033-886",
+      "cycle_id": "ap-1795514346-571",
       "trigger_source": "in_app_5min_daemon",
-      "repo": "deep5devlopers/gred",
-      "repo_slug": "gred",
+      "repo": "deep5devlopers/deep",
+      "repo_slug": "deep",
       "private": true,
-      "file": "overview.txt",
-      "branch": "auto/gred/sync-1795514033",
+      "file": "reviews/pr_28_perfection_audit.md",
+      "branch": "auto/deep/sync-1795514346",
       "base_branch": "main",
-      "commit_sha": "528fd1a0f9a6",
-      "pr_number": 46,
-      "pr_url": "https://github.com/deep5devlopers/gred/pull/46",
+      "commit_sha": "4e7c0019868a",
+      "pr_number": 590,
+      "pr_url": "https://github.com/deep5devlopers/deep/pull/590",
       "merged": true,
       "merge_method": "squash",
       "branch_deleted": true,
-      "elapsed_seconds": 12.69,
-      "timestamp_utc": "2026-11-24T09:53:53Z"
+      "elapsed_seconds": 12.62,
+      "timestamp_utc": "2026-11-24T09:59:06Z"
     },
     "recent_history": [
+      {
+        "success": true,
+        "cycle_id": "ap-1795514346-571",
+        "trigger_source": "in_app_5min_daemon",
+        "repo": "deep5devlopers/deep",
+        "repo_slug": "deep",
+        "private": true,
+        "file": "reviews/pr_28_perfection_audit.md",
+        "branch": "auto/deep/sync-1795514346",
+        "base_branch": "main",
+        "commit_sha": "4e7c0019868a",
+        "pr_number": 590,
+        "pr_url": "https://github.com/deep5devlopers/deep/pull/590",
+        "merged": true,
+        "merge_method": "squash",
+        "branch_deleted": true,
+        "elapsed_seconds": 12.62,
+        "timestamp_utc": "2026-11-24T09:59:06Z"
+      },
       {
         "success": true,
         "cycle_id": "ap-1795514033-886",
@@ -1347,25 +1357,6 @@
         "branch_deleted": true,
         "elapsed_seconds": 14.0,
         "timestamp_utc": "2026-11-24T09:01:36Z"
-      },
-      {
-        "success": true,
-        "cycle_id": "ap-1795510582-343",
-        "trigger_source": "in_app_5min_daemon",
-        "repo": "deep5devlopers/grexon",
-        "repo_slug": "grexon",
-        "private": true,
-        "file": "overview/02-architecture-and-stack.txt",
-        "branch": "auto/grexon/sync-1795510582",
-        "base_branch": "main",
-        "commit_sha": "203becace45a",
-        "pr_number": 51,
-        "pr_url": "https://github.com/deep5devlopers/grexon/pull/51",
-        "merged": true,
-        "merge_method": "squash",
-        "branch_deleted": true,
-        "elapsed_seconds": 13.19,
-        "timestamp_utc": "2026-11-24T08:56:22Z"
       }
     ]
   },
@@ -1826,6 +1817,34 @@
     "error": null
   },
   "cron_logs": [
+    {
+      "id": "log-1795514358674",
+      "timestamp_epoch": 1795514358.6746147,
+      "timestamp_utc": "2026-11-24 09:59:18 UTC",
+      "category": "scheduler",
+      "level": "SUCCESS",
+      "source": "Autopilot5Min",
+      "message": "[ap-1795514346-571] deep5devlopers/deep :: reviews/pr_28_perfection_audit.md -> PR #590 (MERGED)",
+      "details": {
+        "success": true,
+        "cycle_id": "ap-1795514346-571",
+        "trigger_source": "in_app_5min_daemon",
+        "repo": "deep5devlopers/deep",
+        "repo_slug": "deep",
+        "private": true,
+        "file": "reviews/pr_28_perfection_audit.md",
+        "branch": "auto/deep/sync-1795514346",
+        "base_branch": "main",
+        "commit_sha": "4e7c0019868a",
+        "pr_number": 590,
+        "pr_url": "https://github.com/deep5devlopers/deep/pull/590",
+        "merged": true,
+        "merge_method": "squash",
+        "branch_deleted": true,
+        "elapsed_seconds": 12.62,
+        "timestamp_utc": "2026-11-24T09:59:06Z"
+      }
+    },
     {
       "id": "log-1795514046035",
       "timestamp_epoch": 1795514046.035385,
@@ -3465,16 +3484,6 @@
         "elapsed_seconds": 13.35,
         "timestamp_utc": "2026-11-24T04:56:15Z"
       }
-    },
-    {
-      "id": "log-1795496162833",
-      "timestamp_epoch": 1795496162.8332193,
-      "timestamp_utc": "2026-11-24 04:56:02 UTC",
-      "category": "scheduler",
-      "level": "INFO",
-      "source": "Autopilot5Min",
-      "message": "5-Minute Non-Sleeper Autopilot daemon started (interval: 300s)",
-      "details": {}
     }
   ]
 }
