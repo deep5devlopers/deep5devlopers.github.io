@@ -1,6 +1,6 @@
 {
   "success": true,
-  "generated_at_utc": "2026-11-24T11:05:56Z",
+  "generated_at_utc": "2026-11-24T11:11:04Z",
   "deployment": {
     "mode": "github_pages_cloud_never_sleep",
     "pages_url": "https://deep5devlopers.github.io/cron-dashboard/",
@@ -12,14 +12,14 @@
     "enabled": true,
     "mode": "strict_cloud_never_sleep",
     "works_without_browser": true,
-    "total_pulses": 75,
-    "successful_pulses": 75,
-    "last_pulse_utc": "2026-11-24T11:05:55Z",
+    "total_pulses": 76,
+    "successful_pulses": 76,
+    "last_pulse_utc": "2026-11-24T11:11:02Z",
     "last_trigger": "app_server_daemon",
     "cdn_online": true,
-    "cdn_latency_ms": 308,
+    "cdn_latency_ms": 900,
     "snapshot_online": true,
-    "snapshot_latency_ms": 328,
+    "snapshot_latency_ms": 339,
     "git_extraheader_clean": true
   },
   "projects": [
@@ -1105,31 +1105,50 @@
     "active": true,
     "enabled": true,
     "interval_seconds": 300,
-    "total_cycles": 77,
-    "total_merged_prs": 77,
+    "total_cycles": 78,
+    "total_merged_prs": 78,
     "total_failures": 0,
-    "last_run_utc": "2026-11-24T11:01:47Z",
+    "last_run_utc": "2026-11-24T11:07:00Z",
     "last_error": null,
     "last_result": {
       "success": true,
-      "cycle_id": "ap-1795518107-812",
+      "cycle_id": "ap-1795518420-386",
       "trigger_source": "in_app_5min_daemon",
-      "repo": "deep5devlopers/readme-metrics-studio",
-      "repo_slug": "readme-metrics-studio",
-      "private": false,
-      "file": "PROFILE_METRICS.md",
-      "branch": "auto/readme-metrics-studio/sync-1795518107",
+      "repo": "deep5devlopers/chamflow",
+      "repo_slug": "chamflow",
+      "private": true,
+      "file": "overview/05-integration-and-data-flow.txt",
+      "branch": "auto/chamflow/sync-1795518420",
       "base_branch": "main",
-      "commit_sha": "944838dbb74b",
-      "pr_number": 101,
-      "pr_url": "https://github.com/deep5devlopers/readme-metrics-studio/pull/101",
+      "commit_sha": "d0d4b6ecb665",
+      "pr_number": 48,
+      "pr_url": "https://github.com/deep5devlopers/chamflow/pull/48",
       "merged": true,
       "merge_method": "squash",
       "branch_deleted": true,
-      "elapsed_seconds": 13.08,
-      "timestamp_utc": "2026-11-24T11:01:47Z"
+      "elapsed_seconds": 12.68,
+      "timestamp_utc": "2026-11-24T11:07:00Z"
     },
     "recent_history": [
+      {
+        "success": true,
+        "cycle_id": "ap-1795518420-386",
+        "trigger_source": "in_app_5min_daemon",
+        "repo": "deep5devlopers/chamflow",
+        "repo_slug": "chamflow",
+        "private": true,
+        "file": "overview/05-integration-and-data-flow.txt",
+        "branch": "auto/chamflow/sync-1795518420",
+        "base_branch": "main",
+        "commit_sha": "d0d4b6ecb665",
+        "pr_number": 48,
+        "pr_url": "https://github.com/deep5devlopers/chamflow/pull/48",
+        "merged": true,
+        "merge_method": "squash",
+        "branch_deleted": true,
+        "elapsed_seconds": 12.68,
+        "timestamp_utc": "2026-11-24T11:07:00Z"
+      },
       {
         "success": true,
         "cycle_id": "ap-1795518107-812",
@@ -1338,25 +1357,6 @@
         "branch_deleted": true,
         "elapsed_seconds": 14.52,
         "timestamp_utc": "2026-11-24T10:09:32Z"
-      },
-      {
-        "success": true,
-        "cycle_id": "ap-1795514659-396",
-        "trigger_source": "in_app_5min_daemon",
-        "repo": "deep5devlopers/myflow",
-        "repo_slug": "myflow",
-        "private": true,
-        "file": "overview/07-security-and-access.txt",
-        "branch": "auto/myflow/sync-1795514659",
-        "base_branch": "main",
-        "commit_sha": "32a11544e4e1",
-        "pr_number": 44,
-        "pr_url": "https://github.com/deep5devlopers/myflow/pull/44",
-        "merged": true,
-        "merge_method": "squash",
-        "branch_deleted": true,
-        "elapsed_seconds": 13.06,
-        "timestamp_utc": "2026-11-24T10:04:19Z"
       }
     ]
   },
@@ -1817,6 +1817,34 @@
     "error": null
   },
   "cron_logs": [
+    {
+      "id": "log-1795518433033",
+      "timestamp_epoch": 1795518433.033108,
+      "timestamp_utc": "2026-11-24 11:07:13 UTC",
+      "category": "scheduler",
+      "level": "SUCCESS",
+      "source": "Autopilot5Min",
+      "message": "[ap-1795518420-386] deep5devlopers/chamflow :: overview/05-integration-and-data-flow.txt -> PR #48 (MERGED)",
+      "details": {
+        "success": true,
+        "cycle_id": "ap-1795518420-386",
+        "trigger_source": "in_app_5min_daemon",
+        "repo": "deep5devlopers/chamflow",
+        "repo_slug": "chamflow",
+        "private": true,
+        "file": "overview/05-integration-and-data-flow.txt",
+        "branch": "auto/chamflow/sync-1795518420",
+        "base_branch": "main",
+        "commit_sha": "d0d4b6ecb665",
+        "pr_number": 48,
+        "pr_url": "https://github.com/deep5devlopers/chamflow/pull/48",
+        "merged": true,
+        "merge_method": "squash",
+        "branch_deleted": true,
+        "elapsed_seconds": 12.68,
+        "timestamp_utc": "2026-11-24T11:07:00Z"
+      }
+    },
     {
       "id": "log-1795518120333",
       "timestamp_epoch": 1795518120.3338609,
@@ -3467,34 +3495,6 @@
         "branch_deleted": true,
         "elapsed_seconds": 12.97,
         "timestamp_utc": "2026-11-24T05:58:51Z"
-      }
-    },
-    {
-      "id": "log-1795499630447",
-      "timestamp_epoch": 1795499630.4471385,
-      "timestamp_utc": "2026-11-24 05:53:50 UTC",
-      "category": "scheduler",
-      "level": "SUCCESS",
-      "source": "Autopilot5Min",
-      "message": "[ap-1795499617-433] deep5devlopers/chamflow :: overview/04-core-capabilities.txt -> PR #42 (MERGED)",
-      "details": {
-        "success": true,
-        "cycle_id": "ap-1795499617-433",
-        "trigger_source": "in_app_5min_daemon",
-        "repo": "deep5devlopers/chamflow",
-        "repo_slug": "chamflow",
-        "private": true,
-        "file": "overview/04-core-capabilities.txt",
-        "branch": "auto/chamflow/sync-1795499617",
-        "base_branch": "main",
-        "commit_sha": "d35b7ceebdc0",
-        "pr_number": 42,
-        "pr_url": "https://github.com/deep5devlopers/chamflow/pull/42",
-        "merged": true,
-        "merge_method": "squash",
-        "branch_deleted": true,
-        "elapsed_seconds": 13.39,
-        "timestamp_utc": "2026-11-24T05:53:37Z"
       }
     }
   ]
