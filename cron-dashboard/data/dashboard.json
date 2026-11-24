@@ -1,6 +1,6 @@
 {
   "success": true,
-  "generated_at_utc": "2026-11-24T13:03:50Z",
+  "generated_at_utc": "2026-11-24T13:08:58Z",
   "deployment": {
     "mode": "github_pages_cloud_never_sleep",
     "pages_url": "https://deep5devlopers.github.io/cron-dashboard/",
@@ -12,14 +12,14 @@
     "enabled": true,
     "mode": "strict_cloud_never_sleep",
     "works_without_browser": true,
-    "total_pulses": 98,
-    "successful_pulses": 98,
-    "last_pulse_utc": "2026-11-24T13:03:49Z",
+    "total_pulses": 99,
+    "successful_pulses": 99,
+    "last_pulse_utc": "2026-11-24T13:08:58Z",
     "last_trigger": "app_server_daemon",
     "cdn_online": true,
-    "cdn_latency_ms": 328,
+    "cdn_latency_ms": 335,
     "snapshot_online": true,
-    "snapshot_latency_ms": 352,
+    "snapshot_latency_ms": 307,
     "git_extraheader_clean": true
   },
   "projects": [
@@ -1087,31 +1087,50 @@
     "active": true,
     "enabled": true,
     "interval_seconds": 300,
-    "total_cycles": 100,
-    "total_merged_prs": 100,
+    "total_cycles": 101,
+    "total_merged_prs": 101,
     "total_failures": 0,
-    "last_run_utc": "2026-11-24T13:01:58Z",
+    "last_run_utc": "2026-11-24T13:07:13Z",
     "last_error": null,
     "last_result": {
       "success": true,
-      "cycle_id": "ap-1795525318-635",
+      "cycle_id": "ap-1795525633-358",
       "trigger_source": "in_app_5min_daemon",
-      "repo": "deep5devlopers/pixelbyte",
-      "repo_slug": "pixelbyte",
+      "repo": "deep5devlopers/myflow",
+      "repo_slug": "myflow",
       "private": true,
-      "file": "overview/02-architecture-and-stack.txt",
-      "branch": "auto/pixelbyte/sync-1795525318",
+      "file": "overview/05-integration-and-data-flow.txt",
+      "branch": "auto/myflow/sync-1795525633",
       "base_branch": "main",
-      "commit_sha": "abd0b2c00d7b",
-      "pr_number": 42,
-      "pr_url": "https://github.com/deep5devlopers/pixelbyte/pull/42",
+      "commit_sha": "4f65d2908e58",
+      "pr_number": 49,
+      "pr_url": "https://github.com/deep5devlopers/myflow/pull/49",
       "merged": true,
       "merge_method": "squash",
       "branch_deleted": true,
-      "elapsed_seconds": 15.03,
-      "timestamp_utc": "2026-11-24T13:01:58Z"
+      "elapsed_seconds": 14.8,
+      "timestamp_utc": "2026-11-24T13:07:13Z"
     },
     "recent_history": [
+      {
+        "success": true,
+        "cycle_id": "ap-1795525633-358",
+        "trigger_source": "in_app_5min_daemon",
+        "repo": "deep5devlopers/myflow",
+        "repo_slug": "myflow",
+        "private": true,
+        "file": "overview/05-integration-and-data-flow.txt",
+        "branch": "auto/myflow/sync-1795525633",
+        "base_branch": "main",
+        "commit_sha": "4f65d2908e58",
+        "pr_number": 49,
+        "pr_url": "https://github.com/deep5devlopers/myflow/pull/49",
+        "merged": true,
+        "merge_method": "squash",
+        "branch_deleted": true,
+        "elapsed_seconds": 14.8,
+        "timestamp_utc": "2026-11-24T13:07:13Z"
+      },
       {
         "success": true,
         "cycle_id": "ap-1795525318-635",
@@ -1320,25 +1339,6 @@
         "branch_deleted": true,
         "elapsed_seconds": 14.3,
         "timestamp_utc": "2026-11-24T12:09:43Z"
-      },
-      {
-        "success": true,
-        "cycle_id": "ap-1795521870-526",
-        "trigger_source": "in_app_5min_daemon",
-        "repo": "deep5devlopers/myflow",
-        "repo_slug": "myflow",
-        "private": true,
-        "file": "overview/01-executive-summary.txt",
-        "branch": "auto/myflow/sync-1795521870",
-        "base_branch": "main",
-        "commit_sha": "3e7716c6e044",
-        "pr_number": 47,
-        "pr_url": "https://github.com/deep5devlopers/myflow/pull/47",
-        "merged": true,
-        "merge_method": "squash",
-        "branch_deleted": true,
-        "elapsed_seconds": 13.59,
-        "timestamp_utc": "2026-11-24T12:04:30Z"
       }
     ]
   },
@@ -1799,6 +1799,34 @@
     "error": null
   },
   "cron_logs": [
+    {
+      "id": "log-1795525647784",
+      "timestamp_epoch": 1795525647.784842,
+      "timestamp_utc": "2026-11-24 13:07:27 UTC",
+      "category": "scheduler",
+      "level": "SUCCESS",
+      "source": "Autopilot5Min",
+      "message": "[ap-1795525633-358] deep5devlopers/myflow :: overview/05-integration-and-data-flow.txt -> PR #49 (MERGED)",
+      "details": {
+        "success": true,
+        "cycle_id": "ap-1795525633-358",
+        "trigger_source": "in_app_5min_daemon",
+        "repo": "deep5devlopers/myflow",
+        "repo_slug": "myflow",
+        "private": true,
+        "file": "overview/05-integration-and-data-flow.txt",
+        "branch": "auto/myflow/sync-1795525633",
+        "base_branch": "main",
+        "commit_sha": "4f65d2908e58",
+        "pr_number": 49,
+        "pr_url": "https://github.com/deep5devlopers/myflow/pull/49",
+        "merged": true,
+        "merge_method": "squash",
+        "branch_deleted": true,
+        "elapsed_seconds": 14.8,
+        "timestamp_utc": "2026-11-24T13:07:13Z"
+      }
+    },
     {
       "id": "log-1795525332969",
       "timestamp_epoch": 1795525332.9698844,
@@ -3449,34 +3477,6 @@
         "branch_deleted": true,
         "elapsed_seconds": 12.62,
         "timestamp_utc": "2026-11-24T07:58:57Z"
-      }
-    },
-    {
-      "id": "log-1795506836846",
-      "timestamp_epoch": 1795506836.8461146,
-      "timestamp_utc": "2026-11-24 07:53:56 UTC",
-      "category": "scheduler",
-      "level": "SUCCESS",
-      "source": "Autopilot5Min",
-      "message": "[ap-1795506824-870] deep5devlopers/pixelbyte :: read.txt -> PR #36 (MERGED)",
-      "details": {
-        "success": true,
-        "cycle_id": "ap-1795506824-870",
-        "trigger_source": "in_app_5min_daemon",
-        "repo": "deep5devlopers/pixelbyte",
-        "repo_slug": "pixelbyte",
-        "private": true,
-        "file": "read.txt",
-        "branch": "auto/pixelbyte/sync-1795506824",
-        "base_branch": "main",
-        "commit_sha": "b0e9e5af19ca",
-        "pr_number": 36,
-        "pr_url": "https://github.com/deep5devlopers/pixelbyte/pull/36",
-        "merged": true,
-        "merge_method": "squash",
-        "branch_deleted": true,
-        "elapsed_seconds": 12.44,
-        "timestamp_utc": "2026-11-24T07:53:44Z"
       }
     }
   ]
