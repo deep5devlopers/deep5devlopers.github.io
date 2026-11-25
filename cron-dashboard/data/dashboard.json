@@ -1,6 +1,6 @@
 {
   "success": true,
-  "generated_at_utc": "2026-11-25T05:11:24Z",
+  "generated_at_utc": "2026-11-25T05:16:32Z",
   "deployment": {
     "mode": "github_pages_cloud_never_sleep",
     "pages_url": "https://deep5devlopers.github.io/cron-dashboard/",
@@ -12,14 +12,14 @@
     "enabled": true,
     "mode": "strict_cloud_never_sleep",
     "works_without_browser": true,
-    "total_pulses": 4,
-    "successful_pulses": 4,
-    "last_pulse_utc": "2026-11-25T05:11:23Z",
+    "total_pulses": 5,
+    "successful_pulses": 5,
+    "last_pulse_utc": "2026-11-25T05:16:31Z",
     "last_trigger": "app_server_daemon",
     "cdn_online": true,
-    "cdn_latency_ms": 306,
+    "cdn_latency_ms": 343,
     "snapshot_online": true,
-    "snapshot_latency_ms": 296,
+    "snapshot_latency_ms": 294,
     "git_extraheader_clean": true
   },
   "projects": [
@@ -350,7 +350,7 @@
       "success": true,
       "date_utc": "2026-11-25",
       "timestamp_utc": "2026-11-25T05:09:18Z",
-      "trigger_source": "in_app_daily_scheduler",
+      "trigger_source": "in_app_daily_scheduler_8am_ist",
       "repo": "deep5devlopers/deep",
       "counts": {
         "commits_added": 26,
@@ -365,70 +365,266 @@
         "code_reviews": 6,
         "pull_requests": 6
       },
+      "stale_cleanup": {
+        "closed_open_prs": [],
+        "closed_open_issues": []
+      },
       "issues": [
         {
-          "number": 370,
+          "number": 595,
+          "title": "[Perfection 2026-11-25 1/26] Core Runtime & HTTP Server Health Verification",
+          "html_url": "https://github.com/deep5devlopers/deep/issues/595",
           "closed": true
         },
         {
-          "number": 371,
+          "number": 596,
+          "title": "[Perfection 2026-11-25 2/26] AST Syntax & Security Compliance Hardening",
+          "html_url": "https://github.com/deep5devlopers/deep/issues/596",
           "closed": true
         },
         {
-          "number": 372,
+          "number": 597,
+          "title": "[Perfection 2026-11-25 3/26] Daily Quota & 8:00 AM IST Schedule Telemetry",
+          "html_url": "https://github.com/deep5devlopers/deep/issues/597",
           "closed": true
         },
         {
-          "number": 373,
+          "number": 598,
+          "title": "[Perfection 2026-11-25 4/26] Ecosystem Catalog & Overview Documentation Sync",
+          "html_url": "https://github.com/deep5devlopers/deep/issues/598",
           "closed": true
         },
         {
-          "number": 374,
+          "number": 599,
+          "title": "[Perfection 2026-11-25 5/26] Automated Regression Suite & Cross-Route Validation",
+          "html_url": "https://github.com/deep5devlopers/deep/issues/599",
+          "closed": true
+        },
+        {
+          "number": 600,
+          "title": "[Perfection 2026-11-25 6/26] GitHub Actions Concurrency & Retry Resilience",
+          "html_url": "https://github.com/deep5devlopers/deep/issues/600",
+          "closed": true
+        },
+        {
+          "number": 601,
+          "title": "[Perfection 2026-11-25 7/26] Branch Lifecycle & Stale Ref Hygiene Audit",
+          "html_url": "https://github.com/deep5devlopers/deep/issues/601",
+          "closed": true
+        },
+        {
+          "number": 602,
+          "title": "[Perfection 2026-11-25 8/26] Pull Request Rebase Merge & Commit Preservation",
+          "html_url": "https://github.com/deep5devlopers/deep/issues/602",
+          "closed": true
+        },
+        {
+          "number": 603,
+          "title": "[Perfection 2026-11-25 9/26] Code Review Gate & Automated Signoff Audit",
+          "html_url": "https://github.com/deep5devlopers/deep/issues/603",
+          "closed": true
+        },
+        {
+          "number": 604,
+          "title": "[Perfection 2026-11-25 10/26] JSON State Persistence & Atomic Write Integrity",
+          "html_url": "https://github.com/deep5devlopers/deep/issues/604",
+          "closed": true
+        },
+        {
+          "number": 605,
+          "title": "[Perfection 2026-11-25 11/26] 5-Min Autopilot Cooldown & Anti-Repeat Queue",
+          "html_url": "https://github.com/deep5devlopers/deep/issues/605",
+          "closed": true
+        },
+        {
+          "number": 606,
+          "title": "[Perfection 2026-11-25 12/26] Dashboard API Response & Cache Freshness Check",
+          "html_url": "https://github.com/deep5devlopers/deep/issues/606",
+          "closed": true
+        },
+        {
+          "number": 607,
+          "title": "[Perfection 2026-11-25 13/26] Indian Standard Time (IST) Formatting & Clock Sync",
+          "html_url": "https://github.com/deep5devlopers/deep/issues/607",
+          "closed": true
+        },
+        {
+          "number": 608,
+          "title": "[Perfection 2026-11-25 14/26] GREXON Spatial Platform Verification & Metrics",
+          "html_url": "https://github.com/deep5devlopers/deep/issues/608",
+          "closed": true
+        },
+        {
+          "number": 609,
+          "title": "[Perfection 2026-11-25 15/26] Gred Workflow Engine Verification & Metrics",
+          "html_url": "https://github.com/deep5devlopers/deep/issues/609",
+          "closed": true
+        },
+        {
+          "number": 610,
+          "title": "[Perfection 2026-11-25 16/26] CLOX Indoor Navigation Verification & Metrics",
+          "html_url": "https://github.com/deep5devlopers/deep/issues/610",
+          "closed": true
+        },
+        {
+          "number": 611,
+          "title": "[Perfection 2026-11-25 17/26] README Metrics Studio Telemetry Check",
+          "html_url": "https://github.com/deep5devlopers/deep/issues/611",
+          "closed": true
+        },
+        {
+          "number": 612,
+          "title": "[Perfection 2026-11-25 18/26] ChamFlow CAM Engine Build & Latency Verification",
+          "html_url": "https://github.com/deep5devlopers/deep/issues/612",
+          "closed": true
+        },
+        {
+          "number": 613,
+          "title": "[Perfection 2026-11-25 19/26] MyFlow CRM Pipeline Integrity Audit",
+          "html_url": "https://github.com/deep5devlopers/deep/issues/613",
+          "closed": true
+        },
+        {
+          "number": 614,
+          "title": "[Perfection 2026-11-25 20/26] InfoGrid Distributed Telemetry Health Check",
+          "html_url": "https://github.com/deep5devlopers/deep/issues/614",
+          "closed": true
+        },
+        {
+          "number": 615,
+          "title": "[Perfection 2026-11-25 21/26] DataDot ETL Pipeline Schema Validation",
+          "html_url": "https://github.com/deep5devlopers/deep/issues/615",
+          "closed": true
+        },
+        {
+          "number": 616,
+          "title": "[Perfection 2026-11-25 22/26] SmallBox SEO Utility Metadata Verification",
+          "html_url": "https://github.com/deep5devlopers/deep/issues/616",
+          "closed": true
+        },
+        {
+          "number": 617,
+          "title": "[Perfection 2026-11-25 23/26] Taurus Automation Assistant Runtime Check",
+          "html_url": "https://github.com/deep5devlopers/deep/issues/617",
+          "closed": true
+        },
+        {
+          "number": 618,
+          "title": "[Perfection 2026-11-25 24/26] Ongrow Conversational Engine Health Audit",
+          "html_url": "https://github.com/deep5devlopers/deep/issues/618",
+          "closed": true
+        },
+        {
+          "number": 619,
+          "title": "[Perfection 2026-11-25 25/26] Corpen Infrastructure & Mesh Scaling Audit",
+          "html_url": "https://github.com/deep5devlopers/deep/issues/619",
+          "closed": true
+        },
+        {
+          "number": 620,
+          "title": "[Perfection 2026-11-25 26/26] Zerna Commerce Automation Final Signoff",
+          "html_url": "https://github.com/deep5devlopers/deep/issues/620",
           "closed": true
         }
       ],
       "pull_requests": [
         {
-          "number": 375,
+          "number": 621,
+          "title": "perf(daily_quota): Daily Quota Runner & Core Service Perfection [1/6 \u00b7 2026-11-25]",
+          "html_url": "https://github.com/deep5devlopers/deep/pull/621",
+          "branch": "perf/daily-2026-11-25-pr1-1795583156",
+          "commits_count": 5,
+          "merged": true,
+          "merge_method": "rebase",
+          "branch_deleted": true
+        },
+        {
+          "number": 622,
+          "title": "perf(console_api): Server Endpoints & Agents Console Sync [2/6 \u00b7 2026-11-25]",
+          "html_url": "https://github.com/deep5devlopers/deep/pull/622",
+          "branch": "perf/daily-2026-11-25-pr2-1795583156",
+          "commits_count": 5,
+          "merged": true,
+          "merge_method": "rebase",
+          "branch_deleted": true
+        },
+        {
+          "number": 623,
+          "title": "perf(security_ast): Security & AST Syntax Hardening Audit [3/6 \u00b7 2026-11-25]",
+          "html_url": "https://github.com/deep5devlopers/deep/pull/623",
+          "branch": "perf/daily-2026-11-25-pr3-1795583156",
           "commits_count": 4,
           "merged": true,
           "merge_method": "rebase",
-          "html_url": "https://github.com/deep5devlopers/deep/pull/375"
+          "branch_deleted": true
         },
         {
-          "number": 376,
+          "number": 624,
+          "title": "perf(catalog_sync): Ecosystem Catalog & Portfolio Link Integrity [4/6 \u00b7 2026-11-25]",
+          "html_url": "https://github.com/deep5devlopers/deep/pull/624",
+          "branch": "perf/daily-2026-11-25-pr4-1795583156",
           "commits_count": 4,
           "merged": true,
           "merge_method": "rebase",
-          "html_url": "https://github.com/deep5devlopers/deep/pull/376"
+          "branch_deleted": true
         },
         {
-          "number": 377,
-          "commits_count": 3,
+          "number": 625,
+          "title": "perf(regression): Automated Invariants & Regression Verification [5/6 \u00b7 2026-11-25]",
+          "html_url": "https://github.com/deep5devlopers/deep/pull/625",
+          "branch": "perf/daily-2026-11-25-pr5-1795583156",
+          "commits_count": 4,
           "merged": true,
           "merge_method": "rebase",
-          "html_url": "https://github.com/deep5devlopers/deep/pull/377"
+          "branch_deleted": true
         },
         {
-          "number": 378,
-          "commits_count": 3,
+          "number": 626,
+          "title": "perf(signoff): Repository-Wide Perfection Signoff & Telemetry [6/6 \u00b7 2026-11-25]",
+          "html_url": "https://github.com/deep5devlopers/deep/pull/626",
+          "branch": "perf/daily-2026-11-25-pr6-1795583156",
+          "commits_count": 4,
           "merged": true,
           "merge_method": "rebase",
-          "html_url": "https://github.com/deep5devlopers/deep/pull/378"
+          "branch_deleted": true
+        }
+      ],
+      "code_reviews": [
+        {
+          "pr_number": 621,
+          "review_id": 6052140546,
+          "type": "primary_pr_review",
+          "html_url": "https://github.com/deep5devlopers/deep/pull/621#pullrequestreview-6052140546"
         },
         {
-          "number": 379,
-          "commits_count": 3,
-          "merged": true,
-          "merge_method": "rebase",
-          "html_url": "https://github.com/deep5devlopers/deep/pull/379"
+          "pr_number": 622,
+          "review_id": 6052143550,
+          "type": "primary_pr_review",
+          "html_url": "https://github.com/deep5devlopers/deep/pull/622#pullrequestreview-6052143550"
         },
         {
-          "number": 380,
-          "commits_count": 3,
-          "merged": true,
-          "merge_method": "rebase",
-          "html_url": "https://github.com/deep5devlopers/deep/pull/380"
+          "pr_number": 623,
+          "review_id": 6052146086,
+          "type": "primary_pr_review",
+          "html_url": "https://github.com/deep5devlopers/deep/pull/623#pullrequestreview-6052146086"
+        },
+        {
+          "pr_number": 624,
+          "review_id": 6052148755,
+          "type": "primary_pr_review",
+          "html_url": "https://github.com/deep5devlopers/deep/pull/624#pullrequestreview-6052148755"
+        },
+        {
+          "pr_number": 625,
+          "review_id": 6052151259,
+          "type": "primary_pr_review",
+          "html_url": "https://github.com/deep5devlopers/deep/pull/625#pullrequestreview-6052151259"
+        },
+        {
+          "pr_number": 626,
+          "review_id": 6052153832,
+          "type": "primary_pr_review",
+          "html_url": "https://github.com/deep5devlopers/deep/pull/626#pullrequestreview-6052153832"
         }
       ],
       "perfection": {
@@ -445,8 +641,17 @@
           "average_score": 96.2,
           "global_grade": "A",
           "status": "ALL_REPOS_AUDITED_PERFECT"
+        },
+        "overview_sync": {
+          "success": true,
+          "total_repos": 10,
+          "failed": 0,
+          "excluded": [
+            "deep"
+          ]
         }
-      }
+      },
+      "elapsed_seconds": 336.57
     },
     "history": [
       {
@@ -757,19 +962,14 @@
         "trigger_source": "cloud_verified_github",
         "repo": "deep5devlopers/deep",
         "counts": {
-          "commits_added": 8,
+          "commits_added": 4,
           "issues_added": 0,
-          "code_reviews_added": 2,
-          "pull_requests_added": 2,
-          "pull_requests_merged": 2
+          "code_reviews_added": 1,
+          "pull_requests_added": 1,
+          "pull_requests_merged": 1
         },
         "issues": [],
         "pull_requests": [
-          {
-            "number": 535,
-            "merged": true,
-            "html_url": "https://github.com/deep5devlopers/deep/pull/535"
-          },
           {
             "number": 536,
             "merged": true,
@@ -919,31 +1119,50 @@
     "active": true,
     "enabled": true,
     "interval_seconds": 300,
-    "total_cycles": 8,
-    "total_merged_prs": 8,
+    "total_cycles": 9,
+    "total_merged_prs": 9,
     "total_failures": 0,
-    "last_run_utc": "2026-11-25T05:10:56Z",
+    "last_run_utc": "2026-11-25T05:16:11Z",
     "last_error": null,
     "last_result": {
       "success": true,
-      "cycle_id": "ap-1795583456-400",
+      "cycle_id": "ap-1795583771-487",
       "trigger_source": "in_app_5min_daemon",
-      "repo": "deep5devlopers/myflow",
-      "repo_slug": "myflow",
+      "repo": "deep5devlopers/deep",
+      "repo_slug": "deep",
       "private": true,
-      "file": "overview/04-core-capabilities.txt",
-      "branch": "auto/myflow/sync-1795583456",
+      "file": "github-agents/agent/cloud_never_sleep_keeper.py",
+      "branch": "auto/deep/sync-1795583771",
       "base_branch": "main",
-      "commit_sha": "4dadbf6ec14c",
-      "pr_number": 51,
-      "pr_url": "https://github.com/deep5devlopers/myflow/pull/51",
+      "commit_sha": "3a692ae6b3e8",
+      "pr_number": 627,
+      "pr_url": "https://github.com/deep5devlopers/deep/pull/627",
       "merged": true,
       "merge_method": "squash",
       "branch_deleted": true,
-      "elapsed_seconds": 13.86,
-      "timestamp_utc": "2026-11-25T05:10:56Z"
+      "elapsed_seconds": 14.22,
+      "timestamp_utc": "2026-11-25T05:16:11Z"
     },
     "recent_history": [
+      {
+        "success": true,
+        "cycle_id": "ap-1795583771-487",
+        "trigger_source": "in_app_5min_daemon",
+        "repo": "deep5devlopers/deep",
+        "repo_slug": "deep",
+        "private": true,
+        "file": "github-agents/agent/cloud_never_sleep_keeper.py",
+        "branch": "auto/deep/sync-1795583771",
+        "base_branch": "main",
+        "commit_sha": "3a692ae6b3e8",
+        "pr_number": 627,
+        "pr_url": "https://github.com/deep5devlopers/deep/pull/627",
+        "merged": true,
+        "merge_method": "squash",
+        "branch_deleted": true,
+        "elapsed_seconds": 14.22,
+        "timestamp_utc": "2026-11-25T05:16:11Z"
+      },
       {
         "success": true,
         "cycle_id": "ap-1795583456-400",
@@ -1555,6 +1774,50 @@
     "error": null
   },
   "cron_logs": [
+    {
+      "id": "log-1795583784033",
+      "timestamp_epoch": 1795583784.0339773,
+      "timestamp_utc": "2026-11-25 05:16:24 UTC",
+      "category": "scheduler",
+      "level": "SUCCESS",
+      "source": "Autopilot5Min",
+      "message": "[ap-1795583771-487] deep5devlopers/deep :: github-agents/agent/cloud_never_sleep_keeper.py -> PR #627 (MERGED)",
+      "details": {
+        "success": true,
+        "cycle_id": "ap-1795583771-487",
+        "trigger_source": "in_app_5min_daemon",
+        "repo": "deep5devlopers/deep",
+        "repo_slug": "deep",
+        "private": true,
+        "file": "github-agents/agent/cloud_never_sleep_keeper.py",
+        "branch": "auto/deep/sync-1795583771",
+        "base_branch": "main",
+        "commit_sha": "3a692ae6b3e8",
+        "pr_number": 627,
+        "pr_url": "https://github.com/deep5devlopers/deep/pull/627",
+        "merged": true,
+        "merge_method": "squash",
+        "branch_deleted": true,
+        "elapsed_seconds": 14.22,
+        "timestamp_utc": "2026-11-25T05:16:11Z"
+      }
+    },
+    {
+      "id": "log-1795583493572",
+      "timestamp_epoch": 1795583493.572151,
+      "timestamp_utc": "2026-11-25 05:11:33 UTC",
+      "category": "workflow",
+      "level": "SUCCESS",
+      "source": "DailyQuotaTask",
+      "message": "Completed Daily Quota in deep5devlopers/deep: 26 Commits, 26 Issues, 6 Code Reviews, 6 PRs (336.57s)",
+      "details": {
+        "commits_added": 26,
+        "issues_added": 26,
+        "code_reviews_added": 6,
+        "pull_requests_added": 6,
+        "pull_requests_merged": 6
+      }
+    },
     {
       "id": "log-1795583469801",
       "timestamp_epoch": 1795583469.8018796,
@@ -2541,39 +2804,6 @@
         "category": "resilience",
         "ast_valid": true,
         "git_commit": "{'success': True, 'commit_sha': '74dedbe8cad5741722edec32d503f7c0a72d0bcd', 'com"
-      }
-    },
-    {
-      "id": "log-1791529749158",
-      "timestamp_epoch": 1791529749.1588492,
-      "timestamp_utc": "2026-10-09 07:09:09 UTC",
-      "category": "workflow",
-      "level": "SUCCESS",
-      "source": "1HourAutopilot",
-      "message": "1-Hour Random Update on 'Ongrow': [RESILIENCE] Synthesized circuit-breaker error recovery & fault-tolerant failover handlers (AST 100% Green)",
-      "details": {
-        "project_id": "proj-ongrow",
-        "project_name": "Ongrow",
-        "slug": "ongrow",
-        "version": "v1.0.6",
-        "category": "resilience",
-        "ast_valid": true,
-        "git_commit": "{'success': True, 'commit_sha': 'd396da65dd5e18f230f63c323bb88ae0e582bf10', 'com"
-      }
-    },
-    {
-      "id": "log-1791529150303",
-      "timestamp_epoch": 1791529150.3032148,
-      "timestamp_utc": "2026-10-09 06:59:10 UTC",
-      "category": "scheduler",
-      "level": "SUCCESS",
-      "source": "CadenceScheduler",
-      "message": "Scheduled 10-minute cycle #15 succeeded: Updated 'SmallBox' [resilience] & synced README (15 cycles complete)",
-      "details": {
-        "run_number": 15,
-        "target_project": "SmallBox",
-        "version": "v3.1.4",
-        "category": "resilience"
       }
     }
   ]
