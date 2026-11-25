@@ -1,6 +1,6 @@
 {
   "success": true,
-  "generated_at_utc": "2026-11-25T05:31:53Z",
+  "generated_at_utc": "2026-11-25T05:37:00Z",
   "deployment": {
     "mode": "github_pages_cloud_never_sleep",
     "pages_url": "https://deep5devlopers.github.io/cron-dashboard/",
@@ -12,14 +12,14 @@
     "enabled": true,
     "mode": "strict_cloud_never_sleep",
     "works_without_browser": true,
-    "total_pulses": 8,
-    "successful_pulses": 8,
-    "last_pulse_utc": "2026-11-25T05:31:52Z",
+    "total_pulses": 9,
+    "successful_pulses": 9,
+    "last_pulse_utc": "2026-11-25T05:36:59Z",
     "last_trigger": "app_server_daemon",
     "cdn_online": true,
-    "cdn_latency_ms": 298,
+    "cdn_latency_ms": 314,
     "snapshot_online": true,
-    "snapshot_latency_ms": 317,
+    "snapshot_latency_ms": 308,
     "git_extraheader_clean": true
   },
   "projects": [
@@ -1119,31 +1119,50 @@
     "active": true,
     "enabled": true,
     "interval_seconds": 300,
-    "total_cycles": 11,
-    "total_merged_prs": 11,
+    "total_cycles": 12,
+    "total_merged_prs": 12,
     "total_failures": 0,
-    "last_run_utc": "2026-11-25T05:26:38Z",
+    "last_run_utc": "2026-11-25T05:31:51Z",
     "last_error": null,
     "last_result": {
       "success": true,
-      "cycle_id": "ap-1795584398-992",
+      "cycle_id": "ap-1795584711-666",
       "trigger_source": "in_app_5min_daemon",
-      "repo": "deep5devlopers/zerna",
-      "repo_slug": "zerna",
-      "private": true,
-      "file": "overview/06-deployment-and-runtime.txt",
-      "branch": "auto/zerna/sync-1795584398",
+      "repo": "deep5devlopers/readme-metrics-studio",
+      "repo_slug": "readme-metrics-studio",
+      "private": false,
+      "file": "overview.txt",
+      "branch": "auto/readme-metrics-studio/sync-1795584711",
       "base_branch": "main",
-      "commit_sha": "eff1963ffad0",
-      "pr_number": 41,
-      "pr_url": "https://github.com/deep5devlopers/zerna/pull/41",
+      "commit_sha": "2fd08986c6bb",
+      "pr_number": 106,
+      "pr_url": "https://github.com/deep5devlopers/readme-metrics-studio/pull/106",
       "merged": true,
       "merge_method": "squash",
       "branch_deleted": true,
-      "elapsed_seconds": 13.3,
-      "timestamp_utc": "2026-11-25T05:26:38Z"
+      "elapsed_seconds": 13.73,
+      "timestamp_utc": "2026-11-25T05:31:51Z"
     },
     "recent_history": [
+      {
+        "success": true,
+        "cycle_id": "ap-1795584711-666",
+        "trigger_source": "in_app_5min_daemon",
+        "repo": "deep5devlopers/readme-metrics-studio",
+        "repo_slug": "readme-metrics-studio",
+        "private": false,
+        "file": "overview.txt",
+        "branch": "auto/readme-metrics-studio/sync-1795584711",
+        "base_branch": "main",
+        "commit_sha": "2fd08986c6bb",
+        "pr_number": 106,
+        "pr_url": "https://github.com/deep5devlopers/readme-metrics-studio/pull/106",
+        "merged": true,
+        "merge_method": "squash",
+        "branch_deleted": true,
+        "elapsed_seconds": 13.73,
+        "timestamp_utc": "2026-11-25T05:31:51Z"
+      },
       {
         "success": true,
         "cycle_id": "ap-1795584398-992",
@@ -1812,6 +1831,34 @@
     "error": null
   },
   "cron_logs": [
+    {
+      "id": "log-1795584724935",
+      "timestamp_epoch": 1795584724.935317,
+      "timestamp_utc": "2026-11-25 05:32:04 UTC",
+      "category": "scheduler",
+      "level": "SUCCESS",
+      "source": "Autopilot5Min",
+      "message": "[ap-1795584711-666] deep5devlopers/readme-metrics-studio :: overview.txt -> PR #106 (MERGED)",
+      "details": {
+        "success": true,
+        "cycle_id": "ap-1795584711-666",
+        "trigger_source": "in_app_5min_daemon",
+        "repo": "deep5devlopers/readme-metrics-studio",
+        "repo_slug": "readme-metrics-studio",
+        "private": false,
+        "file": "overview.txt",
+        "branch": "auto/readme-metrics-studio/sync-1795584711",
+        "base_branch": "main",
+        "commit_sha": "2fd08986c6bb",
+        "pr_number": 106,
+        "pr_url": "https://github.com/deep5devlopers/readme-metrics-studio/pull/106",
+        "merged": true,
+        "merge_method": "squash",
+        "branch_deleted": true,
+        "elapsed_seconds": 13.73,
+        "timestamp_utc": "2026-11-25T05:31:51Z"
+      }
+    },
     {
       "id": "log-1795584411195",
       "timestamp_epoch": 1795584411.1955497,
@@ -2850,21 +2897,6 @@
         "category": "resilience",
         "ast_valid": true,
         "git_commit": "{'success': True, 'commit_sha': 'db1747c7e385c743c9d38cc657d80a9bcfed63aa', 'com"
-      }
-    },
-    {
-      "id": "log-1791529750839",
-      "timestamp_epoch": 1791529750.839856,
-      "timestamp_utc": "2026-10-09 07:09:10 UTC",
-      "category": "scheduler",
-      "level": "SUCCESS",
-      "source": "CadenceScheduler",
-      "message": "Scheduled 10-minute cycle #16 succeeded: Updated 'Corpen' [resilience] & synced README (16 cycles complete)",
-      "details": {
-        "run_number": 16,
-        "target_project": "Corpen",
-        "version": "v2.1.2",
-        "category": "resilience"
       }
     }
   ]
