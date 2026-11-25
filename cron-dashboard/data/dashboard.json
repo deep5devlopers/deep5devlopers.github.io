@@ -1,6 +1,6 @@
 {
   "success": true,
-  "generated_at_utc": "2026-11-25T05:26:47Z",
+  "generated_at_utc": "2026-11-25T05:31:53Z",
   "deployment": {
     "mode": "github_pages_cloud_never_sleep",
     "pages_url": "https://deep5devlopers.github.io/cron-dashboard/",
@@ -12,14 +12,14 @@
     "enabled": true,
     "mode": "strict_cloud_never_sleep",
     "works_without_browser": true,
-    "total_pulses": 7,
-    "successful_pulses": 7,
-    "last_pulse_utc": "2026-11-25T05:26:46Z",
+    "total_pulses": 8,
+    "successful_pulses": 8,
+    "last_pulse_utc": "2026-11-25T05:31:52Z",
     "last_trigger": "app_server_daemon",
     "cdn_online": true,
-    "cdn_latency_ms": 309,
+    "cdn_latency_ms": 298,
     "snapshot_online": true,
-    "snapshot_latency_ms": 312,
+    "snapshot_latency_ms": 317,
     "git_extraheader_clean": true
   },
   "projects": [
@@ -1119,31 +1119,50 @@
     "active": true,
     "enabled": true,
     "interval_seconds": 300,
-    "total_cycles": 10,
-    "total_merged_prs": 10,
+    "total_cycles": 11,
+    "total_merged_prs": 11,
     "total_failures": 0,
-    "last_run_utc": "2026-11-25T05:21:24Z",
+    "last_run_utc": "2026-11-25T05:26:38Z",
     "last_error": null,
     "last_result": {
       "success": true,
-      "cycle_id": "ap-1795584084-551",
+      "cycle_id": "ap-1795584398-992",
       "trigger_source": "in_app_5min_daemon",
-      "repo": "deep5devlopers/chamflow",
-      "repo_slug": "chamflow",
+      "repo": "deep5devlopers/zerna",
+      "repo_slug": "zerna",
       "private": true,
-      "file": "overview/05-integration-and-data-flow.txt",
-      "branch": "auto/chamflow/sync-1795584084",
+      "file": "overview/06-deployment-and-runtime.txt",
+      "branch": "auto/zerna/sync-1795584398",
       "base_branch": "main",
-      "commit_sha": "f9400e8e5ed5",
-      "pr_number": 52,
-      "pr_url": "https://github.com/deep5devlopers/chamflow/pull/52",
+      "commit_sha": "eff1963ffad0",
+      "pr_number": 41,
+      "pr_url": "https://github.com/deep5devlopers/zerna/pull/41",
       "merged": true,
       "merge_method": "squash",
       "branch_deleted": true,
-      "elapsed_seconds": 13.83,
-      "timestamp_utc": "2026-11-25T05:21:24Z"
+      "elapsed_seconds": 13.3,
+      "timestamp_utc": "2026-11-25T05:26:38Z"
     },
     "recent_history": [
+      {
+        "success": true,
+        "cycle_id": "ap-1795584398-992",
+        "trigger_source": "in_app_5min_daemon",
+        "repo": "deep5devlopers/zerna",
+        "repo_slug": "zerna",
+        "private": true,
+        "file": "overview/06-deployment-and-runtime.txt",
+        "branch": "auto/zerna/sync-1795584398",
+        "base_branch": "main",
+        "commit_sha": "eff1963ffad0",
+        "pr_number": 41,
+        "pr_url": "https://github.com/deep5devlopers/zerna/pull/41",
+        "merged": true,
+        "merge_method": "squash",
+        "branch_deleted": true,
+        "elapsed_seconds": 13.3,
+        "timestamp_utc": "2026-11-25T05:26:38Z"
+      },
       {
         "success": true,
         "cycle_id": "ap-1795584084-551",
@@ -1793,6 +1812,34 @@
     "error": null
   },
   "cron_logs": [
+    {
+      "id": "log-1795584411195",
+      "timestamp_epoch": 1795584411.1955497,
+      "timestamp_utc": "2026-11-25 05:26:51 UTC",
+      "category": "scheduler",
+      "level": "SUCCESS",
+      "source": "Autopilot5Min",
+      "message": "[ap-1795584398-992] deep5devlopers/zerna :: overview/06-deployment-and-runtime.txt -> PR #41 (MERGED)",
+      "details": {
+        "success": true,
+        "cycle_id": "ap-1795584398-992",
+        "trigger_source": "in_app_5min_daemon",
+        "repo": "deep5devlopers/zerna",
+        "repo_slug": "zerna",
+        "private": true,
+        "file": "overview/06-deployment-and-runtime.txt",
+        "branch": "auto/zerna/sync-1795584398",
+        "base_branch": "main",
+        "commit_sha": "eff1963ffad0",
+        "pr_number": 41,
+        "pr_url": "https://github.com/deep5devlopers/zerna/pull/41",
+        "merged": true,
+        "merge_method": "squash",
+        "branch_deleted": true,
+        "elapsed_seconds": 13.3,
+        "timestamp_utc": "2026-11-25T05:26:38Z"
+      }
+    },
     {
       "id": "log-1795584097879",
       "timestamp_epoch": 1795584097.8793943,
@@ -2817,21 +2864,6 @@
         "run_number": 16,
         "target_project": "Corpen",
         "version": "v2.1.2",
-        "category": "resilience"
-      }
-    },
-    {
-      "id": "log-1791529750614",
-      "timestamp_epoch": 1791529750.6147847,
-      "timestamp_utc": "2026-10-09 07:09:10 UTC",
-      "category": "scheduler",
-      "level": "SUCCESS",
-      "source": "CadenceScheduler",
-      "message": "Scheduled 10-minute cycle #16 succeeded: Updated 'Ongrow' [resilience] & synced README (16 cycles complete)",
-      "details": {
-        "run_number": 16,
-        "target_project": "Ongrow",
-        "version": "v1.0.6",
         "category": "resilience"
       }
     }
