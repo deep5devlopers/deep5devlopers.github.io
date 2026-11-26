@@ -1,6 +1,6 @@
 {
   "success": true,
-  "generated_at_utc": "2026-11-26T06:05:16Z",
+  "generated_at_utc": "2026-11-26T06:10:22Z",
   "deployment": {
     "mode": "github_pages_cloud_never_sleep",
     "pages_url": "https://deep5devlopers.github.io/cron-dashboard/",
@@ -12,14 +12,14 @@
     "enabled": true,
     "mode": "strict_cloud_never_sleep",
     "works_without_browser": true,
-    "total_pulses": 9,
-    "successful_pulses": 9,
-    "last_pulse_utc": "2026-11-26T06:05:15Z",
+    "total_pulses": 10,
+    "successful_pulses": 10,
+    "last_pulse_utc": "2026-11-26T06:10:22Z",
     "last_trigger": "app_server_daemon",
     "cdn_online": true,
-    "cdn_latency_ms": 311,
+    "cdn_latency_ms": 384,
     "snapshot_online": true,
-    "snapshot_latency_ms": 314,
+    "snapshot_latency_ms": 319,
     "git_extraheader_clean": true
   },
   "projects": [
@@ -939,31 +939,50 @@
     "active": true,
     "enabled": true,
     "interval_seconds": 300,
-    "total_cycles": 12,
-    "total_merged_prs": 12,
+    "total_cycles": 13,
+    "total_merged_prs": 13,
     "total_failures": 0,
-    "last_run_utc": "2026-11-26T06:00:04Z",
+    "last_run_utc": "2026-11-26T06:05:18Z",
     "last_error": null,
     "last_result": {
       "success": true,
-      "cycle_id": "ap-1795672804-665",
+      "cycle_id": "ap-1795673118-922",
       "trigger_source": "in_app_5min_daemon",
-      "repo": "deep5devlopers/clox",
-      "repo_slug": "clox",
-      "private": false,
-      "file": "overview.txt",
-      "branch": "auto/clox/sync-1795672804",
+      "repo": "deep5devlopers/gred",
+      "repo_slug": "gred",
+      "private": true,
+      "file": "overview/01-executive-summary.txt",
+      "branch": "auto/gred/sync-1795673118",
       "base_branch": "main",
-      "commit_sha": "2bf979f9411a",
-      "pr_number": 109,
-      "pr_url": "https://github.com/deep5devlopers/clox/pull/109",
+      "commit_sha": "177031677dec",
+      "pr_number": 54,
+      "pr_url": "https://github.com/deep5devlopers/gred/pull/54",
       "merged": true,
       "merge_method": "squash",
       "branch_deleted": true,
-      "elapsed_seconds": 14.42,
-      "timestamp_utc": "2026-11-26T06:00:04Z"
+      "elapsed_seconds": 13.74,
+      "timestamp_utc": "2026-11-26T06:05:18Z"
     },
     "recent_history": [
+      {
+        "success": true,
+        "cycle_id": "ap-1795673118-922",
+        "trigger_source": "in_app_5min_daemon",
+        "repo": "deep5devlopers/gred",
+        "repo_slug": "gred",
+        "private": true,
+        "file": "overview/01-executive-summary.txt",
+        "branch": "auto/gred/sync-1795673118",
+        "base_branch": "main",
+        "commit_sha": "177031677dec",
+        "pr_number": 54,
+        "pr_url": "https://github.com/deep5devlopers/gred/pull/54",
+        "merged": true,
+        "merge_method": "squash",
+        "branch_deleted": true,
+        "elapsed_seconds": 13.74,
+        "timestamp_utc": "2026-11-26T06:05:18Z"
+      },
       {
         "success": true,
         "cycle_id": "ap-1795672804-665",
@@ -1172,25 +1191,6 @@
         "branch_deleted": true,
         "elapsed_seconds": 12.91,
         "timestamp_utc": "2026-11-17T11:56:54Z"
-      },
-      {
-        "success": true,
-        "cycle_id": "ap-1794911937-302",
-        "trigger_source": "manual_api_trigger",
-        "repo": "deep5devlopers/grexon",
-        "repo_slug": "grexon",
-        "private": false,
-        "file": "README.md",
-        "branch": "auto/grexon/sync-1794911937",
-        "base_branch": "main",
-        "commit_sha": "9790c625d4f1",
-        "pr_number": 19,
-        "pr_url": "https://github.com/deep5devlopers/grexon/pull/19",
-        "merged": true,
-        "merge_method": "squash",
-        "branch_deleted": true,
-        "elapsed_seconds": 12.52,
-        "timestamp_utc": "2026-11-17T10:38:57Z"
       }
     ]
   },
@@ -1651,6 +1651,34 @@
     "error": null
   },
   "cron_logs": [
+    {
+      "id": "log-1795673131972",
+      "timestamp_epoch": 1795673131.9721127,
+      "timestamp_utc": "2026-11-26 06:05:31 UTC",
+      "category": "scheduler",
+      "level": "SUCCESS",
+      "source": "Autopilot5Min",
+      "message": "[ap-1795673118-922] deep5devlopers/gred :: overview/01-executive-summary.txt -> PR #54 (MERGED)",
+      "details": {
+        "success": true,
+        "cycle_id": "ap-1795673118-922",
+        "trigger_source": "in_app_5min_daemon",
+        "repo": "deep5devlopers/gred",
+        "repo_slug": "gred",
+        "private": true,
+        "file": "overview/01-executive-summary.txt",
+        "branch": "auto/gred/sync-1795673118",
+        "base_branch": "main",
+        "commit_sha": "177031677dec",
+        "pr_number": 54,
+        "pr_url": "https://github.com/deep5devlopers/gred/pull/54",
+        "merged": true,
+        "merge_method": "squash",
+        "branch_deleted": true,
+        "elapsed_seconds": 13.74,
+        "timestamp_utc": "2026-11-26T06:05:18Z"
+      }
+    },
     {
       "id": "log-1795672818216",
       "timestamp_epoch": 1795672818.2163928,
@@ -2701,21 +2729,6 @@
         "category": "resilience",
         "ast_valid": true,
         "git_commit": "{'success': True, 'commit_sha': 'db1747c7e385c743c9d38cc657d80a9bcfed63aa', 'com"
-      }
-    },
-    {
-      "id": "log-1791529750839",
-      "timestamp_epoch": 1791529750.839856,
-      "timestamp_utc": "2026-10-09 07:09:10 UTC",
-      "category": "scheduler",
-      "level": "SUCCESS",
-      "source": "CadenceScheduler",
-      "message": "Scheduled 10-minute cycle #16 succeeded: Updated 'Corpen' [resilience] & synced README (16 cycles complete)",
-      "details": {
-        "run_number": 16,
-        "target_project": "Corpen",
-        "version": "v2.1.2",
-        "category": "resilience"
       }
     }
   ]
