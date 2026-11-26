@@ -1,6 +1,6 @@
 {
   "success": true,
-  "generated_at_utc": "2026-11-26T09:25:03Z",
+  "generated_at_utc": "2026-11-26T09:30:10Z",
   "deployment": {
     "mode": "github_pages_cloud_never_sleep",
     "pages_url": "https://deep5devlopers.github.io/cron-dashboard/",
@@ -12,14 +12,14 @@
     "enabled": true,
     "mode": "strict_cloud_never_sleep",
     "works_without_browser": true,
-    "total_pulses": 48,
-    "successful_pulses": 48,
-    "last_pulse_utc": "2026-11-26T09:25:02Z",
+    "total_pulses": 49,
+    "successful_pulses": 49,
+    "last_pulse_utc": "2026-11-26T09:30:09Z",
     "last_trigger": "app_server_daemon",
     "cdn_online": true,
-    "cdn_latency_ms": 529,
+    "cdn_latency_ms": 336,
     "snapshot_online": true,
-    "snapshot_latency_ms": 346,
+    "snapshot_latency_ms": 317,
     "git_extraheader_clean": true
   },
   "projects": [
@@ -934,31 +934,50 @@
     "active": true,
     "enabled": true,
     "interval_seconds": 300,
-    "total_cycles": 51,
-    "total_merged_prs": 51,
+    "total_cycles": 52,
+    "total_merged_prs": 52,
     "total_failures": 0,
-    "last_run_utc": "2026-11-26T09:23:45Z",
+    "last_run_utc": "2026-11-26T09:28:59Z",
     "last_error": null,
     "last_result": {
       "success": true,
-      "cycle_id": "ap-1795685025-218",
+      "cycle_id": "ap-1795685339-766",
       "trigger_source": "in_app_5min_daemon",
-      "repo": "deep5devlopers/deep",
-      "repo_slug": "deep",
+      "repo": "deep5devlopers/chamflow",
+      "repo_slug": "chamflow",
       "private": true,
-      "file": "reviews/pr_89_perfection_audit.md",
-      "branch": "auto/deep/sync-1795685025",
+      "file": "overview/04-core-capabilities.txt",
+      "branch": "auto/chamflow/sync-1795685339",
       "base_branch": "main",
-      "commit_sha": "1902ab878221",
-      "pr_number": 671,
-      "pr_url": "https://github.com/deep5devlopers/deep/pull/671",
+      "commit_sha": "f3738cfd8409",
+      "pr_number": 60,
+      "pr_url": "https://github.com/deep5devlopers/chamflow/pull/60",
       "merged": true,
       "merge_method": "squash",
       "branch_deleted": true,
-      "elapsed_seconds": 13.42,
-      "timestamp_utc": "2026-11-26T09:23:45Z"
+      "elapsed_seconds": 13.24,
+      "timestamp_utc": "2026-11-26T09:28:59Z"
     },
     "recent_history": [
+      {
+        "success": true,
+        "cycle_id": "ap-1795685339-766",
+        "trigger_source": "in_app_5min_daemon",
+        "repo": "deep5devlopers/chamflow",
+        "repo_slug": "chamflow",
+        "private": true,
+        "file": "overview/04-core-capabilities.txt",
+        "branch": "auto/chamflow/sync-1795685339",
+        "base_branch": "main",
+        "commit_sha": "f3738cfd8409",
+        "pr_number": 60,
+        "pr_url": "https://github.com/deep5devlopers/chamflow/pull/60",
+        "merged": true,
+        "merge_method": "squash",
+        "branch_deleted": true,
+        "elapsed_seconds": 13.24,
+        "timestamp_utc": "2026-11-26T09:28:59Z"
+      },
       {
         "success": true,
         "cycle_id": "ap-1795685025-218",
@@ -1167,25 +1186,6 @@
         "branch_deleted": true,
         "elapsed_seconds": 12.89,
         "timestamp_utc": "2026-11-26T08:31:31Z"
-      },
-      {
-        "success": true,
-        "cycle_id": "ap-1795681577-322",
-        "trigger_source": "in_app_5min_daemon",
-        "repo": "deep5devlopers/zerna",
-        "repo_slug": "zerna",
-        "private": true,
-        "file": "overview/06-deployment-and-runtime.txt",
-        "branch": "auto/zerna/sync-1795681577",
-        "base_branch": "main",
-        "commit_sha": "c71823612db5",
-        "pr_number": 50,
-        "pr_url": "https://github.com/deep5devlopers/zerna/pull/50",
-        "merged": true,
-        "merge_method": "squash",
-        "branch_deleted": true,
-        "elapsed_seconds": 14.02,
-        "timestamp_utc": "2026-11-26T08:26:17Z"
       }
     ]
   },
@@ -1646,6 +1646,34 @@
     "error": null
   },
   "cron_logs": [
+    {
+      "id": "log-1795685351821",
+      "timestamp_epoch": 1795685351.8210478,
+      "timestamp_utc": "2026-11-26 09:29:11 UTC",
+      "category": "scheduler",
+      "level": "SUCCESS",
+      "source": "Autopilot5Min",
+      "message": "[ap-1795685339-766] deep5devlopers/chamflow :: overview/04-core-capabilities.txt -> PR #60 (MERGED)",
+      "details": {
+        "success": true,
+        "cycle_id": "ap-1795685339-766",
+        "trigger_source": "in_app_5min_daemon",
+        "repo": "deep5devlopers/chamflow",
+        "repo_slug": "chamflow",
+        "private": true,
+        "file": "overview/04-core-capabilities.txt",
+        "branch": "auto/chamflow/sync-1795685339",
+        "base_branch": "main",
+        "commit_sha": "f3738cfd8409",
+        "pr_number": 60,
+        "pr_url": "https://github.com/deep5devlopers/chamflow/pull/60",
+        "merged": true,
+        "merge_method": "squash",
+        "branch_deleted": true,
+        "elapsed_seconds": 13.24,
+        "timestamp_utc": "2026-11-26T09:28:59Z"
+      }
+    },
     {
       "id": "log-1795685038567",
       "timestamp_epoch": 1795685038.5674934,
@@ -3171,36 +3199,6 @@
           "notice": "Unprocessable Entity"
         },
         "timestamp": "2026-10-10T06:05:11.680210+00:00",
-        "message": "Successfully deployed to GitHub Pages at https://deep5devlopers.github.io/gred/"
-      }
-    },
-    {
-      "id": "log-1791611980585",
-      "timestamp_epoch": 1791611980.5851388,
-      "timestamp_utc": "2026-10-10 05:59:40 UTC",
-      "category": "pages",
-      "level": "SUCCESS",
-      "source": "PagesDeployer",
-      "message": "Live GitHub Pages deployed for Gred at https://deep5devlopers.github.io/gred/",
-      "details": {
-        "success": true,
-        "repo": "deep5devlopers/gred",
-        "branch": "gh-pages",
-        "commit": {
-          "success": true,
-          "file_path": "index.html",
-          "commit_sha": "4c55b05ad2f9a20332ee1ea3e7ad25e5379cc1ec",
-          "commit_url": "https://github.com/deep5devlopers/gred/commit/4c55b05ad2f9a20332ee1ea3e7ad25e5379cc1ec",
-          "html_url": "https://github.com/deep5devlopers/gred/blob/gh-pages/index.html",
-          "repo": "deep5devlopers/gred",
-          "branch": "gh-pages"
-        },
-        "pages_url": "https://deep5devlopers.github.io/gred/",
-        "pages_api": {
-          "status_code": 422,
-          "notice": "Unprocessable Entity"
-        },
-        "timestamp": "2026-10-10T05:59:40.585091+00:00",
         "message": "Successfully deployed to GitHub Pages at https://deep5devlopers.github.io/gred/"
       }
     }
