@@ -1,6 +1,6 @@
 {
   "success": true,
-  "generated_at_utc": "2026-11-26T14:27:35Z",
+  "generated_at_utc": "2026-11-26T14:32:43Z",
   "deployment": {
     "mode": "github_pages_cloud_never_sleep",
     "pages_url": "https://deep5devlopers.github.io/cron-dashboard/",
@@ -12,14 +12,14 @@
     "enabled": true,
     "mode": "strict_cloud_never_sleep",
     "works_without_browser": true,
-    "total_pulses": 107,
-    "successful_pulses": 107,
-    "last_pulse_utc": "2026-11-26T14:27:34Z",
+    "total_pulses": 108,
+    "successful_pulses": 108,
+    "last_pulse_utc": "2026-11-26T14:32:42Z",
     "last_trigger": "app_server_daemon",
     "cdn_online": true,
-    "cdn_latency_ms": 372,
+    "cdn_latency_ms": 343,
     "snapshot_online": true,
-    "snapshot_latency_ms": 349,
+    "snapshot_latency_ms": 316,
     "git_extraheader_clean": true
   },
   "projects": [
@@ -869,31 +869,50 @@
     "active": true,
     "enabled": true,
     "interval_seconds": 300,
-    "total_cycles": 109,
-    "total_merged_prs": 109,
+    "total_cycles": 110,
+    "total_merged_prs": 110,
     "total_failures": 0,
-    "last_run_utc": "2026-11-26T14:27:03Z",
+    "last_run_utc": "2026-11-26T14:32:17Z",
     "last_error": null,
     "last_result": {
       "success": true,
-      "cycle_id": "ap-1795703223-436",
+      "cycle_id": "ap-1795703537-411",
       "trigger_source": "in_app_5min_daemon",
-      "repo": "deep5devlopers/clox",
-      "repo_slug": "clox",
-      "private": false,
+      "repo": "deep5devlopers/gred",
+      "repo_slug": "gred",
+      "private": true,
       "file": "overview.txt",
-      "branch": "auto/clox/sync-1795703223",
+      "branch": "auto/gred/sync-1795703537",
       "base_branch": "main",
-      "commit_sha": "0c623dc0e7de",
-      "pr_number": 120,
-      "pr_url": "https://github.com/deep5devlopers/clox/pull/120",
+      "commit_sha": "0588d52a5d60",
+      "pr_number": 65,
+      "pr_url": "https://github.com/deep5devlopers/gred/pull/65",
       "merged": true,
       "merge_method": "squash",
       "branch_deleted": true,
-      "elapsed_seconds": 12.9,
-      "timestamp_utc": "2026-11-26T14:27:03Z"
+      "elapsed_seconds": 13.81,
+      "timestamp_utc": "2026-11-26T14:32:17Z"
     },
     "recent_history": [
+      {
+        "success": true,
+        "cycle_id": "ap-1795703537-411",
+        "trigger_source": "in_app_5min_daemon",
+        "repo": "deep5devlopers/gred",
+        "repo_slug": "gred",
+        "private": true,
+        "file": "overview.txt",
+        "branch": "auto/gred/sync-1795703537",
+        "base_branch": "main",
+        "commit_sha": "0588d52a5d60",
+        "pr_number": 65,
+        "pr_url": "https://github.com/deep5devlopers/gred/pull/65",
+        "merged": true,
+        "merge_method": "squash",
+        "branch_deleted": true,
+        "elapsed_seconds": 13.81,
+        "timestamp_utc": "2026-11-26T14:32:17Z"
+      },
       {
         "success": true,
         "cycle_id": "ap-1795703223-436",
@@ -1102,25 +1121,6 @@
         "branch_deleted": true,
         "elapsed_seconds": 13.23,
         "timestamp_utc": "2026-11-26T13:34:44Z"
-      },
-      {
-        "success": true,
-        "cycle_id": "ap-1795699771-271",
-        "trigger_source": "in_app_5min_daemon",
-        "repo": "deep5devlopers/zerna",
-        "repo_slug": "zerna",
-        "private": true,
-        "file": "overview/05-integration-and-data-flow.txt",
-        "branch": "auto/zerna/sync-1795699771",
-        "base_branch": "main",
-        "commit_sha": "d488c75592a1",
-        "pr_number": 59,
-        "pr_url": "https://github.com/deep5devlopers/zerna/pull/59",
-        "merged": true,
-        "merge_method": "squash",
-        "branch_deleted": true,
-        "elapsed_seconds": 13.11,
-        "timestamp_utc": "2026-11-26T13:29:31Z"
       }
     ]
   },
@@ -1581,6 +1581,34 @@
     "error": null
   },
   "cron_logs": [
+    {
+      "id": "log-1795703550060",
+      "timestamp_epoch": 1795703550.0607305,
+      "timestamp_utc": "2026-11-26 14:32:30 UTC",
+      "category": "scheduler",
+      "level": "SUCCESS",
+      "source": "Autopilot5Min",
+      "message": "[ap-1795703537-411] deep5devlopers/gred :: overview.txt -> PR #65 (MERGED)",
+      "details": {
+        "success": true,
+        "cycle_id": "ap-1795703537-411",
+        "trigger_source": "in_app_5min_daemon",
+        "repo": "deep5devlopers/gred",
+        "repo_slug": "gred",
+        "private": true,
+        "file": "overview.txt",
+        "branch": "auto/gred/sync-1795703537",
+        "base_branch": "main",
+        "commit_sha": "0588d52a5d60",
+        "pr_number": 65,
+        "pr_url": "https://github.com/deep5devlopers/gred/pull/65",
+        "merged": true,
+        "merge_method": "squash",
+        "branch_deleted": true,
+        "elapsed_seconds": 13.81,
+        "timestamp_utc": "2026-11-26T14:32:17Z"
+      }
+    },
     {
       "id": "log-1795703236227",
       "timestamp_epoch": 1795703236.2273843,
@@ -3231,34 +3259,6 @@
         "branch_deleted": true,
         "elapsed_seconds": 13.42,
         "timestamp_utc": "2026-11-26T09:23:45Z"
-      }
-    },
-    {
-      "id": "log-1795684725132",
-      "timestamp_epoch": 1795684725.1321309,
-      "timestamp_utc": "2026-11-26 09:18:45 UTC",
-      "category": "scheduler",
-      "level": "SUCCESS",
-      "source": "Autopilot5Min",
-      "message": "[ap-1795684712-500] deep5devlopers/clox :: ARCHITECTURE_BLUEPRINT.md -> PR #113 (MERGED)",
-      "details": {
-        "success": true,
-        "cycle_id": "ap-1795684712-500",
-        "trigger_source": "in_app_5min_daemon",
-        "repo": "deep5devlopers/clox",
-        "repo_slug": "clox",
-        "private": false,
-        "file": "ARCHITECTURE_BLUEPRINT.md",
-        "branch": "auto/clox/sync-1795684712",
-        "base_branch": "main",
-        "commit_sha": "a84cb64870bf",
-        "pr_number": 113,
-        "pr_url": "https://github.com/deep5devlopers/clox/pull/113",
-        "merged": true,
-        "merge_method": "squash",
-        "branch_deleted": true,
-        "elapsed_seconds": 13.74,
-        "timestamp_utc": "2026-11-26T09:18:32Z"
       }
     }
   ]
