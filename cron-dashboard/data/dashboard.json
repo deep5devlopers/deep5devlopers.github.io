@@ -1,6 +1,6 @@
 {
   "success": true,
-  "generated_at_utc": "2026-11-26T12:14:14Z",
+  "generated_at_utc": "2026-11-26T12:19:23Z",
   "deployment": {
     "mode": "github_pages_cloud_never_sleep",
     "pages_url": "https://deep5devlopers.github.io/cron-dashboard/",
@@ -12,14 +12,14 @@
     "enabled": true,
     "mode": "strict_cloud_never_sleep",
     "works_without_browser": true,
-    "total_pulses": 81,
-    "successful_pulses": 81,
-    "last_pulse_utc": "2026-11-26T12:14:14Z",
+    "total_pulses": 82,
+    "successful_pulses": 82,
+    "last_pulse_utc": "2026-11-26T12:19:22Z",
     "last_trigger": "app_server_daemon",
     "cdn_online": true,
-    "cdn_latency_ms": 301,
+    "cdn_latency_ms": 321,
     "snapshot_online": true,
-    "snapshot_latency_ms": 329,
+    "snapshot_latency_ms": 623,
     "git_extraheader_clean": true
   },
   "projects": [
@@ -332,7 +332,7 @@
     "today_utc": "2026-11-26",
     "last_completed_date_utc": "2026-11-26",
     "last_run_utc": "2026-11-26T03:07:05Z",
-    "total_runs": 6,
+    "total_runs": 5,
     "target_repo": "deep5devlopers/deep",
     "schedule_ist": "08:00 AM IST",
     "backup_schedule_ist": "08:00 AM \u2013 12:15 PM IST + Autopilot Fail-Safe",
@@ -607,16 +607,12 @@
         "repo": "deep5devlopers/deep",
         "counts": {
           "commits_added": 26,
-          "issues_added": 25,
+          "issues_added": 24,
           "code_reviews_added": 6,
           "pull_requests_added": 6,
           "pull_requests_merged": 6
         },
         "issues": [
-          {
-            "number": 596,
-            "closed": true
-          },
           {
             "number": 597,
             "closed": true
@@ -744,27 +740,6 @@
             "number": 626,
             "merged": true,
             "html_url": "https://github.com/deep5devlopers/deep/pull/626"
-          }
-        ]
-      },
-      {
-        "date_utc": "2026-11-24",
-        "timestamp_utc": "2026-11-24T04:59:52Z",
-        "trigger_source": "cloud_verified_github",
-        "repo": "deep5devlopers/deep",
-        "counts": {
-          "commits_added": 4,
-          "issues_added": 0,
-          "code_reviews_added": 1,
-          "pull_requests_added": 1,
-          "pull_requests_merged": 1
-        },
-        "issues": [],
-        "pull_requests": [
-          {
-            "number": 584,
-            "merged": true,
-            "html_url": "https://github.com/deep5devlopers/deep/pull/584"
           }
         ]
       },
@@ -910,31 +885,50 @@
     "active": true,
     "enabled": true,
     "interval_seconds": 300,
-    "total_cycles": 83,
-    "total_merged_prs": 83,
+    "total_cycles": 84,
+    "total_merged_prs": 84,
     "total_failures": 0,
-    "last_run_utc": "2026-11-26T12:11:04Z",
+    "last_run_utc": "2026-11-26T12:16:17Z",
     "last_error": null,
     "last_result": {
       "success": true,
-      "cycle_id": "ap-1795695064-950",
+      "cycle_id": "ap-1795695377-783",
       "trigger_source": "in_app_5min_daemon",
-      "repo": "deep5devlopers/grexon",
-      "repo_slug": "grexon",
+      "repo": "deep5devlopers/myflow",
+      "repo_slug": "myflow",
       "private": true,
-      "file": "overview/01-executive-summary.txt",
-      "branch": "auto/grexon/sync-1795695064",
+      "file": "overview/04-core-capabilities.txt",
+      "branch": "auto/myflow/sync-1795695377",
       "base_branch": "main",
-      "commit_sha": "61e93381785b",
-      "pr_number": 74,
-      "pr_url": "https://github.com/deep5devlopers/grexon/pull/74",
+      "commit_sha": "f3c5ec1bcbe0",
+      "pr_number": 65,
+      "pr_url": "https://github.com/deep5devlopers/myflow/pull/65",
       "merged": true,
       "merge_method": "squash",
       "branch_deleted": true,
-      "elapsed_seconds": 12.77,
-      "timestamp_utc": "2026-11-26T12:11:04Z"
+      "elapsed_seconds": 12.75,
+      "timestamp_utc": "2026-11-26T12:16:17Z"
     },
     "recent_history": [
+      {
+        "success": true,
+        "cycle_id": "ap-1795695377-783",
+        "trigger_source": "in_app_5min_daemon",
+        "repo": "deep5devlopers/myflow",
+        "repo_slug": "myflow",
+        "private": true,
+        "file": "overview/04-core-capabilities.txt",
+        "branch": "auto/myflow/sync-1795695377",
+        "base_branch": "main",
+        "commit_sha": "f3c5ec1bcbe0",
+        "pr_number": 65,
+        "pr_url": "https://github.com/deep5devlopers/myflow/pull/65",
+        "merged": true,
+        "merge_method": "squash",
+        "branch_deleted": true,
+        "elapsed_seconds": 12.75,
+        "timestamp_utc": "2026-11-26T12:16:17Z"
+      },
       {
         "success": true,
         "cycle_id": "ap-1795695064-950",
@@ -1143,31 +1137,27 @@
         "branch_deleted": true,
         "elapsed_seconds": 15.33,
         "timestamp_utc": "2026-11-26T11:18:44Z"
-      },
-      {
-        "success": true,
-        "cycle_id": "ap-1795691611-257",
-        "trigger_source": "in_app_5min_daemon",
-        "repo": "deep5devlopers/pixelbyte",
-        "repo_slug": "pixelbyte",
-        "private": true,
-        "file": "read.txt",
-        "branch": "auto/pixelbyte/sync-1795691611",
-        "base_branch": "main",
-        "commit_sha": "114cf7ac1d2a",
-        "pr_number": 52,
-        "pr_url": "https://github.com/deep5devlopers/pixelbyte/pull/52",
-        "merged": true,
-        "merge_method": "squash",
-        "branch_deleted": true,
-        "elapsed_seconds": 12.54,
-        "timestamp_utc": "2026-11-26T11:13:31Z"
       }
     ]
   },
   "github_actions": {
     "repo": "deep5devlopers/deep",
     "runs": [
+      {
+        "id": 45818133507,
+        "run_number": 33,
+        "name": "Non-Sleeper 5-Min Autopilot PR & 8:00 AM IST Daily Fail-Safe Cron",
+        "path": ".github/workflows/autopilot-5min-cron.yml",
+        "event": "schedule",
+        "status": "completed",
+        "conclusion": "success",
+        "head_branch": "main",
+        "head_sha": "08eb25e",
+        "created_at": "2026-11-26T12:16:33Z",
+        "updated_at": "2026-11-26T12:16:54Z",
+        "duration_seconds": 21,
+        "html_url": "https://github.com/deep5devlopers/deep/actions/runs/45818133507"
+      },
       {
         "id": 45801766066,
         "run_number": 9,
@@ -1602,26 +1592,39 @@
         "updated_at": "2026-11-20T06:18:51Z",
         "duration_seconds": 20,
         "html_url": "https://github.com/deep5devlopers/deep/actions/runs/44686876999"
-      },
-      {
-        "id": 44671644860,
-        "run_number": 10,
-        "name": "Non-Sleeper 5-Min Autopilot PR & Keep-Alive Cron",
-        "path": ".github/workflows/autopilot-5min-cron.yml",
-        "event": "schedule",
-        "status": "completed",
-        "conclusion": "success",
-        "head_branch": "main",
-        "head_sha": "1ed0b60",
-        "created_at": "2026-11-20T04:01:53Z",
-        "updated_at": "2026-11-20T04:02:11Z",
-        "duration_seconds": 18,
-        "html_url": "https://github.com/deep5devlopers/deep/actions/runs/44671644860"
       }
     ],
     "error": null
   },
   "cron_logs": [
+    {
+      "id": "log-1795695389542",
+      "timestamp_epoch": 1795695389.542892,
+      "timestamp_utc": "2026-11-26 12:16:29 UTC",
+      "category": "scheduler",
+      "level": "SUCCESS",
+      "source": "Autopilot5Min",
+      "message": "[ap-1795695377-783] deep5devlopers/myflow :: overview/04-core-capabilities.txt -> PR #65 (MERGED)",
+      "details": {
+        "success": true,
+        "cycle_id": "ap-1795695377-783",
+        "trigger_source": "in_app_5min_daemon",
+        "repo": "deep5devlopers/myflow",
+        "repo_slug": "myflow",
+        "private": true,
+        "file": "overview/04-core-capabilities.txt",
+        "branch": "auto/myflow/sync-1795695377",
+        "base_branch": "main",
+        "commit_sha": "f3c5ec1bcbe0",
+        "pr_number": 65,
+        "pr_url": "https://github.com/deep5devlopers/myflow/pull/65",
+        "merged": true,
+        "merge_method": "squash",
+        "branch_deleted": true,
+        "elapsed_seconds": 12.75,
+        "timestamp_utc": "2026-11-26T12:16:17Z"
+      }
+    },
     {
       "id": "log-1795695076774",
       "timestamp_epoch": 1795695076.7747552,
@@ -3272,34 +3275,6 @@
         "branch_deleted": true,
         "elapsed_seconds": 13.52,
         "timestamp_utc": "2026-11-26T07:07:56Z"
-      }
-    },
-    {
-      "id": "log-1795676575387",
-      "timestamp_epoch": 1795676575.3873193,
-      "timestamp_utc": "2026-11-26 07:02:55 UTC",
-      "category": "scheduler",
-      "level": "SUCCESS",
-      "source": "Autopilot5Min",
-      "message": "[ap-1795676562-682] deep5devlopers/readme-metrics-studio :: README.md -> PR #112 (MERGED)",
-      "details": {
-        "success": true,
-        "cycle_id": "ap-1795676562-682",
-        "trigger_source": "in_app_5min_daemon",
-        "repo": "deep5devlopers/readme-metrics-studio",
-        "repo_slug": "readme-metrics-studio",
-        "private": false,
-        "file": "README.md",
-        "branch": "auto/readme-metrics-studio/sync-1795676562",
-        "base_branch": "main",
-        "commit_sha": "76958880c8a4",
-        "pr_number": 112,
-        "pr_url": "https://github.com/deep5devlopers/readme-metrics-studio/pull/112",
-        "merged": true,
-        "merge_method": "squash",
-        "branch_deleted": true,
-        "elapsed_seconds": 13.61,
-        "timestamp_utc": "2026-11-26T07:02:42Z"
       }
     }
   ]
