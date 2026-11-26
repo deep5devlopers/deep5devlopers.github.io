@@ -1,6 +1,6 @@
 {
   "success": true,
-  "generated_at_utc": "2026-11-26T11:48:34Z",
+  "generated_at_utc": "2026-11-26T11:53:42Z",
   "deployment": {
     "mode": "github_pages_cloud_never_sleep",
     "pages_url": "https://deep5devlopers.github.io/cron-dashboard/",
@@ -12,14 +12,14 @@
     "enabled": true,
     "mode": "strict_cloud_never_sleep",
     "works_without_browser": true,
-    "total_pulses": 76,
-    "successful_pulses": 76,
-    "last_pulse_utc": "2026-11-26T11:48:32Z",
+    "total_pulses": 77,
+    "successful_pulses": 77,
+    "last_pulse_utc": "2026-11-26T11:53:41Z",
     "last_trigger": "app_server_daemon",
     "cdn_online": true,
-    "cdn_latency_ms": 626,
+    "cdn_latency_ms": 304,
     "snapshot_online": true,
-    "snapshot_latency_ms": 1254,
+    "snapshot_latency_ms": 302,
     "git_extraheader_clean": true
   },
   "projects": [
@@ -919,31 +919,50 @@
     "active": true,
     "enabled": true,
     "interval_seconds": 300,
-    "total_cycles": 78,
-    "total_merged_prs": 78,
+    "total_cycles": 79,
+    "total_merged_prs": 79,
     "total_failures": 0,
-    "last_run_utc": "2026-11-26T11:44:53Z",
+    "last_run_utc": "2026-11-26T11:50:08Z",
     "last_error": null,
     "last_result": {
       "success": true,
-      "cycle_id": "ap-1795693493-118",
+      "cycle_id": "ap-1795693808-895",
       "trigger_source": "in_app_5min_daemon",
-      "repo": "deep5devlopers/readme-metrics-studio",
-      "repo_slug": "readme-metrics-studio",
-      "private": false,
-      "file": "metrics_compiler.py",
-      "branch": "auto/readme-metrics-studio/sync-1795693493",
+      "repo": "deep5devlopers/pixelbyte",
+      "repo_slug": "pixelbyte",
+      "private": true,
+      "file": "overview/01-executive-summary.txt",
+      "branch": "auto/pixelbyte/sync-1795693808",
       "base_branch": "main",
-      "commit_sha": "90a4bb2d2da7",
-      "pr_number": 116,
-      "pr_url": "https://github.com/deep5devlopers/readme-metrics-studio/pull/116",
+      "commit_sha": "673d7ab1788c",
+      "pr_number": 53,
+      "pr_url": "https://github.com/deep5devlopers/pixelbyte/pull/53",
       "merged": true,
       "merge_method": "squash",
       "branch_deleted": true,
-      "elapsed_seconds": 15.02,
-      "timestamp_utc": "2026-11-26T11:44:53Z"
+      "elapsed_seconds": 14.08,
+      "timestamp_utc": "2026-11-26T11:50:08Z"
     },
     "recent_history": [
+      {
+        "success": true,
+        "cycle_id": "ap-1795693808-895",
+        "trigger_source": "in_app_5min_daemon",
+        "repo": "deep5devlopers/pixelbyte",
+        "repo_slug": "pixelbyte",
+        "private": true,
+        "file": "overview/01-executive-summary.txt",
+        "branch": "auto/pixelbyte/sync-1795693808",
+        "base_branch": "main",
+        "commit_sha": "673d7ab1788c",
+        "pr_number": 53,
+        "pr_url": "https://github.com/deep5devlopers/pixelbyte/pull/53",
+        "merged": true,
+        "merge_method": "squash",
+        "branch_deleted": true,
+        "elapsed_seconds": 14.08,
+        "timestamp_utc": "2026-11-26T11:50:08Z"
+      },
       {
         "success": true,
         "cycle_id": "ap-1795693493-118",
@@ -1152,25 +1171,6 @@
         "branch_deleted": true,
         "elapsed_seconds": 13.07,
         "timestamp_utc": "2026-11-26T10:52:40Z"
-      },
-      {
-        "success": true,
-        "cycle_id": "ap-1795690046-688",
-        "trigger_source": "in_app_5min_daemon",
-        "repo": "deep5devlopers/pixelbyte",
-        "repo_slug": "pixelbyte",
-        "private": true,
-        "file": "overview/04-core-capabilities.txt",
-        "branch": "auto/pixelbyte/sync-1795690046",
-        "base_branch": "main",
-        "commit_sha": "f015f7f5132a",
-        "pr_number": 51,
-        "pr_url": "https://github.com/deep5devlopers/pixelbyte/pull/51",
-        "merged": true,
-        "merge_method": "squash",
-        "branch_deleted": true,
-        "elapsed_seconds": 14.04,
-        "timestamp_utc": "2026-11-26T10:47:26Z"
       }
     ]
   },
@@ -1631,6 +1631,34 @@
     "error": null
   },
   "cron_logs": [
+    {
+      "id": "log-1795693822073",
+      "timestamp_epoch": 1795693822.0738225,
+      "timestamp_utc": "2026-11-26 11:50:22 UTC",
+      "category": "scheduler",
+      "level": "SUCCESS",
+      "source": "Autopilot5Min",
+      "message": "[ap-1795693808-895] deep5devlopers/pixelbyte :: overview/01-executive-summary.txt -> PR #53 (MERGED)",
+      "details": {
+        "success": true,
+        "cycle_id": "ap-1795693808-895",
+        "trigger_source": "in_app_5min_daemon",
+        "repo": "deep5devlopers/pixelbyte",
+        "repo_slug": "pixelbyte",
+        "private": true,
+        "file": "overview/01-executive-summary.txt",
+        "branch": "auto/pixelbyte/sync-1795693808",
+        "base_branch": "main",
+        "commit_sha": "673d7ab1788c",
+        "pr_number": 53,
+        "pr_url": "https://github.com/deep5devlopers/pixelbyte/pull/53",
+        "merged": true,
+        "merge_method": "squash",
+        "branch_deleted": true,
+        "elapsed_seconds": 14.08,
+        "timestamp_utc": "2026-11-26T11:50:08Z"
+      }
+    },
     {
       "id": "log-1795693507975",
       "timestamp_epoch": 1795693507.9750233,
@@ -3281,34 +3309,6 @@
         "branch_deleted": true,
         "elapsed_seconds": 12.69,
         "timestamp_utc": "2026-11-26T06:41:50Z"
-      }
-    },
-    {
-      "id": "log-1795675009500",
-      "timestamp_epoch": 1795675009.5004866,
-      "timestamp_utc": "2026-11-26 06:36:49 UTC",
-      "category": "scheduler",
-      "level": "SUCCESS",
-      "source": "Autopilot5Min",
-      "message": "[ap-1795674997-844] deep5devlopers/readme-metrics-studio :: overview.txt -> PR #111 (MERGED)",
-      "details": {
-        "success": true,
-        "cycle_id": "ap-1795674997-844",
-        "trigger_source": "in_app_5min_daemon",
-        "repo": "deep5devlopers/readme-metrics-studio",
-        "repo_slug": "readme-metrics-studio",
-        "private": false,
-        "file": "overview.txt",
-        "branch": "auto/readme-metrics-studio/sync-1795674997",
-        "base_branch": "main",
-        "commit_sha": "a023a8cbe6be",
-        "pr_number": 111,
-        "pr_url": "https://github.com/deep5devlopers/readme-metrics-studio/pull/111",
-        "merged": true,
-        "merge_method": "squash",
-        "branch_deleted": true,
-        "elapsed_seconds": 12.04,
-        "timestamp_utc": "2026-11-26T06:36:37Z"
       }
     }
   ]
