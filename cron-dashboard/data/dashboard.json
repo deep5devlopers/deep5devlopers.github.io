@@ -1,6 +1,6 @@
 {
   "success": true,
-  "generated_at_utc": "2026-11-28T10:50:10Z",
+  "generated_at_utc": "2026-11-28T10:51:47Z",
   "deployment": {
     "mode": "github_pages_cloud_never_sleep",
     "pages_url": "https://deep5devlopers.github.io/cron-dashboard/",
@@ -12,14 +12,14 @@
     "enabled": true,
     "mode": "strict_cloud_never_sleep",
     "works_without_browser": true,
-    "total_pulses": 5,
-    "successful_pulses": 5,
-    "last_pulse_utc": "2026-11-28T10:50:10Z",
+    "total_pulses": 6,
+    "successful_pulses": 6,
+    "last_pulse_utc": "2026-11-28T10:51:46Z",
     "last_trigger": "app_server_daemon",
     "cdn_online": true,
-    "cdn_latency_ms": 307,
+    "cdn_latency_ms": 299,
     "snapshot_online": true,
-    "snapshot_latency_ms": 311,
+    "snapshot_latency_ms": 333,
     "git_extraheader_clean": true
   },
   "projects": [
@@ -1733,6 +1733,26 @@
   },
   "cron_logs": [
     {
+      "id": "log-1795863061511",
+      "timestamp_epoch": 1795863061.5114412,
+      "timestamp_utc": "2026-11-28 10:51:01 UTC",
+      "category": "scheduler",
+      "level": "INFO",
+      "source": "Autopilot5Min",
+      "message": "5-Minute Non-Sleeper Autopilot daemon started (interval: 300s)",
+      "details": {}
+    },
+    {
+      "id": "log-1795863024674",
+      "timestamp_epoch": 1795863024.6742866,
+      "timestamp_utc": "2026-11-28 10:50:24 UTC",
+      "category": "scheduler",
+      "level": "INFO",
+      "source": "Autopilot5Min",
+      "message": "5-Minute Non-Sleeper Autopilot daemon started (interval: 300s)",
+      "details": {}
+    },
+    {
       "id": "log-1795862965052",
       "timestamp_epoch": 1795862965.052316,
       "timestamp_utc": "2026-11-28 10:49:25 UTC",
@@ -2700,39 +2720,6 @@
         "category": "resilience",
         "ast_valid": true,
         "git_commit": "{'success': True, 'commit_sha': '74dedbe8cad5741722edec32d503f7c0a72d0bcd', 'com"
-      }
-    },
-    {
-      "id": "log-1791529749158",
-      "timestamp_epoch": 1791529749.1588492,
-      "timestamp_utc": "2026-10-09 07:09:09 UTC",
-      "category": "workflow",
-      "level": "SUCCESS",
-      "source": "1HourAutopilot",
-      "message": "1-Hour Random Update on 'Ongrow': [RESILIENCE] Synthesized circuit-breaker error recovery & fault-tolerant failover handlers (AST 100% Green)",
-      "details": {
-        "project_id": "proj-ongrow",
-        "project_name": "Ongrow",
-        "slug": "ongrow",
-        "version": "v1.0.6",
-        "category": "resilience",
-        "ast_valid": true,
-        "git_commit": "{'success': True, 'commit_sha': 'd396da65dd5e18f230f63c323bb88ae0e582bf10', 'com"
-      }
-    },
-    {
-      "id": "log-1791529150303",
-      "timestamp_epoch": 1791529150.3032148,
-      "timestamp_utc": "2026-10-09 06:59:10 UTC",
-      "category": "scheduler",
-      "level": "SUCCESS",
-      "source": "CadenceScheduler",
-      "message": "Scheduled 10-minute cycle #15 succeeded: Updated 'SmallBox' [resilience] & synced README (15 cycles complete)",
-      "details": {
-        "run_number": 15,
-        "target_project": "SmallBox",
-        "version": "v3.1.4",
-        "category": "resilience"
       }
     }
   ]
