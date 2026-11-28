@@ -1,6 +1,6 @@
 {
   "success": true,
-  "generated_at_utc": "2026-11-28T10:24:55Z",
+  "generated_at_utc": "2026-11-28T10:30:02Z",
   "deployment": {
     "mode": "github_pages_cloud_never_sleep",
     "pages_url": "https://deep5devlopers.github.io/cron-dashboard/",
@@ -12,14 +12,14 @@
     "enabled": true,
     "mode": "strict_cloud_never_sleep",
     "works_without_browser": true,
-    "total_pulses": 17,
-    "successful_pulses": 17,
-    "last_pulse_utc": "2026-11-28T10:24:55Z",
+    "total_pulses": 18,
+    "successful_pulses": 18,
+    "last_pulse_utc": "2026-11-28T10:30:02Z",
     "last_trigger": "app_server_daemon",
     "cdn_online": true,
-    "cdn_latency_ms": 310,
+    "cdn_latency_ms": 305,
     "snapshot_online": true,
-    "snapshot_latency_ms": 317,
+    "snapshot_latency_ms": 301,
     "git_extraheader_clean": true
   },
   "projects": [
@@ -919,31 +919,50 @@
     "active": true,
     "enabled": true,
     "interval_seconds": 300,
-    "total_cycles": 20,
-    "total_merged_prs": 20,
+    "total_cycles": 21,
+    "total_merged_prs": 21,
     "total_failures": 0,
-    "last_run_utc": "2026-11-28T10:20:30Z",
+    "last_run_utc": "2026-11-28T10:25:43Z",
     "last_error": null,
     "last_result": {
       "success": true,
-      "cycle_id": "ap-1795861230-903",
+      "cycle_id": "ap-1795861543-733",
       "trigger_source": "in_app_5min_daemon",
-      "repo": "deep5devlopers/deep",
-      "repo_slug": "deep",
+      "repo": "deep5devlopers/myflow",
+      "repo_slug": "myflow",
       "private": true,
-      "file": "reviews/pr_105_perfection_audit.md",
-      "branch": "auto/deep/sync-1795861230",
+      "file": "overview.txt",
+      "branch": "auto/myflow/sync-1795861543",
       "base_branch": "main",
-      "commit_sha": "ecb54ee912ac",
-      "pr_number": 756,
-      "pr_url": "https://github.com/deep5devlopers/deep/pull/756",
+      "commit_sha": "5743094003cf",
+      "pr_number": 73,
+      "pr_url": "https://github.com/deep5devlopers/myflow/pull/73",
       "merged": true,
       "merge_method": "squash",
       "branch_deleted": true,
-      "elapsed_seconds": 12.66,
-      "timestamp_utc": "2026-11-28T10:20:30Z"
+      "elapsed_seconds": 12.36,
+      "timestamp_utc": "2026-11-28T10:25:43Z"
     },
     "recent_history": [
+      {
+        "success": true,
+        "cycle_id": "ap-1795861543-733",
+        "trigger_source": "in_app_5min_daemon",
+        "repo": "deep5devlopers/myflow",
+        "repo_slug": "myflow",
+        "private": true,
+        "file": "overview.txt",
+        "branch": "auto/myflow/sync-1795861543",
+        "base_branch": "main",
+        "commit_sha": "5743094003cf",
+        "pr_number": 73,
+        "pr_url": "https://github.com/deep5devlopers/myflow/pull/73",
+        "merged": true,
+        "merge_method": "squash",
+        "branch_deleted": true,
+        "elapsed_seconds": 12.36,
+        "timestamp_utc": "2026-11-28T10:25:43Z"
+      },
       {
         "success": true,
         "cycle_id": "ap-1795861230-903",
@@ -1152,25 +1171,6 @@
         "branch_deleted": true,
         "elapsed_seconds": 12.63,
         "timestamp_utc": "2026-11-28T09:28:22Z"
-      },
-      {
-        "success": true,
-        "cycle_id": "ap-1795857788-625",
-        "trigger_source": "in_app_5min_daemon",
-        "repo": "deep5devlopers/deep",
-        "repo_slug": "deep",
-        "private": true,
-        "file": "reviews/pr_108_perfection_audit.md",
-        "branch": "auto/deep/sync-1795857788",
-        "base_branch": "main",
-        "commit_sha": "a98ed4318af1",
-        "pr_number": 755,
-        "pr_url": "https://github.com/deep5devlopers/deep/pull/755",
-        "merged": true,
-        "merge_method": "squash",
-        "branch_deleted": true,
-        "elapsed_seconds": 13.33,
-        "timestamp_utc": "2026-11-28T09:23:08Z"
       }
     ]
   },
@@ -1631,6 +1631,34 @@
     "error": null
   },
   "cron_logs": [
+    {
+      "id": "log-1795861555181",
+      "timestamp_epoch": 1795861555.1810539,
+      "timestamp_utc": "2026-11-28 10:25:55 UTC",
+      "category": "scheduler",
+      "level": "SUCCESS",
+      "source": "Autopilot5Min",
+      "message": "[ap-1795861543-733] deep5devlopers/myflow :: overview.txt -> PR #73 (MERGED)",
+      "details": {
+        "success": true,
+        "cycle_id": "ap-1795861543-733",
+        "trigger_source": "in_app_5min_daemon",
+        "repo": "deep5devlopers/myflow",
+        "repo_slug": "myflow",
+        "private": true,
+        "file": "overview.txt",
+        "branch": "auto/myflow/sync-1795861543",
+        "base_branch": "main",
+        "commit_sha": "5743094003cf",
+        "pr_number": 73,
+        "pr_url": "https://github.com/deep5devlopers/myflow/pull/73",
+        "merged": true,
+        "merge_method": "squash",
+        "branch_deleted": true,
+        "elapsed_seconds": 12.36,
+        "timestamp_utc": "2026-11-28T10:25:43Z"
+      }
+    },
     {
       "id": "log-1795861242809",
       "timestamp_epoch": 1795861242.8095567,
@@ -2773,21 +2801,6 @@
         "category": "resilience",
         "ast_valid": true,
         "git_commit": "{'success': True, 'commit_sha': 'f37a42984225a90f31e6d4f533b1eb7ecbbf4113', 'com"
-      }
-    },
-    {
-      "id": "log-1791530951861",
-      "timestamp_epoch": 1791530951.861051,
-      "timestamp_utc": "2026-10-09 07:29:11 UTC",
-      "category": "scheduler",
-      "level": "SUCCESS",
-      "source": "CadenceScheduler",
-      "message": "Scheduled 10-minute cycle #18 succeeded: Updated 'Deep5' [feature] & synced README (18 cycles complete)",
-      "details": {
-        "run_number": 18,
-        "target_project": "Deep5",
-        "version": "v2.6.3",
-        "category": "feature"
       }
     }
   ]
