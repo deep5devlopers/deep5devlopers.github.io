@@ -1,6 +1,6 @@
 {
   "success": true,
-  "generated_at_utc": "2026-11-28T10:56:54Z",
+  "generated_at_utc": "2026-11-28T11:02:03Z",
   "deployment": {
     "mode": "github_pages_cloud_never_sleep",
     "pages_url": "https://deep5devlopers.github.io/cron-dashboard/",
@@ -12,14 +12,14 @@
     "enabled": true,
     "mode": "strict_cloud_never_sleep",
     "works_without_browser": true,
-    "total_pulses": 7,
-    "successful_pulses": 7,
-    "last_pulse_utc": "2026-11-28T10:56:54Z",
+    "total_pulses": 8,
+    "successful_pulses": 8,
+    "last_pulse_utc": "2026-11-28T11:02:02Z",
     "last_trigger": "app_server_daemon",
     "cdn_online": true,
-    "cdn_latency_ms": 305,
+    "cdn_latency_ms": 306,
     "snapshot_online": true,
-    "snapshot_latency_ms": 300,
+    "snapshot_latency_ms": 302,
     "git_extraheader_clean": true
   },
   "projects": [
@@ -1115,31 +1115,50 @@
     "active": true,
     "enabled": true,
     "interval_seconds": 300,
-    "total_cycles": 8,
-    "total_merged_prs": 8,
+    "total_cycles": 9,
+    "total_merged_prs": 9,
     "total_failures": 0,
-    "last_run_utc": "2026-11-28T10:52:43Z",
+    "last_run_utc": "2026-11-28T10:57:56Z",
     "last_error": null,
     "last_result": {
       "success": true,
-      "cycle_id": "ap-1795863163-416",
+      "cycle_id": "ap-1795863476-101",
       "trigger_source": "in_app_5min_daemon",
-      "repo": "deep5devlopers/chamflow",
-      "repo_slug": "chamflow",
-      "private": true,
-      "file": "overview/06-deployment-and-runtime.txt",
-      "branch": "auto/chamflow/sync-1795863163",
+      "repo": "deep5devlopers/clox",
+      "repo_slug": "clox",
+      "private": false,
+      "file": "overview.txt",
+      "branch": "auto/clox/sync-1795863476",
       "base_branch": "main",
-      "commit_sha": "a657803ca08b",
-      "pr_number": 73,
-      "pr_url": "https://github.com/deep5devlopers/chamflow/pull/73",
+      "commit_sha": "37a9057bc69d",
+      "pr_number": 128,
+      "pr_url": "https://github.com/deep5devlopers/clox/pull/128",
       "merged": true,
       "merge_method": "squash",
       "branch_deleted": true,
-      "elapsed_seconds": 12.0,
-      "timestamp_utc": "2026-11-28T10:52:43Z"
+      "elapsed_seconds": 12.4,
+      "timestamp_utc": "2026-11-28T10:57:56Z"
     },
     "recent_history": [
+      {
+        "success": true,
+        "cycle_id": "ap-1795863476-101",
+        "trigger_source": "in_app_5min_daemon",
+        "repo": "deep5devlopers/clox",
+        "repo_slug": "clox",
+        "private": false,
+        "file": "overview.txt",
+        "branch": "auto/clox/sync-1795863476",
+        "base_branch": "main",
+        "commit_sha": "37a9057bc69d",
+        "pr_number": 128,
+        "pr_url": "https://github.com/deep5devlopers/clox/pull/128",
+        "merged": true,
+        "merge_method": "squash",
+        "branch_deleted": true,
+        "elapsed_seconds": 12.4,
+        "timestamp_utc": "2026-11-28T10:57:56Z"
+      },
       {
         "success": true,
         "cycle_id": "ap-1795863163-416",
@@ -1751,6 +1770,34 @@
     "error": null
   },
   "cron_logs": [
+    {
+      "id": "log-1795863487931",
+      "timestamp_epoch": 1795863487.9313035,
+      "timestamp_utc": "2026-11-28 10:58:07 UTC",
+      "category": "scheduler",
+      "level": "SUCCESS",
+      "source": "Autopilot5Min",
+      "message": "[ap-1795863476-101] deep5devlopers/clox :: overview.txt -> PR #128 (MERGED)",
+      "details": {
+        "success": true,
+        "cycle_id": "ap-1795863476-101",
+        "trigger_source": "in_app_5min_daemon",
+        "repo": "deep5devlopers/clox",
+        "repo_slug": "clox",
+        "private": false,
+        "file": "overview.txt",
+        "branch": "auto/clox/sync-1795863476",
+        "base_branch": "main",
+        "commit_sha": "37a9057bc69d",
+        "pr_number": 128,
+        "pr_url": "https://github.com/deep5devlopers/clox/pull/128",
+        "merged": true,
+        "merge_method": "squash",
+        "branch_deleted": true,
+        "elapsed_seconds": 12.4,
+        "timestamp_utc": "2026-11-28T10:57:56Z"
+      }
+    },
     {
       "id": "log-1795863175516",
       "timestamp_epoch": 1795863175.5162246,
@@ -2733,21 +2780,6 @@
         "run_number": 16,
         "target_project": "Corpen",
         "version": "v2.1.2",
-        "category": "resilience"
-      }
-    },
-    {
-      "id": "log-1791529750614",
-      "timestamp_epoch": 1791529750.6147847,
-      "timestamp_utc": "2026-10-09 07:09:10 UTC",
-      "category": "scheduler",
-      "level": "SUCCESS",
-      "source": "CadenceScheduler",
-      "message": "Scheduled 10-minute cycle #16 succeeded: Updated 'Ongrow' [resilience] & synced README (16 cycles complete)",
-      "details": {
-        "run_number": 16,
-        "target_project": "Ongrow",
-        "version": "v1.0.6",
         "category": "resilience"
       }
     }
