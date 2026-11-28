@@ -1,6 +1,6 @@
 {
   "success": true,
-  "generated_at_utc": "2026-11-28T09:28:36Z",
+  "generated_at_utc": "2026-11-28T09:33:43Z",
   "deployment": {
     "mode": "github_pages_cloud_never_sleep",
     "pages_url": "https://deep5devlopers.github.io/cron-dashboard/",
@@ -12,14 +12,14 @@
     "enabled": true,
     "mode": "strict_cloud_never_sleep",
     "works_without_browser": true,
-    "total_pulses": 6,
-    "successful_pulses": 6,
-    "last_pulse_utc": "2026-11-28T09:28:34Z",
+    "total_pulses": 7,
+    "successful_pulses": 7,
+    "last_pulse_utc": "2026-11-28T09:33:42Z",
     "last_trigger": "app_server_daemon",
     "cdn_online": true,
-    "cdn_latency_ms": 1480,
+    "cdn_latency_ms": 316,
     "snapshot_online": true,
-    "snapshot_latency_ms": 303,
+    "snapshot_latency_ms": 299,
     "git_extraheader_clean": true
   },
   "projects": [
