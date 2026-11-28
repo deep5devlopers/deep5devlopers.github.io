@@ -910,12 +910,12 @@
                 <div class="kv-val mono">08:00:00 AM IST Daily</div>
               </div>
               <div>
-                <div class="kv-label">Throttle-Proof Window (IST)</div>
-                <div class="kv-val mono">08:00 AM &ndash; 12:15 PM IST (1x/day)</div>
+                <div class="kv-label">Off-Peak Anti-Queue Window</div>
+                <div class="kv-val mono">08:00 AM &ndash; 11:22 AM IST (1x/day)</div>
               </div>
               <div>
-                <div class="kv-label">GitHub Cron (UTC)</div>
-                <div class="kv-val mono">*/15 2-6 * * * + Fail-Safe</div>
+                <div class="kv-label">GitHub Cron (UTC Off-Peak)</div>
+                <div class="kv-val mono">29,37,47,57 2 * * * + Fail-Safe</div>
               </div>
               <div>
                 <div class="kv-label">Countdown to Next 8:00 AM IST</div>
@@ -947,8 +947,8 @@
 
             <div class="kv-grid">
               <div>
-                <div class="kv-label">Cron Expression</div>
-                <div class="kv-val mono">*/5 * * * * (Every 5 Min)</div>
+                <div class="kv-label">Cron Expression (Off-Peak)</div>
+                <div class="kv-val mono">3,8,13..58 * * * * (Every 5 Min)</div>
               </div>
               <div>
                 <div class="kv-label">Next In-App Cycle</div>
@@ -983,39 +983,39 @@
             </thead>
             <tbody id="scheduleTimetableBody">
               <tr>
-                <td class="item-title">Daily Perfection Dense Window</td>
-                <td class="mono nowrap">08:00 AM &ndash; 12:15 PM IST (Runs Strictly 1x/Day)</td>
-                <td class="mono nowrap">*/15 2-6 * * *</td>
+                <td class="item-title">Daily Perfection Off-Peak Window</td>
+                <td class="mono nowrap">08:00 AM &ndash; 11:22 AM IST (Runs Strictly 1x/Day)</td>
+                <td class="mono nowrap">29,37,47,57 2 * * *<br>7,22,37,52 3-5 * * *</td>
                 <td>52 Commits &middot; 52 Issues &middot; 12 Code Reviews &middot; 12 PRs in deep5devlopers/deep (--after-ist-hour 8)</td>
                 <td><span class="status-text status-ok">Active</span></td>
               </tr>
               <tr>
                 <td class="item-title">Autopilot 8:00 AM IST Fail-Safe</td>
                 <td class="mono nowrap">Every Scheduled Autopilot Run (&ge; 08:00 AM IST)</td>
-                <td class="mono nowrap">*/5 * * * *</td>
-                <td>Verifies today&apos;s completion remotely (--if-needed); runs 52/52/12/12 automatically if primary slot dropped</td>
+                <td class="mono nowrap">3,8,13..58 * * * *</td>
+                <td>Verifies today&apos;s completion remotely (--if-needed); runs 52/52/12/12 automatically if primary slot delayed</td>
                 <td><span class="status-text status-ok">Armed</span></td>
               </tr>
               <tr>
                 <td class="item-title">5-Min Autopilot PR Cycle</td>
-                <td class="mono nowrap">Continuous 24/7 (12:00 AM &ndash; 11:55 PM IST)</td>
-                <td class="mono nowrap">*/5 * * * *</td>
-                <td>Rotates 1 repository &amp; 1 safe file, opens PR, squash-merges &amp; deletes branch</td>
+                <td class="mono nowrap">Continuous 24/7 (12:03 AM &ndash; 11:58 PM IST)</td>
+                <td class="mono nowrap">3,8,13..58 * * * *</td>
+                <td>Rotates 1 repository &amp; 1 safe file, opens PR, squash-merges &amp; deletes branch ($0/mo GitHub Actions)</td>
                 <td><span class="status-text status-ok">Active</span></td>
               </tr>
               <tr>
-                <td class="item-title">GitHub Pages Never-Sleep Cloud</td>
-                <td class="mono nowrap">24/7 Always-On CDN + 60s Live Browser Heartbeat</td>
-                <td class="mono nowrap">Auto-Publish + API</td>
-                <td>Raw GitHub main snapshot + live public GitHub Cloud API hydration every 60s with zero server sleep</td>
-                <td><span class="status-text status-ok">Always On</span></td>
+                <td class="item-title">Pure Cloud 30-Min Pages Sync</td>
+                <td class="mono nowrap">24/7 Cloud Watchdog (:11 &amp; :41 Past Every Hour)</td>
+                <td class="mono nowrap">11,41 * * * *</td>
+                <td>Verifies GitHub Pages CDN + cleans git .extraheader + refreshes dashboard.json with zero server required</td>
+                <td><span class="status-text status-ok">Active 24/7</span></td>
               </tr>
               <tr>
-                <td class="item-title">Strict Never-Sleep Keeper (.py)</td>
-                <td class="mono nowrap">24/7 Cloud Watchdog (Works Without Any Browser Open)</td>
-                <td class="mono nowrap">cloud_never_sleep_keeper.py</td>
-                <td>Verifies GitHub Pages CDN + wakes configured public servers + cleans git .extraheader + syncs dashboard.json</td>
-                <td><span class="status-text status-ok">Active 24/7</span></td>
+                <td class="item-title">GitHub Pages Never-Sleep CDN</td>
+                <td class="mono nowrap">24/7 Always-On Static CDN + 60s Live Browser Heartbeat</td>
+                <td class="mono nowrap">Zero-Server ($0/mo)</td>
+                <td>Raw GitHub main snapshot + live public GitHub Cloud API hydration every 60s &mdash; never sleeps</td>
+                <td><span class="status-text status-ok">Always On</span></td>
               </tr>
             </tbody>
           </table>
