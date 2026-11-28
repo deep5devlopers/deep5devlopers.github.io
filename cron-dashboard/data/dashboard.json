@@ -1,6 +1,6 @@
 {
   "success": true,
-  "generated_at_utc": "2026-11-28T10:47:45Z",
+  "generated_at_utc": "2026-11-28T10:49:30Z",
   "deployment": {
     "mode": "github_pages_cloud_never_sleep",
     "pages_url": "https://deep5devlopers.github.io/cron-dashboard/",
@@ -12,14 +12,14 @@
     "enabled": true,
     "mode": "strict_cloud_never_sleep",
     "works_without_browser": true,
-    "total_pulses": 3,
-    "successful_pulses": 3,
-    "last_pulse_utc": "2026-11-28T10:47:44Z",
-    "last_trigger": "app_server_daemon",
+    "total_pulses": 4,
+    "successful_pulses": 4,
+    "last_pulse_utc": "2026-11-28T10:49:29Z",
+    "last_trigger": "upgrade_option_b_52_52_12_12",
     "cdn_online": true,
-    "cdn_latency_ms": 302,
+    "cdn_latency_ms": 308,
     "snapshot_online": true,
-    "snapshot_latency_ms": 305,
+    "snapshot_latency_ms": 297,
     "git_extraheader_clean": true
   },
   "projects": [
@@ -332,7 +332,7 @@
     "today_utc": "2026-11-28",
     "last_completed_date_utc": "2026-11-28",
     "last_run_utc": "2026-11-28T03:50:25Z",
-    "total_runs": 6,
+    "total_runs": 10,
     "target_repo": "deep5devlopers/deep",
     "schedule_ist": "08:00 AM IST",
     "backup_schedule_ist": "08:00 AM \u2013 12:15 PM IST + Autopilot Fail-Safe",
@@ -340,10 +340,10 @@
     "backup_cron_utc": "*/5 * * * *",
     "next_run_utc": "2026-11-29T02:30:00Z",
     "targets": {
-      "commits": 26,
-      "issues": 26,
-      "code_reviews": 6,
-      "pull_requests": 6
+      "commits": 52,
+      "issues": 52,
+      "code_reviews": 12,
+      "pull_requests": 12
     },
     "last_error": null,
     "last_result": {
@@ -757,14 +757,51 @@
         "trigger_source": "cloud_verified_github",
         "repo": "deep5devlopers/deep",
         "counts": {
-          "commits_added": 8,
-          "issues_added": 0,
-          "code_reviews_added": 2,
-          "pull_requests_added": 2,
-          "pull_requests_merged": 2
+          "commits_added": 20,
+          "issues_added": 4,
+          "code_reviews_added": 8,
+          "pull_requests_added": 6,
+          "pull_requests_merged": 6
         },
-        "issues": [],
+        "issues": [
+          {
+            "number": 657,
+            "closed": true
+          },
+          {
+            "number": 658,
+            "closed": true
+          },
+          {
+            "number": 659,
+            "closed": true
+          },
+          {
+            "number": 660,
+            "closed": true
+          }
+        ],
         "pull_requests": [
+          {
+            "number": 661,
+            "merged": true,
+            "html_url": "https://github.com/deep5devlopers/deep/pull/661"
+          },
+          {
+            "number": 662,
+            "merged": true,
+            "html_url": "https://github.com/deep5devlopers/deep/pull/662"
+          },
+          {
+            "number": 663,
+            "merged": true,
+            "html_url": "https://github.com/deep5devlopers/deep/pull/663"
+          },
+          {
+            "number": 664,
+            "merged": true,
+            "html_url": "https://github.com/deep5devlopers/deep/pull/664"
+          },
           {
             "number": 665,
             "merged": true,
@@ -774,6 +811,165 @@
             "number": 666,
             "merged": true,
             "html_url": "https://github.com/deep5devlopers/deep/pull/666"
+          }
+        ]
+      },
+      {
+        "date_utc": "2026-11-25",
+        "timestamp_utc": "2026-11-25T05:09:18Z",
+        "trigger_source": "cloud_verified_github",
+        "repo": "deep5devlopers/deep",
+        "counts": {
+          "commits_added": 20,
+          "issues_added": 0,
+          "code_reviews_added": 8,
+          "pull_requests_added": 6,
+          "pull_requests_merged": 6
+        },
+        "issues": [],
+        "pull_requests": [
+          {
+            "number": 621,
+            "merged": true,
+            "html_url": "https://github.com/deep5devlopers/deep/pull/621"
+          },
+          {
+            "number": 622,
+            "merged": true,
+            "html_url": "https://github.com/deep5devlopers/deep/pull/622"
+          },
+          {
+            "number": 623,
+            "merged": true,
+            "html_url": "https://github.com/deep5devlopers/deep/pull/623"
+          },
+          {
+            "number": 624,
+            "merged": true,
+            "html_url": "https://github.com/deep5devlopers/deep/pull/624"
+          },
+          {
+            "number": 625,
+            "merged": true,
+            "html_url": "https://github.com/deep5devlopers/deep/pull/625"
+          },
+          {
+            "number": 626,
+            "merged": true,
+            "html_url": "https://github.com/deep5devlopers/deep/pull/626"
+          }
+        ]
+      },
+      {
+        "date_utc": "2026-11-24",
+        "timestamp_utc": "2026-11-24T04:59:52Z",
+        "trigger_source": "cloud_verified_github",
+        "repo": "deep5devlopers/deep",
+        "counts": {
+          "commits_added": 20,
+          "issues_added": 0,
+          "code_reviews_added": 8,
+          "pull_requests_added": 6,
+          "pull_requests_merged": 6
+        },
+        "issues": [],
+        "pull_requests": [
+          {
+            "number": 579,
+            "merged": true,
+            "html_url": "https://github.com/deep5devlopers/deep/pull/579"
+          },
+          {
+            "number": 580,
+            "merged": true,
+            "html_url": "https://github.com/deep5devlopers/deep/pull/580"
+          },
+          {
+            "number": 581,
+            "merged": true,
+            "html_url": "https://github.com/deep5devlopers/deep/pull/581"
+          },
+          {
+            "number": 582,
+            "merged": true,
+            "html_url": "https://github.com/deep5devlopers/deep/pull/582"
+          },
+          {
+            "number": 583,
+            "merged": true,
+            "html_url": "https://github.com/deep5devlopers/deep/pull/583"
+          },
+          {
+            "number": 584,
+            "merged": true,
+            "html_url": "https://github.com/deep5devlopers/deep/pull/584"
+          }
+        ]
+      },
+      {
+        "date_utc": "2026-11-23",
+        "timestamp_utc": "2026-11-23T02:45:15Z",
+        "trigger_source": "cloud_verified_github",
+        "repo": "deep5devlopers/deep",
+        "counts": {
+          "commits_added": 20,
+          "issues_added": 0,
+          "code_reviews_added": 8,
+          "pull_requests_added": 6,
+          "pull_requests_merged": 6
+        },
+        "issues": [],
+        "pull_requests": [
+          {
+            "number": 531,
+            "merged": true,
+            "html_url": "https://github.com/deep5devlopers/deep/pull/531"
+          },
+          {
+            "number": 532,
+            "merged": true,
+            "html_url": "https://github.com/deep5devlopers/deep/pull/532"
+          },
+          {
+            "number": 533,
+            "merged": true,
+            "html_url": "https://github.com/deep5devlopers/deep/pull/533"
+          },
+          {
+            "number": 534,
+            "merged": true,
+            "html_url": "https://github.com/deep5devlopers/deep/pull/534"
+          },
+          {
+            "number": 535,
+            "merged": true,
+            "html_url": "https://github.com/deep5devlopers/deep/pull/535"
+          },
+          {
+            "number": 536,
+            "merged": true,
+            "html_url": "https://github.com/deep5devlopers/deep/pull/536"
+          }
+        ]
+      },
+      {
+        "date_utc": "2026-11-22",
+        "timestamp_utc": "2026-11-22T08:54:13Z",
+        "trigger_source": "cloud_verified_github",
+        "repo": "deep5devlopers/deep",
+        "counts": {
+          "commits_added": 4,
+          "issues_added": 0,
+          "code_reviews_added": 1,
+          "pull_requests_added": 1,
+          "pull_requests_merged": 1
+        },
+        "issues": [],
+        "pull_requests": [
+          {
+            "number": 501,
+            "merged": true,
+            "html_url": "https://github.com/deep5devlopers/deep/pull/501"
           }
         ]
       },
@@ -1536,6 +1732,16 @@
     "error": null
   },
   "cron_logs": [
+    {
+      "id": "log-1795862965052",
+      "timestamp_epoch": 1795862965.052316,
+      "timestamp_utc": "2026-11-28 10:49:25 UTC",
+      "category": "scheduler",
+      "level": "INFO",
+      "source": "Autopilot5Min",
+      "message": "5-Minute Non-Sleeper Autopilot daemon started (interval: 300s)",
+      "details": {}
+    },
     {
       "id": "log-1795862843848",
       "timestamp_epoch": 1795862843.848758,
@@ -2527,21 +2733,6 @@
         "target_project": "SmallBox",
         "version": "v3.1.4",
         "category": "resilience"
-      }
-    },
-    {
-      "id": "log-1791529150206",
-      "timestamp_epoch": 1791529150.206145,
-      "timestamp_utc": "2026-10-09 06:59:10 UTC",
-      "category": "scheduler",
-      "level": "SUCCESS",
-      "source": "CadenceScheduler",
-      "message": "Scheduled 10-minute cycle #15 succeeded: Updated 'Algoline' [telemetry] & synced README (15 cycles complete)",
-      "details": {
-        "run_number": 15,
-        "target_project": "Algoline",
-        "version": "v1.2.1",
-        "category": "telemetry"
       }
     }
   ]
