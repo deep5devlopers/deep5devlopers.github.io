@@ -1,6 +1,6 @@
 {
   "success": true,
-  "generated_at_utc": "2026-11-28T11:02:03Z",
+  "generated_at_utc": "2026-11-28T11:07:10Z",
   "deployment": {
     "mode": "github_pages_cloud_never_sleep",
     "pages_url": "https://deep5devlopers.github.io/cron-dashboard/",
@@ -12,12 +12,12 @@
     "enabled": true,
     "mode": "strict_cloud_never_sleep",
     "works_without_browser": true,
-    "total_pulses": 8,
-    "successful_pulses": 8,
-    "last_pulse_utc": "2026-11-28T11:02:02Z",
+    "total_pulses": 9,
+    "successful_pulses": 9,
+    "last_pulse_utc": "2026-11-28T11:07:09Z",
     "last_trigger": "app_server_daemon",
     "cdn_online": true,
-    "cdn_latency_ms": 306,
+    "cdn_latency_ms": 310,
     "snapshot_online": true,
     "snapshot_latency_ms": 302,
     "git_extraheader_clean": true
@@ -1115,31 +1115,50 @@
     "active": true,
     "enabled": true,
     "interval_seconds": 300,
-    "total_cycles": 9,
-    "total_merged_prs": 9,
+    "total_cycles": 10,
+    "total_merged_prs": 10,
     "total_failures": 0,
-    "last_run_utc": "2026-11-28T10:57:56Z",
+    "last_run_utc": "2026-11-28T11:03:08Z",
     "last_error": null,
     "last_result": {
       "success": true,
-      "cycle_id": "ap-1795863476-101",
+      "cycle_id": "ap-1795863788-959",
       "trigger_source": "in_app_5min_daemon",
-      "repo": "deep5devlopers/clox",
-      "repo_slug": "clox",
-      "private": false,
-      "file": "overview.txt",
-      "branch": "auto/clox/sync-1795863476",
+      "repo": "deep5devlopers/grexon",
+      "repo_slug": "grexon",
+      "private": true,
+      "file": "src/middleware/rate_limiter.ts",
+      "branch": "auto/grexon/sync-1795863788",
       "base_branch": "main",
-      "commit_sha": "37a9057bc69d",
-      "pr_number": 128,
-      "pr_url": "https://github.com/deep5devlopers/clox/pull/128",
+      "commit_sha": "85e2a7a7b840",
+      "pr_number": 83,
+      "pr_url": "https://github.com/deep5devlopers/grexon/pull/83",
       "merged": true,
       "merge_method": "squash",
       "branch_deleted": true,
-      "elapsed_seconds": 12.4,
-      "timestamp_utc": "2026-11-28T10:57:56Z"
+      "elapsed_seconds": 12.94,
+      "timestamp_utc": "2026-11-28T11:03:08Z"
     },
     "recent_history": [
+      {
+        "success": true,
+        "cycle_id": "ap-1795863788-959",
+        "trigger_source": "in_app_5min_daemon",
+        "repo": "deep5devlopers/grexon",
+        "repo_slug": "grexon",
+        "private": true,
+        "file": "src/middleware/rate_limiter.ts",
+        "branch": "auto/grexon/sync-1795863788",
+        "base_branch": "main",
+        "commit_sha": "85e2a7a7b840",
+        "pr_number": 83,
+        "pr_url": "https://github.com/deep5devlopers/grexon/pull/83",
+        "merged": true,
+        "merge_method": "squash",
+        "branch_deleted": true,
+        "elapsed_seconds": 12.94,
+        "timestamp_utc": "2026-11-28T11:03:08Z"
+      },
       {
         "success": true,
         "cycle_id": "ap-1795863476-101",
@@ -1770,6 +1789,34 @@
     "error": null
   },
   "cron_logs": [
+    {
+      "id": "log-1795863800884",
+      "timestamp_epoch": 1795863800.8848996,
+      "timestamp_utc": "2026-11-28 11:03:20 UTC",
+      "category": "scheduler",
+      "level": "SUCCESS",
+      "source": "Autopilot5Min",
+      "message": "[ap-1795863788-959] deep5devlopers/grexon :: src/middleware/rate_limiter.ts -> PR #83 (MERGED)",
+      "details": {
+        "success": true,
+        "cycle_id": "ap-1795863788-959",
+        "trigger_source": "in_app_5min_daemon",
+        "repo": "deep5devlopers/grexon",
+        "repo_slug": "grexon",
+        "private": true,
+        "file": "src/middleware/rate_limiter.ts",
+        "branch": "auto/grexon/sync-1795863788",
+        "base_branch": "main",
+        "commit_sha": "85e2a7a7b840",
+        "pr_number": 83,
+        "pr_url": "https://github.com/deep5devlopers/grexon/pull/83",
+        "merged": true,
+        "merge_method": "squash",
+        "branch_deleted": true,
+        "elapsed_seconds": 12.94,
+        "timestamp_utc": "2026-11-28T11:03:08Z"
+      }
+    },
     {
       "id": "log-1795863487931",
       "timestamp_epoch": 1795863487.9313035,
@@ -2766,21 +2813,6 @@
         "category": "resilience",
         "ast_valid": true,
         "git_commit": "{'success': True, 'commit_sha': 'db1747c7e385c743c9d38cc657d80a9bcfed63aa', 'com"
-      }
-    },
-    {
-      "id": "log-1791529750839",
-      "timestamp_epoch": 1791529750.839856,
-      "timestamp_utc": "2026-10-09 07:09:10 UTC",
-      "category": "scheduler",
-      "level": "SUCCESS",
-      "source": "CadenceScheduler",
-      "message": "Scheduled 10-minute cycle #16 succeeded: Updated 'Corpen' [resilience] & synced README (16 cycles complete)",
-      "details": {
-        "run_number": 16,
-        "target_project": "Corpen",
-        "version": "v2.1.2",
-        "category": "resilience"
       }
     }
   ]
