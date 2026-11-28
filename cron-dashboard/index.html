@@ -825,7 +825,7 @@
       <div class="intro-head">
         <div>
           <h1 id="page-title">Projects &amp; Cron Activity Dashboard</h1>
-          <p class="intro-subtitle">All 14 ecosystem projects paired with live Indian Standard Time (IST AM/PM) cron schedules, daily 8:00 AM IST 26/26/6/6 execution tracking, and full perfection history.</p>
+          <p class="intro-subtitle">All 14 ecosystem projects paired with live Indian Standard Time (IST AM/PM) cron schedules, daily 8:00 AM IST 52/52/12/12 execution tracking, and full perfection history.</p>
         </div>
         <div class="clock-meta">
           <div id="liveIstClock" class="live-ist-clock mono">--</div>
@@ -841,7 +841,7 @@
         </div>
         <div class="summary-cell">
           <div class="summary-label">Daily Quota (8:00 AM IST)</div>
-          <div id="kpiQuota" class="summary-value mono">26 / 26 / 6 / 6</div>
+          <div id="kpiQuota" class="summary-value mono">52 / 52 / 12 / 12</div>
           <div id="kpiQuotaSub" class="summary-meta">Commits &middot; Issues &middot; Reviews &middot; PRs</div>
         </div>
         <div class="summary-cell">
@@ -899,7 +899,7 @@
             <div class="cron-card-head">
               <div>
                 <h3 id="daily-cron-title" class="cron-title">Daily Quota &amp; Deep Perfection Task</h3>
-                <p class="cron-desc">26 Commits &middot; 26 Issues &middot; 6 Code Reviews &middot; 6 Pull Requests in deep5devlopers/deep</p>
+                <p class="cron-desc">52 Commits &middot; 52 Issues &middot; 12 Code Reviews &middot; 12 Pull Requests in deep5devlopers/deep</p>
               </div>
               <span id="dailyCronState" class="status-text status-ok">Verified</span>
             </div>
@@ -927,7 +927,7 @@
               </div>
               <div>
                 <div class="kv-label">Commit Batch Plan</div>
-                <div class="kv-val mono">5+5+4+4+4+4 = 26 across 6 PRs</div>
+                <div class="kv-val mono">4&times;5 + 8&times;4 = 52 across 12 PRs</div>
               </div>
             </div>
           </div>
@@ -986,14 +986,14 @@
                 <td class="item-title">Daily Perfection Dense Window</td>
                 <td class="mono nowrap">08:00 AM &ndash; 12:15 PM IST (Runs Strictly 1x/Day)</td>
                 <td class="mono nowrap">*/15 2-6 * * *</td>
-                <td>26 Commits &middot; 26 Issues &middot; 6 Code Reviews &middot; 6 PRs in deep5devlopers/deep (--after-ist-hour 8)</td>
+                <td>52 Commits &middot; 52 Issues &middot; 12 Code Reviews &middot; 12 PRs in deep5devlopers/deep (--after-ist-hour 8)</td>
                 <td><span class="status-text status-ok">Active</span></td>
               </tr>
               <tr>
                 <td class="item-title">Autopilot 8:00 AM IST Fail-Safe</td>
                 <td class="mono nowrap">Every Scheduled Autopilot Run (&ge; 08:00 AM IST)</td>
                 <td class="mono nowrap">*/5 * * * *</td>
-                <td>Verifies today&apos;s completion remotely (--if-needed); runs 26/26/6/6 automatically if primary slot dropped</td>
+                <td>Verifies today&apos;s completion remotely (--if-needed); runs 52/52/12/12 automatically if primary slot dropped</td>
                 <td><span class="status-text status-ok">Armed</span></td>
               </tr>
               <tr>
@@ -1095,7 +1095,7 @@
       <div class="controls-bar">
         <div id="historyFilterTabs" class="segmented-group" role="group" aria-label="Filter cron history">
           <button type="button" class="seg-btn" data-hist="all" aria-pressed="true">All Activity</button>
-          <button type="button" class="seg-btn" data-hist="daily-quota" aria-pressed="false">Daily Quota (26/26/6/6)</button>
+          <button type="button" class="seg-btn" data-hist="daily-quota" aria-pressed="false">Daily Quota (52/52/12/12)</button>
           <button type="button" class="seg-btn" data-hist="github-actions" aria-pressed="false">GitHub Actions</button>
           <button type="button" class="seg-btn" data-hist="github-cloud" aria-pressed="false">GitHub Cloud Live</button>
           <button type="button" class="seg-btn" data-hist="autopilot" aria-pressed="false">5-Min Autopilot PRs</button>
@@ -1377,10 +1377,10 @@
           const perf = detailObj.perfection || {};
           const eco = perf.ecosystem_audit || {};
           const noteParts = [
-            (c.commits_added ?? 26) + " Commits",
-            (c.issues_added ?? 26) + " Issues closed" + (issuesList ? " (" + issuesList + ")" : ""),
-            (c.code_reviews_added ?? 6) + " Code Reviews",
-            (c.pull_requests_merged ?? c.pull_requests_added ?? 6) + " PRs merged" + (prsList ? " (" + prsList + ")" : ""),
+            (c.commits_added ?? 52) + " Commits",
+            (c.issues_added ?? 52) + " Issues closed" + (issuesList ? " (" + issuesList + ")" : ""),
+            (c.code_reviews_added ?? 12) + " Code Reviews",
+            (c.pull_requests_merged ?? c.pull_requests_added ?? 12) + " PRs merged" + (prsList ? " (" + prsList + ")" : ""),
           ];
           if (perf.projects_perfected) {
             noteParts.push(perf.projects_perfected + " Projects 100% Perfect");
@@ -1535,7 +1535,7 @@
         el.kpiProjects.textContent = String(projects.length);
         el.kpiProjectsSub.textContent = passingProjects + " of " + projects.length + " passing & 100% perfect";
 
-        const targets = dq.targets || { commits: 26, issues: 26, code_reviews: 6, pull_requests: 6 };
+        const targets = dq.targets || { commits: 52, issues: 52, code_reviews: 12, pull_requests: 12 };
         el.kpiQuota.textContent = targets.commits + " / " + targets.issues + " / " + targets.code_reviews + " / " + targets.pull_requests;
         el.kpiQuotaSub.textContent = dq.completed_today_utc
           ? "Completed today · Next run 08:00 AM IST"
@@ -1556,8 +1556,8 @@
         el.dailyNoteSummary.textContent = "Configured daily target: " +
           targets.commits + " Commits, " + targets.issues + " Issues, " + targets.code_reviews + " Code Reviews, " + targets.pull_requests + " PRs at 08:00 AM IST. " +
           "Last completed run (" + fmtIST(dq.last_run_utc, false) + "): " +
-          (dqCounts.commits_added ?? 26) + " commits, " + (dqCounts.issues_added ?? 26) + " issues, " +
-          (dqCounts.code_reviews_added ?? 6) + " reviews, " + (dqCounts.pull_requests_merged ?? 6) + " PRs merged" +
+          (dqCounts.commits_added ?? 52) + " commits, " + (dqCounts.issues_added ?? 52) + " issues, " +
+          (dqCounts.code_reviews_added ?? 12) + " reviews, " + (dqCounts.pull_requests_merged ?? 12) + " PRs merged" +
           (ecoAudit.average_score ? (" · Audit " + ecoAudit.average_score + "/100.") : ".");
 
         // Autopilot Card
