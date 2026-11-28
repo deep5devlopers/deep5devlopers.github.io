@@ -1,6 +1,6 @@
 {
   "success": true,
-  "generated_at_utc": "2026-11-28T11:22:31Z",
+  "generated_at_utc": "2026-11-28T11:27:38Z",
   "deployment": {
     "mode": "github_pages_cloud_never_sleep",
     "pages_url": "https://deep5devlopers.github.io/cron-dashboard/",
@@ -12,14 +12,14 @@
     "enabled": true,
     "mode": "strict_cloud_never_sleep",
     "works_without_browser": true,
-    "total_pulses": 12,
-    "successful_pulses": 12,
-    "last_pulse_utc": "2026-11-28T11:22:30Z",
+    "total_pulses": 13,
+    "successful_pulses": 13,
+    "last_pulse_utc": "2026-11-28T11:27:38Z",
     "last_trigger": "app_server_daemon",
     "cdn_online": true,
-    "cdn_latency_ms": 307,
+    "cdn_latency_ms": 314,
     "snapshot_online": true,
-    "snapshot_latency_ms": 298,
+    "snapshot_latency_ms": 291,
     "git_extraheader_clean": true
   },
   "projects": [
@@ -1115,31 +1115,50 @@
     "active": true,
     "enabled": true,
     "interval_seconds": 300,
-    "total_cycles": 13,
-    "total_merged_prs": 13,
+    "total_cycles": 14,
+    "total_merged_prs": 14,
     "total_failures": 0,
-    "last_run_utc": "2026-11-28T11:18:47Z",
+    "last_run_utc": "2026-11-28T11:24:01Z",
     "last_error": null,
     "last_result": {
       "success": true,
-      "cycle_id": "ap-1795864727-393",
+      "cycle_id": "ap-1795865041-375",
       "trigger_source": "in_app_5min_daemon",
-      "repo": "deep5devlopers/gred",
-      "repo_slug": "gred",
-      "private": true,
-      "file": "overview/07-security-and-access.txt",
-      "branch": "auto/gred/sync-1795864727",
+      "repo": "deep5devlopers/readme-metrics-studio",
+      "repo_slug": "readme-metrics-studio",
+      "private": false,
+      "file": "PROFILE_METRICS.md",
+      "branch": "auto/readme-metrics-studio/sync-1795865041",
       "base_branch": "main",
-      "commit_sha": "aad0f8080d7a",
-      "pr_number": 71,
-      "pr_url": "https://github.com/deep5devlopers/gred/pull/71",
+      "commit_sha": "2c838e6a1552",
+      "pr_number": 131,
+      "pr_url": "https://github.com/deep5devlopers/readme-metrics-studio/pull/131",
       "merged": true,
       "merge_method": "squash",
       "branch_deleted": true,
-      "elapsed_seconds": 14.47,
-      "timestamp_utc": "2026-11-28T11:18:47Z"
+      "elapsed_seconds": 12.57,
+      "timestamp_utc": "2026-11-28T11:24:01Z"
     },
     "recent_history": [
+      {
+        "success": true,
+        "cycle_id": "ap-1795865041-375",
+        "trigger_source": "in_app_5min_daemon",
+        "repo": "deep5devlopers/readme-metrics-studio",
+        "repo_slug": "readme-metrics-studio",
+        "private": false,
+        "file": "PROFILE_METRICS.md",
+        "branch": "auto/readme-metrics-studio/sync-1795865041",
+        "base_branch": "main",
+        "commit_sha": "2c838e6a1552",
+        "pr_number": 131,
+        "pr_url": "https://github.com/deep5devlopers/readme-metrics-studio/pull/131",
+        "merged": true,
+        "merge_method": "squash",
+        "branch_deleted": true,
+        "elapsed_seconds": 12.57,
+        "timestamp_utc": "2026-11-28T11:24:01Z"
+      },
       {
         "success": true,
         "cycle_id": "ap-1795864727-393",
@@ -1348,25 +1367,6 @@
         "branch_deleted": true,
         "elapsed_seconds": 12.84,
         "timestamp_utc": "2026-11-18T07:18:20Z"
-      },
-      {
-        "success": true,
-        "cycle_id": "ap-1794916614-809",
-        "trigger_source": "in_app_5min_daemon",
-        "repo": "deep5devlopers/readme-metrics-studio",
-        "repo_slug": "readme-metrics-studio",
-        "private": false,
-        "file": "metrics_compiler.py",
-        "branch": "auto/readme-metrics-studio/sync-1794916614",
-        "base_branch": "main",
-        "commit_sha": "29a8bf26c9dc",
-        "pr_number": 62,
-        "pr_url": "https://github.com/deep5devlopers/readme-metrics-studio/pull/62",
-        "merged": true,
-        "merge_method": "squash",
-        "branch_deleted": true,
-        "elapsed_seconds": 12.91,
-        "timestamp_utc": "2026-11-17T11:56:54Z"
       }
     ]
   },
@@ -1827,6 +1827,34 @@
     "error": null
   },
   "cron_logs": [
+    {
+      "id": "log-1795865053812",
+      "timestamp_epoch": 1795865053.8123536,
+      "timestamp_utc": "2026-11-28 11:24:13 UTC",
+      "category": "scheduler",
+      "level": "SUCCESS",
+      "source": "Autopilot5Min",
+      "message": "[ap-1795865041-375] deep5devlopers/readme-metrics-studio :: PROFILE_METRICS.md -> PR #131 (MERGED)",
+      "details": {
+        "success": true,
+        "cycle_id": "ap-1795865041-375",
+        "trigger_source": "in_app_5min_daemon",
+        "repo": "deep5devlopers/readme-metrics-studio",
+        "repo_slug": "readme-metrics-studio",
+        "private": false,
+        "file": "PROFILE_METRICS.md",
+        "branch": "auto/readme-metrics-studio/sync-1795865041",
+        "base_branch": "main",
+        "commit_sha": "2c838e6a1552",
+        "pr_number": 131,
+        "pr_url": "https://github.com/deep5devlopers/readme-metrics-studio/pull/131",
+        "merged": true,
+        "merge_method": "squash",
+        "branch_deleted": true,
+        "elapsed_seconds": 12.57,
+        "timestamp_utc": "2026-11-28T11:24:01Z"
+      }
+    },
     {
       "id": "log-1795864741223",
       "timestamp_epoch": 1795864741.2236342,
@@ -2869,21 +2897,6 @@
         "category": "telemetry",
         "ast_valid": true,
         "git_commit": "{'success': True, 'commit_sha': '1e303ac59d7c7ffc050a5a6b18dd7df8355f654b', 'com"
-      }
-    },
-    {
-      "id": "log-1791530351380",
-      "timestamp_epoch": 1791530351.3806293,
-      "timestamp_utc": "2026-10-09 07:19:11 UTC",
-      "category": "scheduler",
-      "level": "SUCCESS",
-      "source": "CadenceScheduler",
-      "message": "Scheduled 10-minute cycle #17 succeeded: Updated 'Skyline Ad Media' [telemetry] & synced README (17 cycles complete)",
-      "details": {
-        "run_number": 17,
-        "target_project": "Skyline Ad Media",
-        "version": "v1.8.4",
-        "category": "telemetry"
       }
     }
   ]
