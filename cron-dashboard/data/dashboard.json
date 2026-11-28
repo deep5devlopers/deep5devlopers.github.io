@@ -1,25 +1,26 @@
 {
   "success": true,
-  "generated_at_utc": "2026-11-28T11:52:33Z",
+  "generated_at_utc": "2026-11-28T11:54:16Z",
   "deployment": {
-    "mode": "github_pages_cloud_never_sleep",
+    "mode": "pure_github_actions_and_pages_zero_server",
     "pages_url": "https://deep5devlopers.github.io/cron-dashboard/",
-    "cloud_engine": "GitHub Actions Cloud Cron + GitHub Pages Static CDN",
+    "cloud_engine": "100% Pure GitHub Actions + GitHub Pages CDN ($0/mo \u00b7 Zero Server)",
     "always_on": true,
-    "works_without_browser": true
+    "works_without_browser": true,
+    "zero_server_required": true
   },
   "never_sleep_keeper": {
     "enabled": true,
     "mode": "strict_cloud_never_sleep",
     "works_without_browser": true,
-    "total_pulses": 6,
-    "successful_pulses": 6,
-    "last_pulse_utc": "2026-11-28T11:52:32Z",
-    "last_trigger": "app_server_daemon",
+    "total_pulses": 7,
+    "successful_pulses": 7,
+    "last_pulse_utc": "2026-11-28T11:54:15Z",
+    "last_trigger": "pure_zero_server_cloud_setup",
     "cdn_online": true,
-    "cdn_latency_ms": 320,
+    "cdn_latency_ms": 396,
     "snapshot_online": true,
-    "snapshot_latency_ms": 641,
+    "snapshot_latency_ms": 300,
     "git_extraheader_clean": true
   },
   "projects": [
@@ -335,9 +336,9 @@
     "total_runs": 9,
     "target_repo": "deep5devlopers/deep",
     "schedule_ist": "08:00 AM IST",
-    "backup_schedule_ist": "08:00 AM \u2013 12:15 PM IST + Autopilot Fail-Safe",
-    "schedule_cron_utc": "*/15 2-6 * * *",
-    "backup_cron_utc": "*/5 * * * *",
+    "backup_schedule_ist": "08:00 AM \u2013 11:22 AM IST (Off-Peak) + Autopilot Fail-Safe",
+    "schedule_cron_utc": "29,37,47,57 2 * * * & 7,22,37,52 3-5 * * *",
+    "backup_cron_utc": "3,8,13,18,23,28,33,38,43,48,53,58 * * * *",
     "next_run_utc": "2026-11-29T02:30:00Z",
     "targets": {
       "commits": 52,
@@ -1708,6 +1709,16 @@
   },
   "cron_logs": [
     {
+      "id": "log-1795866848497",
+      "timestamp_epoch": 1795866848.4979928,
+      "timestamp_utc": "2026-11-28 11:54:08 UTC",
+      "category": "scheduler",
+      "level": "INFO",
+      "source": "Autopilot5Min",
+      "message": "5-Minute Non-Sleeper Autopilot daemon started (interval: 300s)",
+      "details": {}
+    },
+    {
       "id": "log-1795866732028",
       "timestamp_epoch": 1795866732.028998,
       "timestamp_utc": "2026-11-28 11:52:12 UTC",
@@ -2698,21 +2709,6 @@
         "target_project": "SmallBox",
         "version": "v3.1.4",
         "category": "resilience"
-      }
-    },
-    {
-      "id": "log-1791529150206",
-      "timestamp_epoch": 1791529150.206145,
-      "timestamp_utc": "2026-10-09 06:59:10 UTC",
-      "category": "scheduler",
-      "level": "SUCCESS",
-      "source": "CadenceScheduler",
-      "message": "Scheduled 10-minute cycle #15 succeeded: Updated 'Algoline' [telemetry] & synced README (15 cycles complete)",
-      "details": {
-        "run_number": 15,
-        "target_project": "Algoline",
-        "version": "v1.2.1",
-        "category": "telemetry"
       }
     }
   ]
