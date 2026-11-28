@@ -1,6 +1,6 @@
 {
   "success": true,
-  "generated_at_utc": "2026-11-28T11:54:16Z",
+  "generated_at_utc": "2026-11-28T11:56:55Z",
   "deployment": {
     "mode": "pure_github_actions_and_pages_zero_server",
     "pages_url": "https://deep5devlopers.github.io/cron-dashboard/",
@@ -13,14 +13,14 @@
     "enabled": true,
     "mode": "strict_cloud_never_sleep",
     "works_without_browser": true,
-    "total_pulses": 7,
-    "successful_pulses": 7,
-    "last_pulse_utc": "2026-11-28T11:54:15Z",
-    "last_trigger": "pure_zero_server_cloud_setup",
+    "total_pulses": 8,
+    "successful_pulses": 8,
+    "last_pulse_utc": "2026-11-28T11:56:54Z",
+    "last_trigger": "app_server_daemon",
     "cdn_online": true,
-    "cdn_latency_ms": 396,
+    "cdn_latency_ms": 389,
     "snapshot_online": true,
-    "snapshot_latency_ms": 300,
+    "snapshot_latency_ms": 311,
     "git_extraheader_clean": true
   },
   "projects": [
@@ -1094,46 +1094,46 @@
     "total_cycles": 7,
     "total_merged_prs": 7,
     "total_failures": 0,
-    "last_run_utc": "2026-11-28T11:52:00Z",
+    "last_run_utc": "2026-11-28T11:56:07Z",
     "last_error": null,
     "last_result": {
       "success": true,
-      "cycle_id": "ap-1795866720-446",
+      "cycle_id": "ap-1795866967-758",
       "trigger_source": "in_app_5min_daemon",
-      "repo": "deep5devlopers/chamflow",
-      "repo_slug": "chamflow",
+      "repo": "deep5devlopers/grexon",
+      "repo_slug": "grexon",
       "private": true,
-      "file": "overview/01-executive-summary.txt",
-      "branch": "auto/chamflow/sync-1795866720",
+      "file": "humans.txt",
+      "branch": "auto/grexon/sync-1795866967",
       "base_branch": "main",
-      "commit_sha": "bef8a4de519e",
-      "pr_number": 76,
-      "pr_url": "https://github.com/deep5devlopers/chamflow/pull/76",
+      "commit_sha": "feeca55bb8e6",
+      "pr_number": 85,
+      "pr_url": "https://github.com/deep5devlopers/grexon/pull/85",
       "merged": true,
       "merge_method": "squash",
       "branch_deleted": true,
-      "elapsed_seconds": 12.76,
-      "timestamp_utc": "2026-11-28T11:52:00Z"
+      "elapsed_seconds": 14.45,
+      "timestamp_utc": "2026-11-28T11:56:07Z"
     },
     "recent_history": [
       {
         "success": true,
-        "cycle_id": "ap-1795866720-446",
+        "cycle_id": "ap-1795866967-758",
         "trigger_source": "in_app_5min_daemon",
-        "repo": "deep5devlopers/chamflow",
-        "repo_slug": "chamflow",
+        "repo": "deep5devlopers/grexon",
+        "repo_slug": "grexon",
         "private": true,
-        "file": "overview/01-executive-summary.txt",
-        "branch": "auto/chamflow/sync-1795866720",
+        "file": "humans.txt",
+        "branch": "auto/grexon/sync-1795866967",
         "base_branch": "main",
-        "commit_sha": "bef8a4de519e",
-        "pr_number": 76,
-        "pr_url": "https://github.com/deep5devlopers/chamflow/pull/76",
+        "commit_sha": "feeca55bb8e6",
+        "pr_number": 85,
+        "pr_url": "https://github.com/deep5devlopers/grexon/pull/85",
         "merged": true,
         "merge_method": "squash",
         "branch_deleted": true,
-        "elapsed_seconds": 12.76,
-        "timestamp_utc": "2026-11-28T11:52:00Z"
+        "elapsed_seconds": 14.45,
+        "timestamp_utc": "2026-11-28T11:56:07Z"
       },
       {
         "success": true,
@@ -1254,6 +1254,21 @@
   "github_actions": {
     "repo": "deep5devlopers/deep",
     "runs": [
+      {
+        "id": 46142067811,
+        "run_number": 1,
+        "name": "Pure Cloud Never-Sleep Pages Sync & Watchdog ($0/mo)",
+        "path": ".github/workflows/pages-cloud-sync.yml",
+        "event": "workflow_dispatch",
+        "status": "completed",
+        "conclusion": "success",
+        "head_branch": "main",
+        "head_sha": "c822eda",
+        "created_at": "2026-11-28T11:54:29Z",
+        "updated_at": "2026-11-28T11:54:41Z",
+        "duration_seconds": 12,
+        "html_url": "https://github.com/deep5devlopers/deep/actions/runs/46142067811"
+      },
       {
         "id": 46132237496,
         "run_number": 11,
@@ -1688,68 +1703,43 @@
         "updated_at": "2026-11-21T21:49:01Z",
         "duration_seconds": 19,
         "html_url": "https://github.com/deep5devlopers/deep/actions/runs/44953460520"
-      },
-      {
-        "id": 44924655501,
-        "run_number": 16,
-        "name": "Non-Sleeper 5-Min Autopilot PR & 8:00 AM IST Daily Fail-Safe Cron",
-        "path": ".github/workflows/autopilot-5min-cron.yml",
-        "event": "schedule",
-        "status": "completed",
-        "conclusion": "success",
-        "head_branch": "main",
-        "head_sha": "3f530ca",
-        "created_at": "2026-11-21T16:27:14Z",
-        "updated_at": "2026-11-21T16:27:32Z",
-        "duration_seconds": 18,
-        "html_url": "https://github.com/deep5devlopers/deep/actions/runs/44924655501"
       }
     ],
     "error": null
   },
   "cron_logs": [
     {
-      "id": "log-1795866848497",
-      "timestamp_epoch": 1795866848.4979928,
-      "timestamp_utc": "2026-11-28 11:54:08 UTC",
-      "category": "scheduler",
-      "level": "INFO",
-      "source": "Autopilot5Min",
-      "message": "5-Minute Non-Sleeper Autopilot daemon started (interval: 300s)",
-      "details": {}
-    },
-    {
-      "id": "log-1795866732028",
-      "timestamp_epoch": 1795866732.028998,
-      "timestamp_utc": "2026-11-28 11:52:12 UTC",
+      "id": "log-1795866980886",
+      "timestamp_epoch": 1795866980.8863647,
+      "timestamp_utc": "2026-11-28 11:56:20 UTC",
       "category": "scheduler",
       "level": "SUCCESS",
       "source": "Autopilot5Min",
-      "message": "[ap-1795866720-446] deep5devlopers/chamflow :: overview/01-executive-summary.txt -> PR #76 (MERGED)",
+      "message": "[ap-1795866967-758] deep5devlopers/grexon :: humans.txt -> PR #85 (MERGED)",
       "details": {
         "success": true,
-        "cycle_id": "ap-1795866720-446",
+        "cycle_id": "ap-1795866967-758",
         "trigger_source": "in_app_5min_daemon",
-        "repo": "deep5devlopers/chamflow",
-        "repo_slug": "chamflow",
+        "repo": "deep5devlopers/grexon",
+        "repo_slug": "grexon",
         "private": true,
-        "file": "overview/01-executive-summary.txt",
-        "branch": "auto/chamflow/sync-1795866720",
+        "file": "humans.txt",
+        "branch": "auto/grexon/sync-1795866967",
         "base_branch": "main",
-        "commit_sha": "bef8a4de519e",
-        "pr_number": 76,
-        "pr_url": "https://github.com/deep5devlopers/chamflow/pull/76",
+        "commit_sha": "feeca55bb8e6",
+        "pr_number": 85,
+        "pr_url": "https://github.com/deep5devlopers/grexon/pull/85",
         "merged": true,
         "merge_method": "squash",
         "branch_deleted": true,
-        "elapsed_seconds": 12.76,
-        "timestamp_utc": "2026-11-28T11:52:00Z"
+        "elapsed_seconds": 14.45,
+        "timestamp_utc": "2026-11-28T11:56:07Z"
       }
     },
     {
-      "id": "log-1795866707267",
-      "timestamp_epoch": 1795866707.26707,
-      "timestamp_utc": "2026-11-28 11:51:47 UTC",
+      "id": "log-1795866954436",
+      "timestamp_epoch": 1795866954.436408,
+      "timestamp_utc": "2026-11-28 11:55:54 UTC",
       "category": "scheduler",
       "level": "INFO",
       "source": "Autopilot5Min",
@@ -2709,6 +2699,21 @@
         "target_project": "SmallBox",
         "version": "v3.1.4",
         "category": "resilience"
+      }
+    },
+    {
+      "id": "log-1791529150206",
+      "timestamp_epoch": 1791529150.206145,
+      "timestamp_utc": "2026-10-09 06:59:10 UTC",
+      "category": "scheduler",
+      "level": "SUCCESS",
+      "source": "CadenceScheduler",
+      "message": "Scheduled 10-minute cycle #15 succeeded: Updated 'Algoline' [telemetry] & synced README (15 cycles complete)",
+      "details": {
+        "run_number": 15,
+        "target_project": "Algoline",
+        "version": "v1.2.1",
+        "category": "telemetry"
       }
     }
   ]
